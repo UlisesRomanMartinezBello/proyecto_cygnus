@@ -1,0 +1,19 @@
+.imgNav{
+    width: 10%;
+}
+
+#nav{
+    border-top: 1px solid white;
+}
+
+.container{
+    padding-left: 0px;
+}
+
+.navbar{
+    padding-left: 0px;
+}
+
+.prueba{
+    border: 1px solid red;
+}

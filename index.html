@@ -17,31 +17,54 @@
 <body>
     <header>
         <div class="bg-principal">
-            <div class="container pt-3 pb-3">
-                <div>
+            <div class="container" id="navLogoUser">
+                <div class="divLogo">
                     <img class="imgNav" src="assets/img/logo-white.png">
+                </div>
+                <div class="divUser">
+                    <div class="divIconoUser">
+                        <i class="uil uil-user btnIcono"></i>
+                    </div>          
+                    <div class="divIniciarSesion">
+                        <p>Iniciar Sesion</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="bg-principal">
-            <div class="container pt-3 pb-3 prueba" id="nav">
-                <nav class="navbar navbar-expand-lg navbar-dark ">
-                    <a class="navbar-brand" href="#">Proyecto Cygnus</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <div class="container" id="nav">
+                <!-- navbar-expand-lg -->
+                <nav class="navbar navbar-dark">
+                    <div class="divNav" id="divProyecto">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand"  href="#">Proyecto Cygnus</a>                     
+                    </div>
+                    
+                    <div class="divNav" id="divTexto">
+                        <a class="nav-item nav-link" href="#">Chamarras</a>
+                        <a class="nav-item nav-link" href="#">Hoddie</a>
+                        <a class="nav-item nav-link" href="#">Playeras</a>
+                    </div>
+
+
+                    <div class="divNav" id="divBotones">
+                        <i class="uil uil-search mr-4 btnIcono"></i>
+                        <i class="uil uil-shopping-cart-alt mr-3 btnIcono"></i>
+                    </div>
+
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="#">Chamarras <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link active" href="#">Chamarras</a>
                             <a class="nav-item nav-link" href="#">Hoddie</a>
                             <a class="nav-item nav-link" href="#">Playeras</a>
-                            <i class="uil uil-search nav-link"></i>
-                            <i class="uil uil-shopping-cart nav-link"></i>
                         </div>
+                    </div>
+                    
                 </nav>
             </div>
         </div>
@@ -50,7 +73,7 @@
     <main>
 
     </main>
-    <footer class="bg-principal py-5 text-light text-uppercase fixed-bottom">
+    <footer class="bg-principal py-5 text-light text-uppercase ">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-3 col-lg-4">
@@ -65,6 +88,7 @@
                         <i class="fa-brands fa-instagram h1 mx-2"></i>
                     </div>
                 </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-4">
                     <h4 class="font-weight-bold">Ayuda</h4>
                     <ul class="lista pt-4 font-weight-light">
@@ -76,6 +100,7 @@
                         <li class="pb-4">Garantias</li>
                     </ul>
                 </div>
+
                 <div class="col-sm-12 col-md-3 col-lg-4">
                     <h4 class="font-weight-bold">Sobre Nosotros</h4>
                     <ul class="lista pt-4 font-weight-light">
@@ -83,6 +108,7 @@
                         <li class="pb-4">Buscar Tiendas</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </footer>

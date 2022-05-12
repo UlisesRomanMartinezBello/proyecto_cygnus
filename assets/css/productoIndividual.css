@@ -1,8 +1,14 @@
 
+#div-img-ch{
+    border: 1px solid yellow;
+    padding: 0;
+}
 
-
-.nose{
-    margin-top: 40px;
+.img-ch{
+    width: 50%;
+    height: 5vh;
+    background-color: white;
+    border: 1px solid red;
 }
 
 .img-carrusel{

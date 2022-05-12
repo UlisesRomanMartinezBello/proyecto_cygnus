@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
         rel="stylesheet">
     <link href="assets/css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
     <title>Proyecto Cygnus</title>
 </head>
 
@@ -71,6 +72,49 @@
 
     </header>
     <main>
+
+        <div id="nosotros" class="mt-5">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md">
+                  <div class="pt-3 mb-5 mr-5">
+                    <!-- <h2 class='text-center' >UBICACIÓN</h2> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30140.164190511012!2d-98.94624236917834!3d19.21613351383168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1652315346915!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <div class="siguenos bg-light p-3 rounded mr-5 text-center">
+                      <label for="">contacto@cygnus.com.mx</label>
+                      <br>
+                      <label for="">5512345678</label>
+                      <h2>SIGUENOS</h2>
+                      <div class="">
+                        <i class="fa-brands fa-facebook-square h1 mx-2"></i>
+                        <i class="fa-brands fa-twitter-square h1 mx-2"></i>
+                        <i class="fa-brands fa-instagram h1 mx-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col bg-light text-dark p-3 rounded">
+                  <form id="contactanos">
+                    <div class="form-group">
+                        <h2 class="font-weight-bolder text-center">CONTACTO</h2>
+                        <label for="inputAddress">Nombre:</label>
+                        <input type="text" class="form-control" id="inputNombre" placeholder="Ingresa tu nombre">
+                      </div>
+                    <div class="form-row">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico">
+                    </div>                    
+                    <div class="form-row">                      
+                        <label for="inputMensaje" >Mensaje</label>
+                        <!-- <input type="text" class="form-control" aria-label="With textarea" id="inputMensaje" placeholder="Ingresa tu mensaje"> -->
+                        <textarea class="form-control fontTxtArea" aria-label="With textarea"></textarea>                                           
+                    </div>                    
+                    <button type="submit" class="btn btn-block btnEnviar text-light mt-5 ">Registrarse</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </main>
     <footer class="bg-principal py-5 text-light text-uppercase ">

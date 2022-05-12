@@ -6,3 +6,29 @@
 .col{
     border-radius: 3%;
 }
+
+.col-btn{
+    
+    background-color: rgb(20, 20, 22);
+    border-radius: 5px;
+    height: 50%;
+    width: 150px;
+    font-size: larger;
+    color: white;
+}
+.col-btn2{
+    
+    background-color: #4B3869;
+    border-radius: 3%;
+    height: 50%;
+    width: 150px;
+    
+}
+
+.col-btn3{
+    align-items: center;
+    background-color: #4B3869;
+    border-radius: 3%;
+    height: 80%;
+    width: 250px;
+}

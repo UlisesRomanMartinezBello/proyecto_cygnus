@@ -1,13 +1,14 @@
+:root{
+    --altura: 0px;
+}
+
 body {
+    background: #EDE6DB;
     font-family: 'Poppins', sans-serif;
 }
 
 a {
     color: #ffffff;
-}
-
-main{
-    height: 100vh;
 }
 
 #navLogoUser{
@@ -131,6 +132,35 @@ p{
     display: none;
 }
 
+#divBanner{
+    border: 1px solid #1A132F;
+}
+
+.imagenSlider{
+    height: calc(75vh - var(--altura));
+    /* object-fit: cover; */
+    /* object-position: center; */
+}
+
+#divCards{
+    margin-top: 5rem;
+}
+
+.card{
+    height: 100%;
+    
+}
+
+.img-card{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+    /* border: 1px solid red; */
+}
+
+
+
 @media screen and (max-width: 992px){
     #nav{
         display: flex;
@@ -167,3 +197,10 @@ p{
     } 
 }
 
+@media screen and (max-width: 575px){
+    .imagenSlider{
+        height: calc(50vh - var(--altura));
+        /* object-fit: cover; */
+        /* object-position: center; */
+    }
+}

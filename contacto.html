@@ -25,7 +25,7 @@
                 <div class="divUser">
                     <div class="divIconoUser">
                         <i class="uil uil-user btnIcono"></i>
-                    </div>          
+                    </div>
                     <div class="divIniciarSesion">
                         <p>Iniciar Sesion</p>
                     </div>
@@ -43,9 +43,9 @@
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="navbar-brand"  href="#">Proyecto Cygnus</a>                     
+                        <a class="navbar-brand" href="#">Proyecto Cygnus</a>
                     </div>
-                    
+
                     <div class="divNav" id="divTexto">
                         <a class="nav-item nav-link" href="#">Chamarras</a>
                         <a class="nav-item nav-link" href="#">Hoddie</a>
@@ -65,7 +65,7 @@
                             <a class="nav-item nav-link" href="#">Playeras</a>
                         </div>
                     </div>
-                    
+
                 </nav>
             </div>
         </div>
@@ -75,49 +75,55 @@
 
         <div id="nosotros" class="mt-5">
             <div class="container ">
-              <div class="row">
-                <div class="col-md">
-                  <div class="pt-5 mb-5 mr-5">
-                    <!-- <h2 class='text-center' >UBICACIÓN</h2> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30140.164190511012!2d-98.94624236917834!3d19.21613351383168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1652315346915!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                  <div class="siguenos bg-light p-3 rounded mr-5 mb-5 text-center">
-                      <label for="">contacto@cygnus.com.mx</label>
-                      <br>
-                      <label for="">5512345678</label>
-                      <h2>SIGUENOS</h2>
-                      <div class="">
-                        <i class="fa-brands fa-facebook-square h1 mx-2"></i>
-                        <i class="fa-brands fa-twitter-square h1 mx-2"></i>
-                        <i class="fa-brands fa-instagram h1 mx-2"></i>
+                <div class="row">
+                    <div id="ubicacion" class="col-md">
+                        <div id="mapa" class="pt-5 mb-5 mr-5">
+                            <!-- <h2 class='text-center' >UBICACIÓN</h2> -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30140.164190511012!2d-98.94624236917834!3d19.21613351383168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1652315346915!5m2!1ses!2smx"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div id="datos" class="p-4 bordeSiguenos rounded mb-5 mr-5">
+                            <label for="">
+                                <i class="fa-solid fa-envelope"></i> contacto@cygnus.com.mx</label>
+                            <br>
+                            <label for=""><i class="fa-solid fa-phone"></i> 5512345678</label>
+                            <h2>SIGUENOS</h2>
+                            <div class="">
+                                <i class="fa-brands fa-facebook-square h1 mx-2"></i>
+                                <i class="fa-brands fa-twitter-square h1 mx-2"></i>
+                                <i class="fa-brands fa-instagram h1 mx-2"></i>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col bg-light text-dark p-3 mb-5 rounded">
-                  <form id="contactanos">
-                    <div class="form-group">
-                        <h2 class="font-weight-bolder text-center">CONTACTO</h2>
-                        <br>
-                        <label for="inputAddress">Nombre:</label>
-                        <input type="text" class="form-control" id="inputNombre" placeholder="Ingresa tu nombre">
-                        <br>
+                    <div id="formulario" class="col bg-light text-dark p-5 mb-5  rounded">
+                        <form >
+                            <div class="form-group">
+                                <h2 class="font-weight-bolder text-center">CONTACTO</h2>
+                                <br>
+                                <label for="inputAddress">Nombre:</label>
+                                <input type="text" class="form-control" id="inputNombre"
+                                    placeholder="Ingresa tu nombre">
+                                <br>
+                            </div>
+                            <div class="form-row">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control input-sm" id="inputEmail"
+                                    placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <label for="inputMensaje">Mensaje</label>
+                                <textarea class="form-control fontTxtArea" rows="10"
+                                    aria-label="With textarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-block btnEnviar text-light mt-5 ">Registrarse</button>
+                        </form>
                     </div>
-                    <div class="form-row">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico">
-                    </div> 
-                    <br>                   
-                    <div class="form-row">                      
-                        <label for="inputMensaje" >Mensaje</label>
-                        <!-- <input type="text" class="form-control" aria-label="With textarea" id="inputMensaje" placeholder="Ingresa tu mensaje"> -->
-                        <textarea class="form-control fontTxtArea" aria-label="With textarea"></textarea>                                           
-                    </div>                    
-                    <button type="submit" class="btn btn-block btnEnviar text-light mt-5 ">Registrarse</button>
-                  </form>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
 
     </main>
     <footer class="bg-principal py-5 text-light text-uppercase ">
@@ -159,7 +165,7 @@
             </div>
         </div>
     </footer>
-  
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -169,6 +175,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
+
 
 </body>
 

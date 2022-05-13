@@ -1,15 +1,4 @@
-.card-radius {
-    border-radius: 1.5rem;
-}
-
-.height-auto {
-    height: auto;
-}
-
-.border-table {
-    border-bottom: 2px solid #000000;
-}
-
+/* Buttons */
 .btn-principal {
     background-color: #4B3869;
     color: #fff;
@@ -20,15 +9,28 @@
     color: #fff;
 }
 
+/* Text */
 .text-principal {
     color: #4B3869;
 }
 
+/* Images */
 .img-carrito {
     width: 9rem;
     object-fit: cover;
+    border-radius: .8rem;
 }
 
-.text-principal {
-    color: #4B3869;
+/* Cards */
+.card-radius {
+    border-radius: 1rem;
+}
+
+.height-auto {
+    height: auto;
+}
+
+/* Tables */
+.border-table {
+    border-bottom: 2px solid #000000;
 }

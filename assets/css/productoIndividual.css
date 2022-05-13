@@ -1,38 +1,28 @@
 
-#div-img-ch{
+#divImg{
     border: 1px solid yellow;
     padding: 0;
+    height: 50vh;
+}
+
+#centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-ch{
     width: 50%;
     height: 5vh;
     background-color: white;
-    border: 1px solid red;
+    border: 2px solid red;
+    margin-bottom: 3rem;
 }
 
-.img-carrusel{
-    height: calc(60vh - 46px);
-    /* object-fit: cover;
-    object-position: center; */
-    border: 1px solid red;
-    display: flex;
 
-
+.vista{
+    object-fit: cover; 
+    object-position: center;
+    width: 50px;
 }
-
-.carousel-item{
-    margin: 1px 0 1px;
-}
-
-.playerasch{
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-    /* object-position: center; */
-}
-
-.card-body{
-    padding: 0%;
-}
-

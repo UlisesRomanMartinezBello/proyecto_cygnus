@@ -3,7 +3,7 @@
 
     width: 100%;
     height: 10vh;
-    border: 1px solid black ;
+    border: 1px solid white ;
 
 
 }
@@ -50,5 +50,11 @@
     background-color: #4B3869;
     color: white;
 }
-    
+#capa, #mensaje{
+    padding: 10px;   
+}
+
+#mensaje{
+    display: none;
+}
    

@@ -1,5 +1,5 @@
 
-#div-img-ch{
+#divImg{
     border: 1px solid yellow;
     padding: 0;
 }
@@ -11,14 +11,14 @@
     border: 1px solid red;
 }
 
+
+
 .img-carrusel{
     height: calc(60vh - 46px);
     /* object-fit: cover;
     object-position: center; */
     border: 1px solid red;
     display: flex;
-
-
 }
 
 .carousel-item{

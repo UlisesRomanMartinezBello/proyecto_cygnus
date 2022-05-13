@@ -1,40 +1,54 @@
-.list-group{
-    display: flex;
-    height: 60%;
-    width: 80%;
+
+.div-Busqueda{
+
+    width: 100%;
+    height: 10vh;
+    border: 1px solid black ;
+
+
 }
 
+.titulo{
 
+    text-align: center;
 
-/* .card-body{
-    display: flex;
-    height: 80%;
-    width: 100%;
-
-} */
+}
 
 
 .card{
     height: 100%;
-    
+    position: relative;
+}
+
+.cora{
+    position: absolute;
+    top: 5px;
+    left:85%;
+}
+
+.btn-carrito{
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #4B3869;
+    color: white;
+    display: none;
+
 }
 
 .img-card{
-    width: 100%;
+
+     width: 100%;
     height: 60vh;
     object-fit: cover;
     object-position: center;
-    /* border: 1px solid red; */
 }
 
-/* .card-title{
-    font-family: 'Poppins', sans-serif;
-    width: 80%;
- height: 70%;
-    }
-.card-text{
-
-    width: 80%;
+.btn{
+    border-bottom: 0px;
+    background-color: #4B3869;
+    color: white;
+}
     
-
-} */
+   

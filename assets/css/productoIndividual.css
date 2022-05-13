@@ -1,8 +1,11 @@
-
 #divImg{
     border: 1px solid yellow;
     padding: 0;
-    height: 50vh;
+    height: 70vh;
+}
+
+#img-g{
+    padding: 0;
 }
 
 #centrar{
@@ -13,8 +16,8 @@
 }
 
 .img-ch{
-    width: 50%;
-    height: 5vh;
+    width: 40%;
+    height: 8vh;
     background-color: white;
     border: 2px solid red;
     margin-bottom: 3rem;
@@ -24,5 +27,13 @@
 .vista{
     object-fit: cover; 
     object-position: center;
-    width: 50px;
+    width: 60px;
+}
+
+.img-g{
+    /* object-fit: cover;
+    object-position: center; */
+    width: 370px;
+    margin-bottom: 0;
+
 }

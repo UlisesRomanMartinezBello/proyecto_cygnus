@@ -1,4 +1,8 @@
+.titulo{
 
+    font-family: 'Sigmar One', cursive;
+    
+}
 .div-Busqueda{
 
     width: 100%;
@@ -6,6 +10,44 @@
     border: 1px solid white ;
 
 
+}
+
+.btn-tamano{
+    width: 100%;
+    height: 50%;
+
+
+}
+
+.efecto:hover{
+ background-color: #4B3869;
+}
+
+.btnxs{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+   }
+
+#bt-b{
+
+   background-color: white; 
+}
+
+#bt-a{
+
+    background-color: blue;
+
+}
+
+#bt-m{
+
+    background-color: blueviolet;
+}
+
+#bt-n{
+    background-color: black;
 }
 
 .titulo{
@@ -18,12 +60,15 @@
 .card{
     height: 100%;
     position: relative;
+    border-radius: 0%;
 }
+
 
 .cora{
     position: absolute;
     top: 5px;
     left:85%;
+    
 }
 
 .btn-carrito{
@@ -49,6 +94,8 @@
     border-bottom: 0px;
     background-color: #4B3869;
     color: white;
+    border-radius: 1rem;
+
 }
 #capa, #mensaje{
     padding: 10px;   

@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
         rel="stylesheet">
     <link href="assets/css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <title>Proyecto Cygnus</title>
 </head>
 
@@ -55,8 +57,7 @@
 
                     <div class="divNav" id="divBotones">
                         <i class="uil uil-search mr-4 btnIcono"></i>
-                        <i class="uil uil-shopping-cart-alt mr-3 btnIcono"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="uil uil-shopping-cart-alt mr-3 btnIcono"></i>                      
                     </div>
 
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -106,84 +107,134 @@
                 </a>
             </div>
         </div>
+        <div class="container pt-5 pb-5">
+          <div class="carousel">
+            <div class="carousel__contenedor">
+              <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+      
+              <div class="carousel__lista">
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie1.webp" class="img-carousel" alt="Rock and Roll Hall of Fame">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie2.png" class="img-carousel" alt="Constitution Square - Tower I">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie3.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie4.jpg" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
         
-        <!-- revisando main -->
-        <div class="container" id="divCards">
-            <div class="row row-cols-1 row-cols-md-4 d-flex justify-content-center">
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="assets/img/img-producto/027a9e56464abe3a7ed3caf40a51003a-product.jpg" class="card-img-top img-card" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Descripcion Producto</h5>
-                      <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie5.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
                 </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="assets/img/img-producto/1570862152b54f301edc6416e2bbd30771652d080e_thumbnail_405x552.jpg" class="card-img-top img-card" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Descripcion Producto</h5>
-                      <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie6.jpg" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
                 </div>
-                <div class="col mb-4">
-                  <div class="card">
-                    <img src="assets/img/img-producto/71GNhj45MJL._AC_UX385_.jpg" class="card-img-top img-card" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Descripcion Producto</h5>
-                      <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie7.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie8.webp" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
                 </div>
 
-                <div class="col mb-4">
-                    <div class="card">
-                      <img src="assets/img/img-producto/027a9e56464abe3a7ed3caf40a51003a-product.jpg" class="card-img-top img-card" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Descripcion Producto</h5>
-                        <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mb-4">
-                    <div class="card">
-                      <img src="assets/img/img-producto/1570862152b54f301edc6416e2bbd30771652d080e_thumbnail_405x552.jpg" class="card-img-top img-card" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Descripcion Producto</h5>
-                        <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col mb-4">
-                    <div class="card">
-                      <img src="assets/img/img-producto/71GNhj45MJL._AC_UX385_.jpg" class="card-img-top img-card" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Descripcion Producto</h5>
-                        <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                    </div>
-                  </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie1.webp" class="img-carousel" alt="Rock and Roll Hall of Fame">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie2.png" class="img-carousel" alt="Constitution Square - Tower I">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie3.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie4.jpg" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+        
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie5.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie6.jpg" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie7.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie8.webp" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
 
-                  <div class="col mb-4">
-                    <div class="card">
-                      <img src="assets/img/img-producto/027a9e56464abe3a7ed3caf40a51003a-product.jpg" class="card-img-top img-card" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Descripcion Producto</h5>
-                        <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie1.webp" class="img-carousel" alt="Rock and Roll Hall of Fame">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie2.png" class="img-carousel" alt="Constitution Square - Tower I">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie3.jpg" class="img-carousel" alt="Empire State Building">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+                <div class="carousel__elemento mr-1">
+                  <img src="assets/img/img-index/hoddie4.jpg" class="img-carousel" alt="Harmony Tower">
+                  <p>Titulo</p>
+                  <p>Descripcion</p>
+                </div>
+              </div>
+      
+              <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
+      
+            <div role="tablist" class="carousel__indicadores"></div>
+          </div>
         </div>
         
-
+        
     </main>
 
     <footer class="bg-principal py-5 text-light text-uppercase ">
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-3 col-lg-4">
@@ -218,9 +269,9 @@
                         <li class="pb-4">Buscar Tiendas</li>
                     </ul>
                 </div>
-
             </div>
         </div>
+
     </footer>
 
     <script src="assets/js/calcularHeader.js"></script>
@@ -232,8 +283,8 @@
         crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

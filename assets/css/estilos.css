@@ -267,9 +267,9 @@ p{
 }
 
 @media screen and (max-width: 800px) {
-	body {
+	/* body {
 		padding: 40px 0;
-	}
+	} */
 
 	.contenido-principal {
 		flex-direction: column;

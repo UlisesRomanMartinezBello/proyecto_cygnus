@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(18, 18, 38);
+    /* background-color: rgb(18, 18, 38); */
+    background-color: rgb(237, 230, 219);
     font-family: 'Poppins', sans-serif;/*  */
 }
 
@@ -64,7 +65,7 @@ body{
 
 .nombreP{
     font-family: 'Sigmar One', cursive;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .nombreP-div{
@@ -84,7 +85,7 @@ body{
 }
 
 .precio{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 
@@ -96,7 +97,7 @@ body{
 }
 
 .tallas{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
@@ -126,6 +127,6 @@ body{
 }
 
 .descripcion{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }

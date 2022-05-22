@@ -1,33 +1,30 @@
 
-.backround-color {
-    background-color: antiquewhite;
-}
-
 .col{
     border-radius: 3%;
 }
 
-.col-btn{
-    
-    background-color: #4B3869;
-    border-radius: 5px;
-    height: 50%;
-    width: 150px;
-    font-size: larger;
-    color: white;
+.msj-error{
+    position: absolute;
+    margin: 0;
+    color: rgb(241, 98, 98);
 }
-.col-btn2{
-    
+.btn-principal {
     background-color: #4B3869;
-    border-radius: 3%;
-    height: 50%;
-    width: 150px;
-    
+    color: #ffffff;
 }
 
-.col-btn3{
-    
-    background-color: #4B3869;
-    border-radius: 3%;
-    
+.btn-principal:hover {
+    background-color: #5b3894;
+    color: #ffffff;
+}
+.form-registrar{
+    background-color: #ffffff;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }

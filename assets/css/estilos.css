@@ -253,8 +253,13 @@ body {
         margin-right: 0;
     }
     #iconoToggler{
-        transform: scale(0.6);
+        /* transform: scale(0.6); */
         border: 1px solid rgba(223, 223, 223, 0.472);
+        /* border: 1px solid yellow; */
+    }
+    #divProyecto{
+        display: flex;
+        /* border: 1px solid red; */
     }
     #navLogoUser{
         height: 5vh;

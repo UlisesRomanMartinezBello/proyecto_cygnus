@@ -17,60 +17,67 @@
 
 <body>
     <header>
-        <div class="bg-principal">
-            <div class="container" id="navLogoUser">
-                <div class="divLogo">
-                    <img class="imgNav" src="assets/img/logo-white.png">
-                </div>
-                <div class="divUser">
-                    <div class="divIconoUser">
-                        <i class="uil uil-user btnIcono"></i>
-                    </div>          
-                    <div class="divIniciarSesion">
-                        <p>Iniciar Sesion</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="bg-principal">
-            <div class="container" id="nav">
-                <!-- navbar-expand-lg -->
-                <nav class="navbar navbar-dark">
-                    <div class="divNav" id="divProyecto">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand"  href="#">Proyecto Cygnus</a>                     
-                    </div>
-                    
-                    <div class="divNav" id="divTexto">
-                        <a class="nav-item nav-link" href="#">Chamarras</a>
-                        <a class="nav-item nav-link" href="#">Hoddie</a>
-                        <a class="nav-item nav-link" href="#">Playeras</a>
-                    </div>
-
-
-                    <div class="divNav" id="divBotones">
-                        <i class="uil uil-search mr-4 btnIcono"></i>
-                        <i class="uil uil-shopping-cart-alt mr-3 btnIcono"></i>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="#">Chamarras</a>
-                            <a class="nav-item nav-link" href="#">Hoddie</a>
-                            <a class="nav-item nav-link" href="#">Playeras</a>
-                        </div>
-                    </div>
-                    
-                </nav>
+          <div class="container divContainer" id="navLogoUser">
+            <div class="divLogo">
+              <img class="imgNav" src="assets/img/logo-white.png">
             </div>
+            <div class="divUser">
+              <div class="divIconoUser">
+                <i class="uil uil-user btnIcono"></i>
+              </div>
+              <div class="divIniciarSesion">
+                <p class="textoRegistrate">Registrate</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </header>
+    
+        <div class="bg-principal">
+          <div class="container divContainer" id="nav">
+            <nav class="navbar navbar-dark" id="navbarP">
+              <div class="divNav" id="divProyecto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="iconoToggler">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand TituloProyecto textoNavBar" href="#">Proyecto Cygnus</a>
+              </div>
+    
+              <div class="divNav" id="divTexto">
+                <a class="nav-item nav-link textoNavBar" href="#">Chamarras</a>
+                <a class="nav-item nav-link textoNavBar" href="#">Hoddie</a>
+                <a class="nav-item nav-link textoNavBar" href="#">Playeras</a>
+              </div>
+    
+    
+              <div class="divNav" id="divBotones">
+                <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
+                  <div class="input-group-prepend buscar">
+                    <span class="input-group-text barraBuscar" id="inputGroup-sizing-sm">Buscar</span>
+                  </div>
+                  <input type="text" class="form-control barraBuscar" id="barraBuscarCursor" aria-label="Small"
+                    aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="d-flex divBtn justify-content-end">
+                  <i class="uil uil-heart btnIcono"></i>
+                  <i class="uil uil-shopping-cart-alt btnIcono" id="btnCarrito"></i>
+                </div>
+              </div>
+    
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link textoNavBar" href="#">Chamarras</a>
+                  <a class="nav-item nav-link textoNavBar" href="#">Hoddie</a>
+                  <a class="nav-item nav-link textoNavBar" href="#">Playeras</a>
+                </div>
+              </div>
+    
+            </nav>
+          </div>
+        </div>
+      </header>
 
     <main>
 
@@ -147,14 +154,14 @@
     </main>
 
     
-    <footer class="bg-principal py-5 text-light text-uppercase ">
-        <div class="container">
+    <footer class="bg-principal pt-5 pb-5 text-light text-uppercase">
+        <div class="container text-center text-md-left">
             <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-4">
-                    <h4 class="font-weight-bold">Contactanos</h4>
+                <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+                    <h4 class="font-weight-bold">Contáctanos</h4>
                     <ul class="lista pt-4 font-weight-light">
                         <li class="pb-4">55 1234 5678</li>
-                        <li class="pb-4">Siguenos</li>
+                        <li class="pb-4">Síguenos</li>
                     </ul>
                     <div class="">
                         <i class="fa-brands fa-facebook-square h1 mx-2"></i>
@@ -163,11 +170,11 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-3 col-lg-4">
+                <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
                     <h4 class="font-weight-bold">Ayuda</h4>
                     <ul class="lista pt-4 font-weight-light">
-                        <a href="#">
-                            <li class="pb-4">Centro de ayuda</li>
+                        <a href="contacto.html" class="text-light">
+                            <li class="pb-4">Contacto</li>
                         </a>
                         <li class="pb-4">¿Cómo comprar?</li>
                         <li class="pb-4">Envios y devoluciones</li>
@@ -175,10 +182,12 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-12 col-md-3 col-lg-4">
+                <div class="col-sm-12 col-md-4">
                     <h4 class="font-weight-bold">Sobre Nosotros</h4>
                     <ul class="lista pt-4 font-weight-light">
-                        <li class="pb-4">Nosotros</li>
+                        <a href="sobre-nosotros.html" class="text-light">
+                            <li class="pb-4">Nosotros</li>
+                        </a>
                         <li class="pb-4">Buscar Tiendas</li>
                     </ul>
                 </div>

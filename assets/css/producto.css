@@ -82,6 +82,14 @@
 
 }
 
+.card-img-top{
+
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+
+}
 .img-card{
 
      width: 100%;

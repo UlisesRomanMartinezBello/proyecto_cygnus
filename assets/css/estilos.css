@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-a {
+.textoNavBar{
     color: #ffffff;
 }
 
@@ -16,9 +16,8 @@ a {
     align-items: center;
     /* border: 1px solid goldenrod; */
     border-bottom: none;
-    
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .divLogo{
@@ -26,13 +25,12 @@ a {
     align-items: center;
     /* justify-content: center; */
     width: 50%;
-    height: 7vh;
+    /* height: 7vh; */
     /* border: 1px solid rgb(43, 226, 153); */
 }
 
 .imgNav{
-    /* border: 1px solid firebrick; */
-    width: 17%;
+    width: calc(var(--altura));
 }
 
 .divUser{
@@ -54,20 +52,21 @@ a {
     height: 6vh;
 }
 
-p{
+.textoRegistrate{
     margin: 0;
     padding: 0;
 }
+
 
 .divIniciarSesion{
     /* border: 1px solid fuchsia; */
     display: flex;
     align-items: center;
     height: 6vh;
-    margin-left: 1rem;
+    /* margin-left: 0rem; */
 }
 
-.container{
+.divContainer{
     padding: 0;
 }
 
@@ -77,6 +76,10 @@ p{
     border-top: 1px solid white;
     /* border: 1px solid greenyellow; */
 
+}
+
+#navbarP{
+    padding: 0.5rem 0;
 }
 
 .navbar{
@@ -93,28 +96,30 @@ p{
 
 .bg-principal {
     background-color: #1A132F;
+    border: 1px solid #1A132F;
 }
 
 .divNav{
     display: flex;
-    width: 30%;
     height: 7vh;
     /* border: 1px solid red; */
 }
 
 #divProyecto{
+    width: 20%;
     display: flex;
     align-items: center;
 }
 
 #divTexto{
+    width: 35%;
     display: flex;
     align-items: center;
 }
 
 #divBotones{
+    width: 45%;
     display: flex;
-    justify-content: end;
     align-items: center;
     color: white;
 }
@@ -122,6 +127,18 @@ p{
 .btnIcono{
     /* border: 1px solid rgb(0, 187, 255); */
     transform: scale(1.8);
+}
+
+.divInputBuscar{
+    width: 70%;
+}
+.divBtn{
+    width: 30%;
+}
+
+#btnCarrito{
+    margin-left: 1.5rem;
+    margin-right: 0.4rem;
 }
 
 .navbar-toggler{
@@ -132,168 +149,21 @@ p{
     display: none;
 }
 
-#divBanner{
-    border: 1px solid #1A132F;
-}
-
-.imagenSlider{
-    height: calc(75vh - var(--altura));
-    /* object-fit: cover; */
-    /* object-position: center; */
-}
-
-#divCards{
-    margin-top: 5rem;
-}
-
-.card{
-    height: 100%;
-}
-
-.img-carousel{
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    object-position: center;
-    /* border: 1px solid red; */
-}
-
-* {
-	box-sizing: border-box;
-}
-
-/* body {
-	background: #1D1D1F;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-} */
-
-.contenedor {
-	max-width: 1200px;
-	width: 90%;
-	margin: auto;
-}
-
-/* --- --- CONTENEDOR PRINCIPAL --- --- */
-
-.contenido-principal {
-	margin-bottom: 50px;
-	display: flex;
-	align-items: center;
-}
-
-.contenido-principal__imagen {
-	vertical-align: top;
-	margin-right: 20px;
-	width: 50%;
-	max-width: 550px;
-}
-
-.contenido-principal__contenedor {
-	width: 50%;
-}
-
-.contenido-principal__titulo {
-	font-weight: normal;
-	font-size: 28px;
-}
-
-.contenido-principal__resumen {
-	font-family: 'Open Sans', sans-serif;
-	line-height: 30px;
-	color: #CFCFCF;
-}
-
-/* --- --- CAROUSEL --- --- */
-.carousel__contenedor {
-	position: relative;
-}
-
-.carousel__anterior,
-.carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color:red;
-	/* opacity: 20%; */
-}
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-	opacity: 100%;
-}
-
-.carousel__anterior {
-	left: -30px;
-}
-
-.carousel__siguiente {
-	right: -30px;
-}
-
-.carousel__lista {
-	overflow: hidden;
-}
-
-.carousel__elemento {
-	text-align: center;
-}
-
-.carousel__indicadores .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: black;
-	opacity: .2;
-	border-radius: 0;
-}
-
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
-
-@media screen and (max-width: 800px) {
-	/* body {
-		padding: 40px 0;
-	} */
-
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
-}
-
-
-
 @media screen and (max-width: 992px){
     #nav{
         display: flex;
         justify-content: space-around;
         /* border: 1px solid white; */
     }
+    .imgNav{
+        width: 27%;
+    }
     .navbar{
         width: 100%;
     }
     #divProyecto{
+        width: 50%;
         display: flex;
-        justify-content: space-between;
     }
 
     #divTexto{
@@ -301,6 +171,7 @@ p{
     }
 
     #divBotones{
+        width: 50%;
         display: flex;
         justify-content: end;
     }
@@ -316,12 +187,90 @@ p{
     .navbar-collapse{
         display: inline-block;
     } 
-}
+    .divIniciarSesion{
 
-@media screen and (max-width: 575px){
-    .imagenSlider{
-        height: calc(50vh - var(--altura));
-        /* object-fit: cover; */
-        /* object-position: center; */
+        margin-left: 1rem;
+    }
+    .TituloProyecto{
+        padding-left: 3rem;
+    }
+    #iconoToggler{
+        border: 1px solid rgba(223, 223, 223, 0.472);
     }
 }
+
+
+@media screen and (max-width: 670px){
+    .imgNav{
+        width: 17%;
+        margin-left: 2rem;
+    }
+    .divUser{
+        padding-right: 2rem;
+    }
+    #nav{
+        padding: 0.6rem 2rem;
+    }
+    #divProyecto{
+        width: 25%;
+    }
+    #divTexto{
+        display: none;
+    }
+    #divBotones{
+        width: 75%;
+    }
+    .TituloProyecto{
+        display: none;
+    }
+    .btnIcono{
+        /* border: 1px solid rgb(0, 187, 255); */
+        transform: scale(1);
+    }
+    .divIniciarSesion{
+        font-size: 0.85rem;
+    }
+    #iconoToggler{
+        transform: scale(0.85);
+        border: 1px solid rgba(223, 223, 223, 0.472);
+    }
+}
+
+
+/* Dimension para pantallas maximo 376*/
+@media screen and (max-width: 376px){
+    .btnIcono{
+        transform: scale(1);
+    }
+    .divIniciarSesion{
+        font-size: 0.7rem;
+    }
+    .TituloProyecto{
+        display: none;
+    }
+    #btnCarrito{
+        margin-left: 0.5rem;
+        margin-right: 0;
+    }
+    #iconoToggler{
+        transform: scale(0.6);
+        border: 1px solid rgba(223, 223, 223, 0.472);
+    }
+    #navLogoUser{
+        height: 5vh;
+    }
+    .barraBuscar{
+        height: 3.5vh;
+    }
+    #barraBuscarCursor{
+        height: 3.5vh;
+    } 
+    
+}
+
+
+
+
+
+
+ 

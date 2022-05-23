@@ -1,0 +1,17 @@
+.imagenSlider{
+    /* height: calc(75vh - var(--altura)); */
+    /* object-fit: cover; */
+    /* object-position: center; */
+}
+
+.img-carousel{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    /* border: 1px solid red; */
+}
+
+#divBanner{
+    border: 1px solid #1A132F;
+}

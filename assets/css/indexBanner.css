@@ -1,7 +1,7 @@
 .imagenSlider{
-    /* height: calc(75vh - var(--altura)); */
+    height: 50vh; 
     /* object-fit: cover; */
-    /* object-position: center; */
+    /* object-position: center;*/
 }
 
 .img-carousel{
@@ -12,6 +12,7 @@
     /* border: 1px solid red; */
 }
 
-#divBanner{
-    border: 1px solid #1A132F;
+
+#btnFlechaAdelante{
+    background-color: red;
 }

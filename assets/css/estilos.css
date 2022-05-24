@@ -39,7 +39,7 @@ body {
     align-items: center;
     color: white;
     width: 50%;
-    height: 7vh;
+    /* height: 7vh; */
     /* border: 1px solid rgb(43, 226, 153); */
 }
 
@@ -49,7 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 10%;
-    height: 6vh;
+    /* height: 6vh; */
 }
 
 .textoRegistrate{
@@ -132,6 +132,21 @@ body {
 .divInputBuscar{
     width: 70%;
 }
+
+.botonBuscar{
+    border: 1px solid black;
+    height: 3.5vh;
+}
+#barraBuscar{
+    width: 50%;
+}
+
+.btnBuscar{
+    display: flex;
+    align-items: center;
+    height: 2.5vh;
+}
+
 .divBtn{
     width: 30%;
 }
@@ -149,6 +164,10 @@ body {
     display: none;
 }
 
+#divBuscar:active{
+    border: 1px solid black;
+}
+
 @media screen and (max-width: 992px){
     #nav{
         display: flex;
@@ -156,7 +175,7 @@ body {
         /* border: 1px solid white; */
     }
     .imgNav{
-        width: 27%;
+        width: calc(var(--altura));
     }
     .navbar{
         width: 100%;
@@ -199,17 +218,23 @@ body {
     }
 }
 
+@media screen and (max-width: 767px){
+    .TituloProyecto{
+        padding-left: 1rem;
+    }
+}
+
 
 @media screen and (max-width: 670px){
     .imgNav{
-        width: 17%;
+        width: calc(var(--altura));
         margin-left: 2rem;
     }
     .divUser{
         padding-right: 2rem;
     }
     #nav{
-        padding: 0.6rem 2rem;
+        padding: 0.3rem 2rem;
     }
     #divProyecto{
         width: 25%;
@@ -234,11 +259,17 @@ body {
         transform: scale(0.85);
         border: 1px solid rgba(223, 223, 223, 0.472);
     }
+    #divGlider{
+        width: 60%;
+    }
 }
 
 
 /* Dimension para pantallas maximo 376*/
 @media screen and (max-width: 376px){
+    .imgNav{
+        width: calc(var(--altura));
+    }
     .btnIcono{
         transform: scale(1);
     }
@@ -270,7 +301,9 @@ body {
     #barraBuscarCursor{
         height: 3.5vh;
     } 
-    
+    #divGlider{
+        width: 60%;
+    }
 }
 
 

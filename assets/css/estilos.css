@@ -35,8 +35,8 @@ body {
 
 .divUser{
     display: flex;
-    justify-content: end;
-    align-items: center;
+    /* justify-content: end;
+    align-items: center; */
     color: white;
     width: 50%;
     /* height: 7vh; */

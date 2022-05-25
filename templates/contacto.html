@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
         rel="stylesheet">
-    <link href="assets/css/estilos.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
     <title>Proyecto Cygnus</title>
 </head>
 
@@ -21,7 +21,7 @@
         <div class="bg-principal">
           <div class="container divContainer" id="navLogoUser">
             <div class="divLogo">
-              <img class="imgNav" src="assets/img/logo-white.png">
+              <img class="imgNav" src="../assets/img/logo-white.png">
             </div>
             <div class="divUser">
               <div class="divIconoUser">
@@ -84,7 +84,7 @@
         <div id="nosotros" class="mt-5">
             <div class="container ">
                 <div class="row">
-                    <div id="ubicacion" class="col-md">
+                    <div id="ubicacion" class="col order-1 order-sm-0 ">
                         <div id="mapa" class="pt-5 pb-5 mb-2 ml-3 mr-3"> 
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30140.164190511012!2d-98.94624236917834!3d19.21613351383168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1652315346915!5m2!1ses!2smx"
@@ -92,7 +92,7 @@
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
-                        <div id="datos" class="p-4 bordeSiguenos rounded mb-5 mr-5">
+                        <div id="datos" class="p-4 bordeSiguenos bg-light rounded mb-5 mr-3 ml-3">
                             <label for="">
                                 <i class="fa-solid fa-envelope"></i> contacto@cygnus.com.mx</label>
                             <br>
@@ -105,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="formulario" class="col bg-light text-dark p-5 mb-5 mr-3 ml-3 rounded">
+                    <div id="formulario" class="col bg-light text-dark p-5 mb-5 mr-3 ml-3 rounded order-0 order-sm-1">
                         <form >
                             <div class="form-group">
                                 <h2 class="font-weight-bolder text-center">CONTACTO</h2>
@@ -126,7 +126,7 @@
                                 <textarea class="form-control fontTxtArea" rows="7"
                                     aria-label="With textarea"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-block btnEnviar text-light mt-5 ">Registrarse</button>
+                            <button type="submit" class="btn btn-block btn-principal text-light mt-5 ">Registrarse</button>
                         </form>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                 <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
                     <h4 class="font-weight-bold">Ayuda</h4>
                     <ul class="lista pt-4 font-weight-light">
-                        <a href="contacto.html" class="text-light">
+                        <a href="../contacto.html" class="text-light">
                             <li class="pb-4">Contacto</li>
                         </a>
                         <li class="pb-4">¿Cómo comprar?</li>
@@ -166,7 +166,7 @@
                 <div class="col-sm-12 col-md-4">
                     <h4 class="font-weight-bold">Sobre Nosotros</h4>
                     <ul class="lista pt-4 font-weight-light">
-                        <a href="sobre-nosotros.html" class="text-light">
+                        <a href="../sobre-nosotros.html" class="text-light">
                             <li class="pb-4">Nosotros</li>
                         </a>
                         <li class="pb-4">Buscar Tiendas</li>
@@ -186,6 +186,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/calcularAlturaNav.js"></script>
 
 
 </body>

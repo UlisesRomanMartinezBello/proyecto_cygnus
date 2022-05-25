@@ -1,10 +1,12 @@
+#divBanner{
+    width: 100%;
+}
+
 .imagenSlider{
     height: 50vh; 
     /* object-fit: cover; */
     /* object-position: center;*/
 }
-
-
 
 .img-carousel{
     width: 100%;
@@ -18,14 +20,24 @@
 #btnFlechaAdelante{
     background-color: red;
 }
-@media screen and (max-width: 376px){
+
+@media screen and (max-width: 675px){
     .imagenSlider{
         height: 25vh; 
         /* object-fit: cover; */
         /* object-position: center;*/
     }
-    #divGlider{
-        width: 90%;
-    }
 }
 
+p{
+    margin: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 376px) {
+	.imagenSlider{
+        height: 25vh; 
+    }
+    #divBanner{
+        margin-top: 1rem;
+    }
+}

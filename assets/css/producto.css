@@ -1,8 +1,10 @@
 .titulo{
 
     font-family: 'Sigmar One', cursive;
-    
+    text-align: center;
 }
+
+
 .div-Busqueda{
 
     width: 100%;
@@ -11,7 +13,7 @@
 
 
 }
-
+/* talla tamaño  */
 .btn-tamano{
     width: 100%;
     height: 50%;
@@ -23,12 +25,16 @@
  background-color: #4B3869;
 }
 
+/* tamaño del filtro color  */
 .btnxs{
 
     width: 30px;
     height: 30px;
     border-radius: 50%;
+
    }
+
+/* color de filtro  */
 
 #bt-b{
 
@@ -50,26 +56,21 @@
     background-color: black;
 }
 
-.titulo{
-
-    text-align: center;
-
-}
-
-
 .card{
     height: 100%;
     position: relative;
     border-radius: 0%;
 }
 
-
+/* posicion del corazon negro arriba de la card */
 .cora{
     position: absolute;
     top: 5px;
     left:85%;
     
 }
+
+/* boton que esta colocado adentro de la imagen y que va directo al carrito */
 
 .btn-carrito{
 

@@ -1,0 +1,101 @@
+const productos = [
+    {
+        nombre: "Playera Galaxia",
+        tipo: "playera",
+        precio: 220,
+        talla: ["G"],
+        color: "negro",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Chamarra Galaxia",
+        tipo: "chamarra",
+        precio: 180,
+        talla: ["G","M","S","XS"],
+        color: "azul",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Hoddie Galaxia",
+        tipo: "hoddie",
+        precio: 230,
+        talla: ["M","S","XS"],
+        color: "morado",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Playera Space",
+        tipo: "playera",
+        precio: 150,
+        talla: ["G","M","S"],
+        color: "blanco",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Chamarra Space",
+        tipo: "chamarra",
+        precio: 350,
+        talla: ["G","M","XS"],
+        color: "negro",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Hoodie Space",
+        precio: 250,
+        talla: ["G","M","S","XS"],
+        color: "azul",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Playera Alien",
+        tipo: "playera",
+        precio: 250,
+        talla: ["G","M","S","XS"],
+        color: "blanco",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Chamarra Alien",
+        tipo: "chamarra",
+        precio: 250,
+        talla: ["G","M","XS"],
+        color: "morado",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Hoodie Alien",
+        tipo: "hoddie",
+        precio: 250,
+        talla: ["S","XS"],
+        color: "negro",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Playera Stars",
+        tipo: "playera",
+        precio: 250,
+        talla: ["M","S","XS"],
+        color: "blanco",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Chamarra Stars",
+        tipo: "chamarra",
+        precio: 250,
+        talla: ["G","M","XS"],
+        color: "",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    },
+    {
+        nombre: "Hoddie Stars",
+        tipo: "hoddie",
+        precio: 250,
+        talla: ["G","S","XS"],
+        color: "",
+        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+    }
+];
+
+setTimeout(() => {
+    console.log(productos);
+}, 2000);

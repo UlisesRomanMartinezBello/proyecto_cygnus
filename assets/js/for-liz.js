@@ -7,8 +7,6 @@ const expresiones = {
 }
 
 const formulario = document.querySelector("form")
-
-
 const inputs = document.querySelectorAll("input")
 
 
@@ -44,7 +42,7 @@ inputs.forEach((input)=>{
             else{
                 statusInf.nombre = false
                
-                nombreError.textContent = "Error"
+                nombreError.textContent = "Error:Has ingresado un carácter incorrecto"
             }
 
             break
@@ -59,7 +57,7 @@ inputs.forEach((input)=>{
             else{
                 
                 statusInf.apellido = false
-                apellidoError.textContent = "Error"
+                apellidoError.textContent = "Error:Has ingresado un carácter incorrecto"
             }
             break
             case "email":
@@ -72,7 +70,7 @@ inputs.forEach((input)=>{
             else{
                
                 statusInf.email = false
-                emailError.textContent = "Error"
+                emailError.textContent = "Error:Has ingresado un carácter incorrecto"
             }
             break
             case "pasword":
@@ -85,7 +83,7 @@ inputs.forEach((input)=>{
             else{
                 
                 statusInf.password = true
-                passwordError.textContent = "Error"
+                passwordError.textContent = "Error:Has ingresado un carácter incorrecto"
             }
             break
             

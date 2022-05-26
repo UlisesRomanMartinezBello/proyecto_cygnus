@@ -5,31 +5,27 @@ const expresiones = {
     mensaje: /^[a-zA-ZÀ-ÿ\s]/, // Letras y espacios, pueden llevar acentos.
 }
 
-const formulario = document.querySelector("form")
-
 const inputs = document.querySelectorAll("input");
 const mensaje = document.getElementById("mensaje")
-
+const btnRegistrar = document.getElementById("btnRegistrar")
 const nombreError = document.querySelector("#errorNombre");
 const emailError = document.querySelector("#errorEmail");
 const mensajeError = document.querySelector("#errorMensaje");
+mensaje.value = ""
 
 const statusInf = {
 	nombre: false,
-	email: false,
-	mensaje: false
+	email: false
 }
 
-/* mensaje.addEventListener("keyup", (e)=>{
-    e.target.name("mensaje")
-    if(expresiones.mensaje.test(e.target.value)){
-        statusInf.mensaje = true
-    mensajeError.textContent = ""
-    }else{
-        statusInf.mensaje = false
+btnRegistrar.addEventListener("click", (e)=>{
+    e.preventDefault();
+    if(mensaje.value ==	""){
         mensajeError.textContent = "error"
+    }else{
+        mensajeError.textContent = ""
     }
-}) */
+});
 
 inputs.forEach((inp)=>{
 	inp.addEventListener("keyup",(e)=>{

@@ -20,9 +20,10 @@
 
 
 }
-
+/* filtro talla */
 .efecto:hover{
  background-color: #4B3869;
+ color:white;
 }
 
 /* tamaño del filtro color  */

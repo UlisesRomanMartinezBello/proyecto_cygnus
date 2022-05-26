@@ -303,6 +303,14 @@ body {
     }
 }
 
+.hiper a{
+    text-decoration: none;
+}
+
+.hiper a:hover{
+    color: black;
+}
+
 
 
 

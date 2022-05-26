@@ -5,7 +5,8 @@ const productos = [
         precio: 220,
         talla: ["G"],
         color: "negro",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['3.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Chamarra Galaxia",
@@ -13,7 +14,8 @@ const productos = [
         precio: 180,
         talla: ["G","M","S","XS"],
         color: "azul",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Hoddie Galaxia",
@@ -21,7 +23,8 @@ const productos = [
         precio: 230,
         talla: ["M","S","XS"],
         color: "morado",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Playera Space",
@@ -29,7 +32,8 @@ const productos = [
         precio: 150,
         talla: ["G","M","S"],
         color: "blanco",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Chamarra Space",
@@ -37,14 +41,16 @@ const productos = [
         precio: 350,
         talla: ["G","M","XS"],
         color: "negro",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Hoodie Space",
         precio: 250,
         talla: ["G","M","S","XS"],
         color: "azul",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Playera Alien",
@@ -52,7 +58,8 @@ const productos = [
         precio: 250,
         talla: ["G","M","S","XS"],
         color: "blanco",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Chamarra Alien",
@@ -60,7 +67,8 @@ const productos = [
         precio: 250,
         talla: ["G","M","XS"],
         color: "morado",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Hoodie Alien",
@@ -68,7 +76,8 @@ const productos = [
         precio: 250,
         talla: ["S","XS"],
         color: "negro",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Playera Stars",
@@ -76,7 +85,8 @@ const productos = [
         precio: 250,
         talla: ["M","S","XS"],
         color: "blanco",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Chamarra Stars",
@@ -84,7 +94,8 @@ const productos = [
         precio: 250,
         talla: ["G","M","XS"],
         color: "",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     },
     {
         nombre: "Hoddie Stars",
@@ -92,10 +103,7 @@ const productos = [
         precio: 250,
         talla: ["G","S","XS"],
         color: "",
-        imagenes: ['frontal','lateral-izquierdo','lateral-derecho','trasera'],
+        imagenes: ['playera-frontal.png','playera-trasera.png','playera-lateral-derecho.png','playera-lateral-izquierdo.png'],
+        descripcion: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam doloremque alias magnam eligendi.',
     }
 ];
-
-setTimeout(() => {
-    console.log(productos);
-}, 2000);

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function mostrarProductos() {
     productos.forEach(producto => {
-        const plantilla = `<div class="col">
+        const plantilla = `<div class="col-sm-12 col-md-4 pb-4">
                                 <div class="card" id="capa">
                                     <i class=" fa-solid fa-heart cora"></i>
                                     <button type="button" class="btn btn-carrito" id="mensaje">Añadir a carrito</button>

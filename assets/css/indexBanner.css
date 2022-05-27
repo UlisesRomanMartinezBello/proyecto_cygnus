@@ -21,23 +21,66 @@
     background-color: red;
 }
 
-@media screen and (max-width: 675px){
-    .imagenSlider{
-        height: 25vh; 
-        /* object-fit: cover; */
-        /* object-position: center;*/
-    }
-}
-
 p{
     margin: 0;
 }
 
 @media screen and (min-width: 300px) and (max-width: 376px) {
 	.imagenSlider{
+        height: 20vh; 
+    }
+    #divBanner{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 377px) and (max-width: 670px) {
+	.imagenSlider{
         height: 25vh; 
     }
     #divBanner{
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
+
+@media screen and (min-width: 671px) and (max-width: 800px) {
+	.imagenSlider{
+        height: 30vh; 
+    }
+    #divBanner{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+	.imagenSlider{
+        height: 35vh; 
+    }
+    #divBanner{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1250px) {
+	.imagenSlider{
+        height: 40vh; 
+    }
+    #divBanner{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 1250px) and (max-width: 2000px) {
+	.imagenSlider{
+        height: 45vh; 
+    }
+    #divBanner{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+

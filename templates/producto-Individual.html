@@ -85,31 +85,28 @@
                 <div class="col-sm-12 col-md-7">
                     <div class="row flex-sm-row flex-column-reverse align-content-center">
                         <div class="col-3">
-                            <div class="d-flex d-sm-block pt-4 pt-sm-0 m-auto">
-                                <img src="../assets/img/img-producto/HDN1-FR.png" alt="" class="pb-3 img-fluid rounded">
-                                    
-                                <img src="../assets/img/img-producto/HDN-ATR.png" alt="" class="pb-3 img-fluid rounded">
-                                    
-                                <img src="../assets/img/img-producto/HDN-DER.png" alt="" class="pb-3 img-fluid rounded">
-                                    
-                                <img src="../assets/img/img-producto/HDN-IZQ.png" alt="" class="pb-3 img-fluid rounded d-block d-sm-none">
-                                    
+                            <div class="d-flex d-sm-block pt-4 pt-sm-0 m-auto" id="imagenes-productos">
+                                
                             </div>
                         </div>
-                        <div class="col-9">
-                            <img src="../assets/img/img-producto/HDN1-FR.png" alt="" class="img-fluid rounded">
+                        <div class="col-9" id="imagen-principal">
+                            
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-5">
                     <div class="text-center text-sm-left">
-                        <h1 class="h2 fw-bold pt-4 pt-md-0 pb-3 titulo">Playera Space</h1>
-                        <p class="h3 py-2 pb-3">$MXN 666.66</p>
+                        <h1 class="h2 fw-bold pt-4 pt-md-0 pb-3 titulo" id="producto-titulo"></h1>
+                        <p class="h3 py-2 pb-3" id="producto-precio"></p>
+
+                        <p class="h5">Talla</p>
+                        <div class="pb-4" id="tallas">
+                          
+                        </div>
+
                     </div>
                     <button class="btn btn-principal btn-block btn-lg text-uppercase">Agregar al carrito</button>
-                    <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia aliquid, dolores
-                        labore eligendi beatae quisquam saepe eius. Nam minima cumque recusandae eaque iure ipsam quisquam
-                        doloremque alias magnam eligendi.</p>
+                    <p class="pt-4" id="producto-descripcion"></p>
                 </div>
             </div>
         </div>
@@ -168,6 +165,9 @@
     <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
     
     <script src="../assets/js/calcularAlturaNav.js"></script>
+
+    <script src="../assets/api_new.js"></script>
+    <script src="../assets/js/producto-individual.js"></script>
 
 
 </body>

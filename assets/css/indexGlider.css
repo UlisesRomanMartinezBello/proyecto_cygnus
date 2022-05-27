@@ -145,35 +145,34 @@
 	opacity: 1;
 }
 
-
-
-@media screen and (max-width: 800px) {
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
+p{
+    margin: 0;
+	padding: 0;
 }
 
-@media screen and (max-width: 575px){
+
+@media screen and (min-width: 250px) and (max-width: 376px) {
     #divGlider{
+		margin-top: 1rem;
+		margin-bottom: 2rem;
         width: 90%;
     }
     #indicadores{
         display: none;
     }
+    .img-carousel{
+        height: 16vh;
+    }
+	.carousel__elemento{
+		margin-right: 0.2rem;
+	}
 }
 
-p{
-    margin: 0;
-}
-
-
-@media screen and (min-width: 377px) and (max-width: 474px) {
+@media screen and (min-width: 377px) and (max-width: 575px) {
     #divGlider{
         width: 90%;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
     }
     #indicadores{
         display: none;
@@ -186,22 +185,73 @@ p{
 	}
 }
 
-@media screen and (min-width: 300px) and (max-width: 376px) {
-    #divGlider{
-        width: 90%;
-    }
-    #indicadores{
-        display: none;
-    }
-    .img-carousel{
-        height: 16vh;
+@media screen and (min-width: 576px) and (max-width: 800px) {
+	/* .contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	} */
+
+	.img-carousel{
+        height: 36vh;
     }
 	.carousel__elemento{
-		margin-right: 0.2rem;
+		margin-right: 0.4rem;
 	}
+
+	#indicadores{
+        display: none;
+    }
+
 	#divGlider{
+        width: 90%;
 		margin-top: 1rem;
-		margin-bottom: 1rem;
-	}
+		margin-bottom: 2rem;
+    }
 }
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+
+	.img-carousel{
+        height: 35vh;
+    }
+	.carousel__elemento{
+		margin-right: 0.4rem;
+	}
+
+	#indicadores{
+        display: none;
+    }
+
+	#divGlider{
+        width: 90%;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+
+	.img-carousel{
+        height: 28vh;
+    }
+	.carousel__elemento{
+		margin-right: 0.4rem;
+	}
+
+	#indicadores{
+        display: none;
+    }
+
+	#divGlider{
+        width: 90%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+    }
+}
+
+
+
 

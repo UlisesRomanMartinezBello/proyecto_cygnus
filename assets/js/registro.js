@@ -73,17 +73,16 @@ function validarFormulario(event) {
             if (bandera === true && inputPassword.value === inputPasswordConfirm.value) { 
                     event.target.classList.add('border-success', 'border-3');
                     event.target.classList.remove('border-danger');
-                    mostrarMensaje('Contraseñas validas', event.target.parentNode);    
+                    mostrarMensaje('Contraseñas válidas', event.target.parentNode);    
                 }else{
                     event.target.classList.add('border-danger', 'border-3');
                     event.target.classList.remove('border-success');
-                    mostrarError('Las contraseñas no son identicas', event.target.parentNode);
+                    mostrarError('Las contraseñas no coinciden', event.target.parentNode);
                 }
             }  
         }
-
-        console.log(inputPasswordConfirm.value);
-        console.log(inputPassword.value);
+        // console.log(inputPasswordConfirm.value);
+        // console.log(inputPassword.value);
     }
 
     //Verificar contraseñas iguales

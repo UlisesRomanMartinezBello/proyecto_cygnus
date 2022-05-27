@@ -64,21 +64,30 @@ function validarFormulario(event) {
         if (!expresiones.password.test(event.target.value)){
             event.target.classList.add('border-danger', 'border-3');
             event.target.classList.remove('border-success');
-            mostrarError('Esta no es una contraseña segura', event.target.parentNode);
-            
+            mostrarError('Esta no es una contraseña segura', event.target.parentNode);     
         }
+        else{
+        if(inputPasswordConfirm.value == ""){
+            mostrarMensaje('Confirmar contraseña', event.target.parentNode);
+        } else{
+            if (bandera === true && inputPassword.value === inputPasswordConfirm.value) { 
+                    event.target.classList.add('border-success', 'border-3');
+                    event.target.classList.remove('border-danger');
+                    mostrarMensaje('Contraseñas validas', event.target.parentNode);    
+                }else{
+                    event.target.classList.add('border-danger', 'border-3');
+                    event.target.classList.remove('border-success');
+                    mostrarError('Las contraseñas no son identicas', event.target.parentNode);
+                }
+            }  
+        }
+
+        console.log(inputPasswordConfirm.value);
+        console.log(inputPassword.value);
     }
 
     //Verificar contraseñas iguales
-    if (!(bandera === true && inputPassword.value === inputPasswordConfirm.value)) { 
-
-        event.target.classList.add('border-danger', 'border-3');
-        event.target.classList.remove('border-success');
-        mostrarError('Las contraseñas no coinciden', event.target.parentNode);
-        
-    } else {
-        mostrarMensaje('Contraseñas validas', event.target.parentNode);
-    }
+    
 }
 
 function mostrarError(mensaje, elementHTML) {

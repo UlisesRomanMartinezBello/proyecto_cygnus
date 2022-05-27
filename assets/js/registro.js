@@ -28,6 +28,7 @@ function loadDocument() {
 
 function validarFormulario(event) {
     // Validando que los inputs no esten vacios
+    const bandera = true;
     if (event.target.value.length > 0) {
         event.target.classList.remove('border-danger');
         event.target.classList.add('border-success', 'border-3');
@@ -35,10 +36,12 @@ function validarFormulario(event) {
         event.target.classList.add('border-danger', 'border-3');
         event.target.classList.remove('border-success');
         mostrarError('El campo esta vacio', event.target.parentNode);
+        bandera = false;
     }
 
     // Validar el correo
-    if (event.target.type === 'email'){
+
+    if (event.target.type === 'email' && bandera === true){
         if (!expresiones.email.test(event.target.value)){
             event.target.classList.add('border-danger', 'border-3');
             event.target.classList.remove('border-success');
@@ -47,7 +50,7 @@ function validarFormulario(event) {
     }
 
     // Validar el nombre
-    if (event.target.type === 'text'){
+    if (event.target.type === 'text' && bandera === true){
         if (!expresiones.nombre.test(event.target.value)){
             event.target.classList.add('border-danger', 'border-3');
             event.target.classList.remove('border-success');
@@ -56,13 +59,42 @@ function validarFormulario(event) {
     }
 
     // Validar password
+    
+    if (event.target.type === 'password' && bandera === true ){
+        if (!expresiones.password.test(event.target.value)){
+            event.target.classList.add('border-danger', 'border-3');
+            event.target.classList.remove('border-success');
+            mostrarError('Esta no es una contraseña segura', event.target.parentNode);
+            
+        }
+    }
 
+    //Verificar contraseñas iguales
+    if (!(bandera === true && inputPassword.value === inputPasswordConfirm.value)) { 
+
+        event.target.classList.add('border-danger', 'border-3');
+        event.target.classList.remove('border-success');
+        mostrarError('Las contraseñas no coinciden', event.target.parentNode);
+        
+    } else {
+        mostrarMensaje('Contraseñas validas', event.target.parentNode);
+    }
 }
 
 function mostrarError(mensaje, elementHTML) {
     const mensajeError = document.createElement('div');
     mensajeError.textContent = mensaje;
     mensajeError.classList.add('alert', 'alert-danger', 'text-center', 'mt-3');
+    elementHTML.appendChild(mensajeError);
+    setTimeout(() => {
+        elementHTML.removeChild(mensajeError);
+    }, 3000);
+}
+
+function mostrarMensaje(mensaje, elementHTML) {
+    const mensajeError = document.createElement('div');
+    mensajeError.textContent = mensaje;
+    mensajeError.classList.add('alert', 'alert-success', 'text-center', 'mt-3');
     elementHTML.appendChild(mensajeError);
     setTimeout(() => {
         elementHTML.removeChild(mensajeError);

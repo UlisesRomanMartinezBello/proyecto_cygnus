@@ -41,6 +41,7 @@ body {
     width: 50%;
     /* height: 7vh; */
     /* border: 1px solid rgb(43, 226, 153); */
+    height: 6vh;
 }
 
 .divIconoUser{
@@ -62,7 +63,7 @@ body {
     /* border: 1px solid fuchsia; */
     display: flex;
     align-items: center;
-    height: 6vh;
+    
     /* margin-left: 0rem; */
 }
 
@@ -111,6 +112,9 @@ body {
     align-items: center;
 }
 
+.linkHover:hover{
+    color: rgba(149, 149, 149, 0.665);
+}
 #divTexto{
     width: 35%;
     display: flex;
@@ -126,7 +130,12 @@ body {
 
 .btnIcono{
     /* border: 1px solid rgb(0, 187, 255); */
-    transform: scale(1.8);
+    transform: scale(1.5);
+}
+
+.btnIconoCorazon{
+    /* border: 1px solid rgb(0, 187, 255); */
+    transform: scale(1.5);
 }
 
 .divInputBuscar{

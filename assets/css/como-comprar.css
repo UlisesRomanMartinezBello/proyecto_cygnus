@@ -1,0 +1,13 @@
+.centrar-listas {
+	text-align: center;
+}
+
+
+.centrar-listas ol {
+	text-align: left;
+	display: inline-block;
+}
+
+.titulo {
+    font-family: 'Sigmar One', cursive;
+}

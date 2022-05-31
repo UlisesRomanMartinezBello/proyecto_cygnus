@@ -1,0 +1,30 @@
+
+.col{
+    border-radius: 3%;
+}
+
+.msj-error{
+    position: absolute;
+    margin: 0;
+    color: rgb(241, 98, 98);
+}
+.btn-principal {
+    background-color: #4B3869;
+    color: #ffffff;
+}
+
+.btn-principal:hover {
+    background-color: #5b3894;
+    color: #ffffff;
+}
+.form-registrar{
+    background-color: #ffffff;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}

@@ -74,9 +74,9 @@
 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav hiper">
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Chamarras</a>
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Hoddie</a>
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Playeras</a>
+              <a class="nav-item nav-link textoNavBar" href="producto.html">Chamarras</a>
+              <a class="nav-item nav-link textoNavBar" href="producto.html">Hoddie</a>
+              <a class="nav-item nav-link textoNavBar" href="producto.html">Playeras</a>
             </div>
           </div>
 
@@ -86,11 +86,11 @@
   </header>
 
   <main>
-
-    <div id="nosotros" class="mt-5">
-      <div class="container ">
+      <div class="container mt-5">
         <div class="row">
-          <div id="ubicacion" class="col order-1 order-sm-0 ">
+          <!--Sección ubicación y contacto -->
+          <div class="col order-1 order-sm-0 " id="ubi_contac">
+            <!-- Mapa -->
             <div id="mapa" class="pt-1 pb-5 mb-1 ml-3 mr-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30140.164190511012!2d-98.94624236917834!3d19.21613351383168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1652315346915!5m2!1ses!2smx"
@@ -98,6 +98,7 @@
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
+            <!-- Datos -->
             <div id="datos" class="p-4 bordeSiguenos bg-light rounded mb-5 mr-3 ml-3">
               <label for="">
                 <i class="fa-solid fa-envelope"></i> contacto@cygnus.com.mx</label>
@@ -111,37 +112,31 @@
               </div>
             </div>
           </div>
-          <div id="formulario" class="col bg-light text-dark p-5 mb-5 mr-3 ml-3 rounded order-0 order-sm-1">
+          <!-- Sección formulario  -->
+          <div class="col bg-light text-dark p-5 mb-5 mr-3 ml-3 rounded order-0 order-sm-1" id="formulario">
             <form>
               <div class="form-group">
                 <h2 class="font-weight-bolder text-center">CONTACTO</h2>
                 <div class="form-row pt-4">
                   <label for="nombre">Nombre <span style="color: red;">*</span></label>
-                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                  <input type="text" class="form-control" id="input_nombre" name="nombre"
+                    placeholder="Ingresa tu nombre">
                 </div>
-                <p class="msj-error" id="errorNombre"></p>
               </div>
               <div class="form-row pt-2">
                 <label for="email">Email <span style="color: red;">*</span></label>
-                <input type="email" class="form-control" id="email" name="email"
+                <input type="email" class="form-control" id="input_email" name="email"
                   placeholder="Ingresa tu correo electrónico">
               </div>
-              <p class="msj-error" id="errorEmail"></p>
               <div class="form-row pt-4">
                 <label for="mensaje">Mensaje <span style="color: red;">*</span></label>
-                <textarea class="form-control fontTxtArea" rows="5" aria-label="With textarea" id="mensaje"
-                  name="mensaje" required>
-                                </textarea>
+                <textarea class="form-control" rows="5" id="txt_area"></textarea>
               </div>
-              <p class="msj-error" id="errorMensaje"></p>
-              <button type="submit" id="btnRegistrar"
-                class="btn btn-block btn-principal text-light mt-5 ">Registrarse</button>
+              <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Enviar</button>
             </form>
           </div>
         </div>
       </div>
-    </div>
-
   </main>
 
   <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">

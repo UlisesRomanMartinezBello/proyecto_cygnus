@@ -1,0 +1,128 @@
+.titulo {
+  font-family: "Sigmar One", cursive;
+  text-align: center;
+}
+
+.div-Busqueda {
+  width: 100%;
+  height: 10vh;
+  border: 1px solid white;
+}
+/* talla tamaño  */
+.btn-tamano {
+  width: 100%;
+  height: 50%;
+}
+
+.efecto:hover {
+  background-color: #4b3869;
+  color: white;
+}
+
+/* tamaño del filtro color  */
+.btn-color {
+  width: 30px;
+  height: 30px;
+}
+
+/* color de filtro  */
+
+#bt-b {
+  background-color: white;
+}
+
+#bt-a {
+  background-color: blue;
+}
+
+#bt-m {
+  background-color: blueviolet;
+}
+
+#bt-n {
+  background-color: black;
+}
+
+.card {
+  height: 100%;
+  position: relative;
+  border-radius: 0%;
+}
+
+/* posicion del corazon negro arriba de la card */
+.cora {
+  position: absolute;
+  top: 5px;
+  left: 85%;
+}
+
+/* boton que esta colocado adentro de la imagen y que va directo al carrito */
+
+.btn-carrito {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background-color: #4b3869;
+  color: white;
+  display: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+.img-card {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn {
+  border-bottom: 0px;
+  background-color: #4b3869;
+  color: white;
+  border-radius: 1rem;
+}
+
+#capa,
+#mensaje {
+  padding: 10px;
+}
+
+#mensaje {
+  display: none;
+}
+
+.blanco {
+  background-color: #ffffff;
+}
+
+.negro {
+  background-color: #000000;
+}
+
+/* Buttons */
+.btn-principal {
+  background-color: #4b3869;
+  color: #fff;
+}
+
+.btn-principal:hover {
+  background-color: #1a132f;
+  color: #fff;
+}
+
+.bg-azul {
+  background-color: #1f01ff;
+}
+
+.bg-morado {
+  background-color: #8a2be2;
+}
+
+.bg-negro {
+  background-color: #000000;
+}

@@ -1,0 +1,22 @@
+.titulo {
+  font-family: "Sigmar One", cursive;
+}
+
+.btn-principal {
+  background-color: #4b3869;
+  color: #ffffff;
+}
+
+.btn-principal:hover {
+  background-color: #5b3894;
+  color: #ffffff;
+}
+
+.img-producto {
+  cursor: pointer;
+}
+
+.efecto:hover {
+  background-color: #4b3869;
+  color: white;
+}

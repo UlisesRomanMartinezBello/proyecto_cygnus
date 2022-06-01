@@ -5,15 +5,25 @@ const productoDescripcion = document.querySelector('#producto-descripcion');
 const productoPrecio = document.querySelector('#producto-precio');
 const tallas = document.querySelector('#tallas');
 const urlImagenes = '../assets/img/img-producto/';
-const idProducto = productos[2];
 
 document.addEventListener('DOMContentLoaded', () => {
-    mostrarImagenes();
-    mostrarImagenPrincipal();
-    mostrarInformacion();
+    mostrarProducto();
 });
 
-function mostrarImagenes() {
+function mostrarProducto() {
+    let urlProducto = window.location.href;
+    if (urlProducto.includes('?')) {
+        urlProducto = urlProducto.split('?')[1].split('=')[1];
+    }
+
+    urlProducto = urlProducto - 1;
+
+    mostrarImagenes(productos[urlProducto]);
+    mostrarInformacion(productos[urlProducto]);
+    mostrarImagenPrincipal(productos[urlProducto]);
+}
+
+function mostrarImagenes(idProducto) {
     idProducto.imagenes.forEach(imagenes => {
         const imagenProducto = document.createElement('img');
         imagenProducto.classList = 'pb-3 img-fluid rounded mx-2 img-producto w-75';
@@ -22,20 +32,23 @@ function mostrarImagenes() {
     });
 }
 
-function mostrarImagenPrincipal() {
+function mostrarImagenPrincipal(idProducto) {
     const imagenPrincipalHTML = document.createElement('img');
     imagenPrincipalHTML.classList = 'rounded img-fluid';
     imagenPrincipalHTML.src = `${urlImagenes}/${idProducto.imagenes[0]}`;
     imagenPrincipal.appendChild(imagenPrincipalHTML);
 
     document.querySelectorAll('.img-producto').forEach(imagen => {
+        imagen.addEventListener('mouseover', () => {
+            imagenPrincipal.lastChild.src = imagen.src;
+        });
         imagen.addEventListener('click', () => {
             imagenPrincipal.lastChild.src = imagen.src;
         });
     });
 }
 
-function mostrarInformacion() {
+function mostrarInformacion(idProducto) {
     productoTitulo.textContent = idProducto.nombre;
     productoPrecio.textContent = `$MXN ${idProducto.precio}`;
     productoDescripcion.textContent = idProducto.descripcion;
@@ -46,4 +59,8 @@ function mostrarInformacion() {
         botonTalla.value = talla;
         tallas.appendChild(botonTalla);
     })
+}
+
+function agregarCarrito() {
+    
 }

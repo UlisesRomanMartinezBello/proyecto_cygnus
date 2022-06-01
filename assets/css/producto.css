@@ -54,17 +54,8 @@
   position: absolute;
   top: 5px;
   left: 85%;
-}
-
-/* boton que esta colocado adentro de la imagen y que va directo al carrito */
-
-.btn-carrito {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  background-color: #4b3869;
-  color: white;
-  display: none;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .card-img-top {
@@ -73,6 +64,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 .img-card {
   width: 100%;
   height: 60vh;
@@ -80,12 +72,7 @@
   object-position: center;
 }
 
-.btn {
-  border-bottom: 0px;
-  background-color: #4b3869;
-  color: white;
-  border-radius: 1rem;
-}
+
 
 #capa,
 #mensaje {
@@ -125,4 +112,22 @@
 
 .bg-negro {
   background-color: #000000;
+}
+
+.btn-talla {
+  border: 2px solid black;
+}
+
+.btn-talla:hover {
+  background-color: #4b3869;
+  color: white;
+}
+
+.btn-talla-seleccionada {
+  background-color: #4b3869;
+  color: white;
+}
+
+.btn-color-seleccionado {
+  border: 2px solid black !important;
 }

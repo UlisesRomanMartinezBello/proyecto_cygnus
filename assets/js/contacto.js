@@ -1,8 +1,7 @@
 const inputNombre = document.getElementById("input_nombre");
 const inputEmail = document.getElementById("input_email");
 const txtArea = document.getElementById("txt_area");
-const btnRegistrar = document.getElementById("btn_enviar")
-const formContacto = document.getElementById("")
+const formContacto = document.getElementById("form_contacto")
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
@@ -15,7 +14,7 @@ function loadDocument() {
     inputNombre.addEventListener('blur', validarFormulario);
     inputEmail.addEventListener('blur', validarFormulario);
     txtArea.addEventListener('blur', validarFormulario);
-    btnRegistrar.addEventListener('click', capturarInformacion);
+    formContacto.addEventListener('submit', capturarInformacion)
 }
 
 function validarFormulario(event) {
@@ -62,11 +61,10 @@ function mostrarError(mensaje, elementHTML) {
 function capturarInformacion(event){
     event.preventDefault();
 	const nombre = inputNombre.value;
+    const email = inputEmail.value;
+    const mensaje = txtArea.value;
 	console.log("el nombre es "+ nombre);
-	const email = inputEmail.value;
 	console.log("el email es "+ email);
-	const mensaje = txtArea.value;
-	alert("el mensaje es "+ mensaje);
+	console.log("el mensaje es "+ mensaje);
 }
-
 

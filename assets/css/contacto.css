@@ -1,3 +1,4 @@
+
 .btn-principal {
     background-color: #4B3869;
     color: #ffffff;
@@ -8,11 +9,14 @@
     color: #ffffff;
     }
 
-h2{
+h2, h3{
     font-family:'Sigmar One', cursive;
 }
 .msj-error{
     position: absolute;
     margin: 0;
     color: rgb(241, 98, 98);
+}
+.span{
+    color: red;
 }

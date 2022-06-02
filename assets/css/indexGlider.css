@@ -43,6 +43,7 @@
 /* --- --- CAROUSEL --- --- */
 .carousel__contenedor {
 	position: relative;
+	height: 100%;
 }
 
 .carousel__anterior,
@@ -107,20 +108,50 @@
 	overflow: hidden;
 } */
 
-.carousel__elemento {
+.carousel__anterior2,
+.carousel__siguiente2 {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
 	text-align: center;
+	background: none;
+	color:red;
+	/* opacity: 20%; */
 }
 
-.carousel__indicadores .glider-dot {
+.carousel__anterior2:hover,
+.carousel__siguiente2:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior2 {
+	left: -30px;
+}
+
+.carousel__siguiente2 {
+	right: -30px;
+}
+
+.carousel__elemento {
+	text-align: center;
+	
+}
+
+/* .carousel__indicadores .glider-dot {
 	display: block;
 	width: 30px;
 	height: 4px;
 	background: black;
 	opacity: .2;
 	border-radius: 0;
-}
+} */
 
-.carousel__indicadores .glider-dot:hover {
+/* .carousel__indicadores .glider-dot:hover {
 	opacity: .5;
 }
 
@@ -143,7 +174,7 @@
 
 .carousel__indicadores1 .glider-dot.active {
 	opacity: 1;
-}
+} */
 
 p{
     margin: 0;
@@ -157,14 +188,17 @@ p{
 		margin-bottom: 2rem;
         width: 90%;
     }
-    #indicadores{
+    /* #indicadores{
         display: none;
-    }
+    } */
     .img-carousel{
-        height: 100%;
+        height: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.142);
+		border-radius: 2%;
     }
+
 	.carousel__elemento{
-		margin-right: 0.2rem;
+		margin-right: 0.5rem;
 	}
 }
 
@@ -178,8 +212,9 @@ p{
 	} */
 
 	.img-carousel{
-        height: 100%;
-		/* border: 4px solid red; */
+        height: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.142);
+		border-radius: 2%;
     }
 	.carousel__elemento{
 		margin-right: 0.4rem;
@@ -207,7 +242,9 @@ p{
         display: none;
     }
     .img-carousel{
-        height: 100%;
+        height: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.142);
+		border-radius: 2%;
     }
 	.carousel__elemento{
 		margin-right: 0.4rem;
@@ -224,7 +261,9 @@ p{
 	} */
 
 	.img-carousel{
-        height: 100%;
+        height: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.142);
+		border-radius: 2%;
     }
 	.carousel__elemento{
 		margin-right: 0.4rem;
@@ -245,7 +284,9 @@ p{
 @media screen and (min-width: 801px) and (max-width: 1023px) {
 
 	.img-carousel{
-        height: 100%;
+        height: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.142);
+		border-radius: 2%;
     }
 	.carousel__elemento{
 		margin-right: 0.4rem;
@@ -265,7 +306,9 @@ p{
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
 
 	.img-carousel{
-        height: 100%;
+        height: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.142);
+		border-radius: 2%;
     }
 	.carousel__elemento{
 		margin-right: 0.4rem;

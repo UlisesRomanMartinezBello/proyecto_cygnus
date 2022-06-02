@@ -121,3 +121,12 @@ function cambiarFormulario() {
         formIniciar.classList = 'd-none';
     });
 }
+
+function imprimirInformacion(){
+	const nombre = inputNombre.value;
+	console.log("el nombre es "+ nombre);
+	const email = inputEmail.value;
+	console.log("el email es "+ email);
+	const mensaje = txtArea.value;
+	alert("el mensaje es "+ mensaje);
+}

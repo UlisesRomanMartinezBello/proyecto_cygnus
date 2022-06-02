@@ -52,6 +52,7 @@ function crearGliderSudadera (){
         carousel__elemento.appendChild(img);
         carousel__elemento.appendChild(titulo);
         carousel__elemento.appendChild(descripcion);
+        titulo.setAttribute('class','tituloGlider');
 
         carousel__elemento.setAttribute('class','carousel__elemento');
         img.setAttribute('class','img-carousel');
@@ -84,6 +85,7 @@ function crearGliderSudadera (){
         carousel__elemento.appendChild(img);
         carousel__elemento.appendChild(titulo);
         carousel__elemento.appendChild(descripcion);
+        titulo.setAttribute('class','tituloGlider');
 
         carousel__elemento.setAttribute('class','carousel__elemento');
         img.setAttribute('class','img-carousel');
@@ -116,6 +118,7 @@ function crearGliderSudadera (){
         carousel__elemento.appendChild(img);
         carousel__elemento.appendChild(titulo);
         carousel__elemento.appendChild(descripcion);
+        titulo.setAttribute('class','tituloGlider');
 
         carousel__elemento.setAttribute('class','carousel__elemento');
         img.setAttribute('class','img-carousel');

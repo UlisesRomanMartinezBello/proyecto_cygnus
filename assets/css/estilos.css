@@ -194,9 +194,9 @@ body {
         display: flex;
     }
 
-    /* #divTexto{
+    #divTexto{
         display: none;
-    } */
+    }
 
     #divBotones{
         width: 50%;
@@ -248,9 +248,9 @@ body {
     #divProyecto{
         width: 25%;
     }
-    /* #divTexto{
+    #divTexto{
         display: none;
-    } */
+    }
     #divBotones{
         width: 75%;
     }

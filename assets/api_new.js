@@ -21,7 +21,7 @@ const productos = [
     },
     {
         id: 3,
-        nombre: "Hoddie Grogu Star-wars",
+        nombre: "Hoodie Grogu Star-wars",
         tipo: "Hoodie",
         precio: 230,
         talla: ["M","S","XS"],
@@ -81,8 +81,8 @@ const productos = [
     },
     {
         id: 9,
-        nombre: "Hoddie Grogu Star-wars",
-        tipo: "Hoddie",
+        nombre: "Hoodie Grogu Star-wars",
+        tipo: "Hoodie",
         precio: 250,
         talla: ["S","XS"],
         color: "Blanco",
@@ -141,8 +141,8 @@ const productos = [
     },
     {
         id: 15,
-        nombre: "Hoddie Grogu Star-wars",
-        tipo: "Hoddie",
+        nombre: "Hoodie Grogu Star-wars",
+        tipo: "Hoodie",
         precio: 250,
         talla: ["S","XS"],
         color: "Negro",
@@ -181,38 +181,6 @@ const productos = [
     }, 
     {
         id: 19,
-        nombre: "Hoodie Galaxia ",
-        tipo: "Hoodie",
-        precio: 300,
-        talla: ["G","M","S","XS"],
-        color: "Negro",
-        imagenes: ['hoddiec.png','HDN-DER.png','HDN-IZQ.png','HDN-ATR.png'],
-        descripcion: 'Hoodie térmica con estampado de galaxia , con bolsillo de canguro.',
-    }, 
-    {
-        id: 20,
-        nombre: "Hoodie Planetas ",
-        tipo: "Hoodie",
-        precio: 340,
-        talla: ["G","M","S","XS"],
-        color: "Negro",
-        imagenes: ['hoddied.png','HDN-DER.png','HDN-IZQ.png','HDN-ATR.png'],
-        descripcion: 'Hoodie térmica con estampado de planetas , con bolsillo de canguro.',
-    }, 
-    {
-        id: 21,
-        nombre: "Hoodie Cygnus ",
-        tipo: "Hoodie",
-        precio: 380,
-        talla: ["G","M","S","XS"],
-        color: "Negro",
-        imagenes: ['hoddieb.png','HDN-DER.png','HDN-IZQ.png','HDN-ATR.png'],
-        descripcion: 'Hoodie térmica con estampado de la constelación Cygnus , con bolsillo de canguro.',
-    },
-
-  
-    {
-        id: 22,
         nombre: "Playera Galaxia cometa ",
         tipo: "Playera",
         precio: 280,
@@ -222,7 +190,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de la galaxia cometa, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 23,
+        id: 20,
         nombre: "Playera Galaxia ",
         tipo: "Playera",
         precio: 270,
@@ -232,7 +200,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de galaxia, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 24,
+        id: 21,
         nombre: "Playera Espacio ",
         tipo: "Playera",
         precio: 265,
@@ -242,7 +210,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de espacio, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 25,
+        id: 22,
         nombre: "Playera Destellos ",
         tipo: "Playera",
         precio: 255,
@@ -252,7 +220,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado con destellos, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 26,
+        id: 23,
         nombre: "Playera Lluvia de estrellas ",
         tipo: "Playera",
         precio: 290,
@@ -262,7 +230,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 27,
+        id: 24,
         nombre: "Playera Barnard ",
         tipo: "Playera",
         precio: 330,
@@ -272,7 +240,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 28,
+        id: 25,
         nombre: "Playera Galaxia cometa ",
         tipo: "Playera",
         precio: 280,
@@ -282,7 +250,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de la galaxia cometa, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 29,
+        id: 26,
         nombre: "Playera Galaxia ",
         tipo: "Playera",
         precio: 270,
@@ -292,7 +260,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de galaxia, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 30,
+        id: 27,
         nombre: "Playera Espacio ",
         tipo: "Playera",
         precio: 265,
@@ -302,7 +270,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de espacio, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 31,
+        id: 28,
         nombre: "Playera Destellos ",
         tipo: "Playera",
         precio: 255,
@@ -312,7 +280,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado con destellos, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 32,
+        id: 29,
         nombre: "Playera Lluvia de estrellas ",
         tipo: "Playera",
         precio: 290,
@@ -322,7 +290,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 33,
+        id: 30,
         nombre: "Playera Barnard ",
         tipo: "Playera",
         precio: 330,
@@ -332,7 +300,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 34,
+        id: 31,
         nombre: "Playera Galaxia cometa ",
         tipo: "Playera",
         precio: 280,
@@ -342,7 +310,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de la galaxia cometa, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 35,
+        id: 32,
         nombre: "Playera Galaxia ",
         tipo: "Playera",
         precio: 270,
@@ -352,7 +320,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de galaxia, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 36,
+        id: 33,
         nombre: "Playera Espacio ",
         tipo: "Playera",
         precio: 265,
@@ -362,7 +330,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de espacio, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 37,
+        id: 34,
         nombre: "Playera Destellos ",
         tipo: "Playera",
         precio: 255,
@@ -372,7 +340,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado con destellos, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 38,
+        id: 35,
         nombre: "Playera Lluvia de estrellas ",
         tipo: "Playera",
         precio: 290,
@@ -382,7 +350,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 39,
+        id: 36,
         nombre: "Playera Barnard ",
         tipo: "Playera",
         precio: 330,
@@ -392,7 +360,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 40,
+        id: 37,
         nombre: "Playera Galaxia cometa ",
         tipo: "Playera",
         precio: 280,
@@ -402,7 +370,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de la galaxia cometa, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 41,
+        id: 38,
         nombre: "Playera  Galaxia ",
         tipo: "Playera",
         precio: 270,
@@ -412,7 +380,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de galaxia, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 42,
+        id: 39,
         nombre: "Playera Espacio ",
         tipo: "Playera",
         precio: 265,
@@ -422,7 +390,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado de espacio, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 43,
+        id: 40,
         nombre: "Playera Destellos ",
         tipo: "Playera",
         precio: 255,
@@ -432,7 +400,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,con estampado con destellos, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 44,
+        id: 41,
         nombre: "Playera Lluvia de estrellas ",
         tipo: "Playera",
         precio: 290,
@@ -442,7 +410,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 45,
+        id: 42,
         nombre: "Playera Barnard ",
         tipo: "Playera",
         precio: 330,
@@ -452,7 +420,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 46,
+        id: 43,
         nombre: "Sudadera NASA ",
         tipo: "Sudadera",
         precio: 380,
@@ -462,7 +430,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 47,
+        id: 44,
         nombre: "Sudadera Astronauta conquista",
         tipo: "Sudadera",
         precio: 370,
@@ -472,7 +440,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 48,
+        id: 45,
         nombre: "Sudadera Astronauta 404 ",
         tipo: "Sudadera",
         precio: 365,
@@ -482,7 +450,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 49,
+        id: 46,
         nombre: "Sudadera Reloj NASA ",
         tipo: "Sudadera",
         precio: 395,
@@ -492,7 +460,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 50,
+        id: 47,
         nombre: "Sudadera NASA misión",
         tipo: "Sudadera",
         precio: 290,
@@ -502,7 +470,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 51,
+        id: 48,
         nombre: "Sudadera NASA explorer",
         tipo: "Sudadera",
         precio: 330,
@@ -512,7 +480,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 52,
+        id: 49,
         nombre: "Sudadera NASA ",
         tipo: "Sudadera",
         precio: 380,
@@ -522,7 +490,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 53,
+        id: 50,
         nombre: "Sudadera Astronauta conquista",
         tipo: "Sudadera",
         precio: 370,
@@ -532,7 +500,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 54,
+        id: 51,
         nombre: "Sudadera Astronauta 404 ",
         tipo: "Sudadera",
         precio: 365,
@@ -542,7 +510,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 55,
+        id: 52,
         nombre: "Sudadera Reloj NASA",
         tipo: "Sudadera",
         precio: 395,
@@ -552,7 +520,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 56,
+        id: 53,
         nombre: "Sudadera NASA misión",
         tipo: "Sudadera",
         precio: 290,
@@ -562,7 +530,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 57,
+        id: 54,
         nombre: "Sudadera NASA explorer",
         tipo: "Sudadera",
         precio: 330,
@@ -572,7 +540,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 58,
+        id: 55,
         nombre: "Sudadera NASA ",
         tipo: "Sudadera",
         precio: 380,
@@ -582,7 +550,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 59,
+        id: 56,
         nombre: "Sudadera Astronauta conquista",
         tipo: "Sudadera",
         precio: 370,
@@ -592,7 +560,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 60,
+        id: 57,
         nombre: "Sudadera Astronauta 404 ",
         tipo: "Sudadera",
         precio: 365,
@@ -602,7 +570,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 61,
+        id: 58,
         nombre: "Sudadera Reloj NASA ",
         tipo: "Sudadera",
         precio: 395,
@@ -612,7 +580,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 62,
+        id: 59,
         nombre: "Sudadera NASA misión",
         tipo: "Sudadera",
         precio: 290,
@@ -622,7 +590,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 63,
+        id: 60,
         nombre: "Sudadera NASA explorer",
         tipo: "Sudadera",
         precio: 330,
@@ -632,7 +600,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 64,
+        id: 61,
         nombre: "Sudadera NASA ",
         tipo: "Sudadera",
         precio: 380,
@@ -642,7 +610,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 65,
+        id: 62,
         nombre: "Sudadera Astronauta conquista",
         tipo: "Sudadera",
         precio: 370,
@@ -652,7 +620,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 66,
+        id: 63,
         nombre: "Sudadera Astronauta 404 ",
         tipo: "Sudadera",
         precio: 365,
@@ -662,7 +630,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 67,
+        id: 64,
         nombre: "Sudadera Reloj NASA ",
         tipo: "Sudadera",
         precio: 395,
@@ -672,7 +640,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 68,
+        id: 65,
         nombre: "Sudadera NASA misión",
         tipo: "Sudadera",
         precio: 290,
@@ -682,7 +650,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 69,
+        id: 66,
         nombre: "Sudadera NASA explorer",
         tipo: "Sudadera",
         precio: 330,
@@ -692,7 +660,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 70,
+        id: 67,
         nombre: "Sudadera NASA ",
         tipo: "Sudadera",
         precio: 380,
@@ -702,7 +670,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 71,
+        id: 68,
         nombre: "Sudadera Astronauta conquista",
         tipo: "Sudadera",
         precio: 370,
@@ -712,7 +680,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 72,
+        id: 69,
         nombre: "Sudadera Astronauta 404 ",
         tipo: "Sudadera",
         precio: 365,
@@ -722,7 +690,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 73,
+        id: 70,
         nombre: "Sudadera Reloj NASA ",
         tipo: "Sudadera",
         precio: 395,
@@ -732,7 +700,7 @@ const productos = [
         descripcion: 'Tiene un tacto suave que proporciona comodidad y garantiza calidez,diseño cuello redondo, manga larga, puños y dobladillo acanalados, costuras suaves y duraderas',
     }, 
     {
-        id: 74,
+        id: 71,
         nombre: "Sudadera NASA misión",
         tipo: "Sudadera",
         precio: 290,
@@ -742,7 +710,7 @@ const productos = [
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {
-        id: 75,
+        id: 72,
         nombre: "Sudadera NASA explorer",
         tipo: "Sudadera",
         precio: 330,

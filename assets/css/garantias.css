@@ -1,0 +1,11 @@
+*{
+    text-align: center;
+}
+
+.importante{
+    background-color: rgb(222, 192, 24);
+}
+
+.note{
+    background-color: chartreuse;
+}

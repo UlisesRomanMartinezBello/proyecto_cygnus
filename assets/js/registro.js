@@ -84,6 +84,7 @@ function validarFormulario(event) {
 
         console.log(inputPasswordConfirm.value);
         console.log(inputPassword.value);
+        imprimirInformacion();
     }
 
     //Verificar contraseñas iguales

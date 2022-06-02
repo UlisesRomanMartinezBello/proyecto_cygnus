@@ -185,7 +185,7 @@ p{
 	/* font-family: "Sigmar One", cursive;
 	font-size: 1.1rem; */
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 
@@ -346,14 +346,14 @@ p{
 	#divGlider{
         width: 90%;
 		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 5rem;
     }
 	.tituloGlider{
 		/* font-family: "Sigmar One", cursive;
 		font-size: 1.1rem; */
 		font-weight: bold;
-		font-size: 1.05rem;
-		padding-top: 1rem;
+		font-size: 1rem;
+		/* padding-top: 1rem; */
 	}
 }
 

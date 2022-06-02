@@ -2,6 +2,7 @@ const inputNombre = document.getElementById("input_nombre");
 const inputEmail = document.getElementById("input_email");
 const txtArea = document.getElementById("txt_area");
 const btnRegistrar = document.getElementById("btn_enviar")
+const formContacto = document.getElementById("")
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
@@ -58,7 +59,8 @@ function mostrarError(mensaje, elementHTML) {
         elementHTML.removeChild(mensajeError);
     }, 2000);
 }
-function capturarInformacion(){
+function capturarInformacion(event){
+    event.preventDefault();
 	const nombre = inputNombre.value;
 	console.log("el nombre es "+ nombre);
 	const email = inputEmail.value;

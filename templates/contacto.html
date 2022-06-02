@@ -11,77 +11,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../assets/css/contacto.css">
+  <link href="../assets/css/contacto.css" rel="stylesheet">
   <title>Proyecto Cygnus</title>
 </head>
 
 <body>
-
   <header>
+    <div class="bg-principal" id="divNavSuperior">
 
-    <div class="bg-principal">
-      <div class="container divContainer" id="navLogoUser">
-        <div class="divLogo">
-          <a href="../index.html" class="text-light "><img class="imgNav" src="../assets/img/logo-white.png"></a>
-        </div>
-        <div class="divUser d-flex justify-content-end">
-          <div class="divIconoUser hiper">
-            <a href="formulario.html" class="text-light btnIcono"><i class="uil uil-user"></i></a>
-          </div>
-          <div class="divIniciarSesion hiper">
-            <a href="formulario.html" class="text-light">
-              <p class="textoRegistrate">Registrate</p>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="bg-principal">
-      <div class="container divContainer" id="nav">
-        <nav class="navbar navbar-dark" id="navbarP">
-          <div class="divNav" id="divProyecto">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="iconoToggler">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand TituloProyecto textoNavBar" href="#">Proyecto Cygnus</a>
-          </div>
+    <div class="bg-principal" id="divNavInferior">
 
-          <div class="divNav hiper" id="divTexto">
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Chamarras</a>
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Hoodie</a>
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Playeras</a>
-          </div>
-
-          <div class="divNav" id="divBotones">
-            <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
-              <div class="input-group-prepend buscar">
-                <span class="input-group-text barraBuscar" id="inputGroup-sizing-sm"><i
-                    class="uil uil-search"></i></span>
-              </div>
-              <input type="text" class="form-control barraBuscar" id="barraBuscarCursor" aria-label="Small"
-                aria-describedby="inputGroup-sizing-sm" placeholder="Buscar...">
-            </div>
-            <!-- btnIcono -->
-            <div class="d-flex divBtn justify-content-end hiper">
-              <a href="producto-Individual.html" class="text-light btnIcono"><i
-                  class="uil uil-heart btnIconoCorazon"></i></a>
-              <a href="carrito-compras.html" class="text-light btnIcono" id="btnCarrito"><i
-                  class="uil uil-shopping-cart-alt"></i></a>
-            </div>
-          </div>
-
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav hiper">
-              <a class="nav-item nav-link textoNavBar" href="producto.html">Chamarras</a>
-              <a class="nav-item nav-link textoNavBar" href="producto.html">Hoddie</a>
-              <a class="nav-item nav-link textoNavBar" href="producto.html">Playeras</a>
-            </div>
-          </div>
-
-        </nav>
-      </div>
     </div>
   </header>
 
@@ -114,22 +55,22 @@
           </div>
           <!-- Sección formulario  -->
           <div class="col bg-light text-dark p-5 mb-5 mr-3 ml-3 rounded order-0 order-sm-1" id="formulario">
-            <form>
+            <form id="form_contacto">
               <div class="form-group">
                 <h2 class="font-weight-bolder text-center">CONTACTO</h2>
                 <div class="form-row pt-4">
-                  <label for="nombre">Nombre <span style="color: red;">*</span></label>
+                  <label for="nombre">Nombre <span class="span">*</span></label>
                   <input type="text" class="form-control" id="input_nombre" name="nombre"
                     placeholder="Ingresa tu nombre">
                 </div>
               </div>
               <div class="form-row pt-2">
-                <label for="email">Email <span style="color: red;">*</span></label>
+                <label for="email">Email <span class="span">*</span></label>
                 <input type="email" class="form-control" id="input_email" name="email"
                   placeholder="Ingresa tu correo electrónico">
               </div>
               <div class="form-row pt-4">
-                <label for="mensaje">Mensaje <span style="color: red;">*</span></label>
+                <label for="mensaje">Mensaje <span class="span">*</span></label>
                 <textarea class="form-control" rows="5" id="txt_area"></textarea>
               </div>
               <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Enviar</button>
@@ -190,6 +131,7 @@
     crossorigin="anonymous"></script>
 
   <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
+  <script src="../assets/js/crearNavFooterTemplates.js"></script>
   <script src="../assets/js/calcularAlturaNav.js"></script>
   <script src="../assets/js/contacto.js"></script>
 

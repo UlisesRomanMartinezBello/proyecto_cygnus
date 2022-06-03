@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
@@ -17,86 +17,27 @@
 
 <body>
   <header>
+    <div class="bg-principal" id="divNavSuperior">
 
-    <div class="bg-principal">
-      <div class="container divContainer" id="navLogoUser">
-        <div class="divLogo">
-          <a href="../index.html" class="text-light "><img class="imgNav" src="../assets/img/logo-white.png"></a>
-        </div>
-        <div class="divUser d-flex justify-content-end">
-          <div class="divIconoUser hiper">
-            <a href="formulario.html" class="text-light btnIcono"><i class="uil uil-user"></i></a>
-          </div>
-          <div class="divIniciarSesion hiper">
-            <a href="formulario.html" class="text-light">
-              <p class="textoRegistrate">Registrate</p>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="bg-principal">
-      <div class="container divContainer" id="nav">
-        <nav class="navbar navbar-dark" id="navbarP">
-          <div class="divNav" id="divProyecto">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="iconoToggler">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand TituloProyecto textoNavBar" href="#">Proyecto Cygnus</a>
-          </div>
+    <div class="bg-principal" id="divNavInferior">
 
-          <div class="divNav hiper" id="divTexto">
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Chamarras</a>
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Hoodie</a>
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Playeras</a>
-          </div>
-
-          <div class="divNav" id="divBotones">
-            <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
-              <div class="input-group-prepend buscar">
-                <span class="input-group-text barraBuscar" id="inputGroup-sizing-sm"><i
-                    class="uil uil-search"></i></span>
-              </div>
-              <input type="text" class="form-control barraBuscar" id="barraBuscarCursor" aria-label="Small"
-                aria-describedby="inputGroup-sizing-sm" placeholder="Buscar...">
-            </div>
-            <!-- btnIcono -->
-            <div class="d-flex divBtn justify-content-end hiper">
-              <a href="producto-Individual.html" class="text-light btnIcono"><i
-                  class="uil uil-heart btnIconoCorazon"></i></a>
-              <a href="carrito-compras.html" class="text-light btnIcono" id="btnCarrito"><i
-                  class="uil uil-shopping-cart-alt"></i></a>
-            </div>
-          </div>
-
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav hiper">
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Chamarras</a>
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Hoddie</a>
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Playeras</a>
-            </div>
-          </div>
-
-        </nav>
-      </div>
     </div>
   </header>
 
   <main>
-    <!-- gg -->
     <div class="container py-5">
       <div class="row">
         <div class="col-sm-12 col-md-7">
           <div class="row flex-sm-row flex-column-reverse align-content-center">
             <div class="col-3">
               <div class="d-flex d-sm-block pt-4 pt-sm-0 m-auto" id="imagenes-productos">
-                
+
               </div>
             </div>
             <div class="col-9" id="imagen-principal">
-              
+
             </div>
           </div>
         </div>
@@ -126,10 +67,16 @@
             <li class="pb-4">55 1234 5678</li>
             <li class="pb-4">Síguenos</li>
           </ul>
-          <div class="">
-            <i class="fa-brands fa-facebook-square h1 mx-2"></i>
-            <i class="fa-brands fa-twitter-square h1 mx-2"></i>
-            <i class="fa-brands fa-instagram h1 mx-2"></i>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100081594083664">
+              <i class="fa-brands fa-facebook-square h1 mx-2 text-light"></i>
+            </a>
+            <a href="https://www.instagram.com/proyecto_cygnus/">
+              <i class="fa-brands fa-twitter-square h1 mx-2 text-light"></i>
+            </a>
+            <a href="https://twitter.com/proyecto_cygnus">
+              <i class="fa-brands fa-instagram h1 mx-2 text-light"></i>
+            </a>
           </div>
         </div>
 
@@ -139,9 +86,15 @@
             <a href="contacto.html" class="text-light">
               <li class="pb-4">Contacto</li>
             </a>
-            <li class="pb-4">¿Cómo comprar?</li>
-            <li class="pb-4">Envios y devoluciones</li>
-            <li class="pb-4">Garantias</li>
+            <a href="como-comprar.html" class="text-light">
+              <li class="pb-4">¿Cómo comprar?</li>
+            </a>
+            <a href="envios-devoluciones.html" class="text-light">
+              <li class="pb-4">Envios y devoluciones</li>
+            </a>
+            <a href="garantias.html" class="text-light">
+              <li class="pb-4">Garantias</li>
+            </a>
           </ul>
         </div>
 
@@ -151,7 +104,9 @@
             <a href="sobre-nosotros.html" class="text-light">
               <li class="pb-4">Nosotros</li>
             </a>
-            <li class="pb-4">Buscar Tiendas</li>
+            <a href="buscar-tiendas.html" class="text-light">
+              <li class="pb-4">Buscar Tiendas</li>
+            </a>
           </ul>
         </div>
 
@@ -168,6 +123,7 @@
 
   <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
 
+  <script src="../assets/js/crearNavFooterTemplates.js"></script>
   <script src="../assets/js/calcularAlturaNav.js"></script>
 
   <script src="../assets/api_new.js"></script>

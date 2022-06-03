@@ -244,11 +244,11 @@ function crearNav(){
     crearClase(divTexto,'divNav');
     agregarAtributo(divTexto,'id','divTexto');
     agregarAtributo(hiperSudaderas,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperSudaderas,'href','productos.html');
+    agregarAtributo(hiperSudaderas,'href','productos.html?tipo=sudadera');
     agregarAtributo(hiperHoodies,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperHoodies,'href','productos.html');
+    agregarAtributo(hiperHoodies,'href','productos.html?tipo=hoodie');
     agregarAtributo(hiperPlayeras,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperPlayeras,'href','productos.html');
+    agregarAtributo(hiperPlayeras,'href','productos.html?tipo=playera');
 
     crearClase(divBotones,'divNav');
     agregarAtributo(divBotones,'id','divBotones');

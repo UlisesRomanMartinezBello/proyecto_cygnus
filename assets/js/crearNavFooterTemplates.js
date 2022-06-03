@@ -278,9 +278,9 @@ function crearNav(){
     agregarAtributo(hiperSudaderasColapsado,'class','nav-item nav-link textoNavBar');
     agregarAtributo(hiperHoodiesColapsado,'class','nav-item nav-link textoNavBar');
     agregarAtributo(hiperPlayerasColapsado,'class','nav-item nav-link textoNavBar');
-    agregarAtributo(hiperSudaderasColapsado,'href','producto.html');
-    agregarAtributo(hiperHoodiesColapsado,'href','producto.html');
-    agregarAtributo(hiperPlayerasColapsado,'href','producto.html');
+    agregarAtributo(hiperSudaderasColapsado,'href','productos.html?tipo=sudadera');
+    agregarAtributo(hiperHoodiesColapsado,'href','productos.html?tipo=hoodie');
+    agregarAtributo(hiperPlayerasColapsado,'href','productos.html?tipo=playera');
 
     // console.log(divContainer);
     

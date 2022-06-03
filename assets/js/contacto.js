@@ -19,9 +19,9 @@ function loadDocument() {
 }
 
 function validarFormulario(event) {
-	
+  
     // Validando que los campos no esten vacios
-    //const bandera = true;
+    const bandera = true;
     if (event.target.value.length > 0 ) {
         event.target.classList.remove('border-danger');
         event.target.classList.add('border-success', 'border-3');
@@ -29,7 +29,7 @@ function validarFormulario(event) {
         event.target.classList.add('border-danger', 'border-3');
         event.target.classList.remove('border-success');
         mostrarError('El campo esta vacio', event.target.parentNode);
-        //bandera = false;
+        bandera = false;
     }
 
     // Validar el nombre

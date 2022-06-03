@@ -18,78 +18,19 @@
 <body>
 
     <header>
+        <div class="bg-principal" id="divNavSuperior">
 
-        <div class="bg-principal">
-            <div class="container divContainer" id="navLogoUser">
-                <div class="divLogo">
-                    <a href="../index.html" class="text-light "><img class="imgNav"
-                            src="../assets/img/logo-white.png"></a>
-                </div>
-                <div class="divUser d-flex justify-content-end">
-                    <div class="divIconoUser hiper">
-                        <a href="formulario.html" class="text-light btnIcono"><i class="uil uil-user"></i></a>
-                    </div>
-                    <div class="divIniciarSesion hiper">
-                        <a href="formulario.html" class="text-light">
-                            <p class="textoRegistrate">Registrate</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <div class="bg-principal">
-            <div class="container divContainer" id="nav">
-                <nav class="navbar navbar-dark" id="navbarP">
-                    <div class="divNav" id="divProyecto">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                            aria-label="Toggle navigation" id="iconoToggler">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="navbar-brand TituloProyecto textoNavBar" href="#">Proyecto Cygnus</a>
-                    </div>
+        <div class="bg-principal" id="divNavInferior">
 
-                    <div class="divNav hiper" id="divTexto">
-                        <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Chamarras</a>
-                        <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Hoodie</a>
-                        <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Playeras</a>
-                    </div>
-
-                    <div class="divNav" id="divBotones">
-                        <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
-                            <div class="input-group-prepend buscar">
-                                <span class="input-group-text barraBuscar" id="inputGroup-sizing-sm"><i
-                                        class="uil uil-search"></i></span>
-                            </div>
-                            <input type="text" class="form-control barraBuscar" id="barraBuscarCursor"
-                                aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Buscar...">
-                        </div>
-                        <!-- btnIcono -->
-                        <div class="d-flex divBtn justify-content-end hiper">
-                            <a href="producto-Individual.html" class="text-light btnIcono"><i
-                                    class="uil uil-heart btnIconoCorazon"></i></a>
-                            <a href="carrito-compras.html" class="text-light btnIcono" id="btnCarrito"><i
-                                    class="uil uil-shopping-cart-alt"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav hiper">
-                            <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Chamarras</a>
-                            <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Hoddie</a>
-                            <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Playeras</a>
-                        </div>
-                    </div>
-
-                </nav>
-            </div>
         </div>
     </header>
 
-    <div class="container py-5">
+
+    <div class="container py-4">
         <div class="row">
-            <div class="col-sm-12 col-md-7 col-lg-8">
+            <div class="col-sm-12 col-md-7 col-lg-8" id="tabla-carrito">
                 <div class="table-responsive-sm">
                     <table class="table table-borderless">
                         <thead class="border-table text-uppercase">
@@ -99,107 +40,8 @@
                                 <th scope="col">Total</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td scope="row">
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../assets/img/individualProducto/playera1.jpg"
-                                                class="img-fluid img-carrito d-none d-sm-block">
-                                        </div>
-                                        <div class="px-3">
-                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
-                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
-                                            <strike class="small">$MXN 699.99</strike>
-                                            <button type="button"
-                                                class="d-block bg-transparent btn-talla my-2">CH</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-light border">-</button>
-                                        <button type="button" class="btn btn-light border">1</button>
-                                        <button type="button" class="btn btn-light border">+</button>
-                                    </div>
-                                </td>
-                                <td class="font-weight-bold">$MXN 666.66</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../assets/img/individualProducto/playera1.jpg"
-                                                class="img-fluid img-carrito d-none d-sm-block">
-                                        </div>
-                                        <div class="px-3">
-                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
-                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
-                                            <strike class="small">$MXN 699.99</strike>
-                                            <button type="button"
-                                                class="d-block bg-transparent btn-talla my-2">CH</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-light border">-</button>
-                                        <button type="button" class="btn btn-light border">1</button>
-                                        <button type="button" class="btn btn-light border">+</button>
-                                    </div>
-                                </td>
-                                <td class="font-weight-bold">$MXN 666.66</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../assets/img/individualProducto/playera1.jpg"
-                                                class="img-fluid img-carrito d-none d-sm-block">
-                                        </div>
-                                        <div class="px-3">
-                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
-                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
-                                            <strike class="small">$MXN 699.99</strike>
-                                            <button type="button"
-                                                class="d-block bg-transparent btn-talla my-2">CH</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-light border">-</button>
-                                        <button type="button" class="btn btn-light border">1</button>
-                                        <button type="button" class="btn btn-light border">+</button>
-                                    </div>
-                                </td>
-                                <td class="font-weight-bold">$MXN 666.66</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="../assets/img/individualProducto/playera1.jpg"
-                                                class="img-fluid img-carrito d-none d-sm-block">
-                                        </div>
-                                        <div class="px-3">
-                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
-                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
-                                            <strike class="small">$MXN 699.99</strike>
-                                            <button type="button"
-                                                class="d-block bg-transparent btn-talla my-2">CH</button>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-light border">-</button>
-                                        <button type="button" class="btn btn-light border">1</button>
-                                        <button type="button" class="btn btn-light border">+</button>
-                                    </div>
-                                </td>
-                                <td class="font-weight-bold">$MXN 666.66</td>
-                            </tr>
+                        <tbody id="lista-productos">
+
                         </tbody>
                     </table>
                 </div>
@@ -211,10 +53,13 @@
                         <div
                             class="d-flex flex-md-column justify-content-between align-items-baseline font-weight-bold py-3">
                             <p class="h2">TOTAL:</p>
-                            <p class="h4 font-weight-bold">$MXN 666.66</p>
+                            <p class="h4 font-weight-bold" id="total"></p>
                         </div>
-                        <button class="btn btn-principal btn-lg">PAGAR</button>
+                        <button class="btn btn-principal btn-lg" id="btnPagar">
+                            PAGAR
+                        </button>
                         <p class="pt-3">Obten más información sobre códigos de descuento.</p>
+
                     </div>
                 </div>
 
@@ -283,6 +128,9 @@
 
     <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
 
+    <script src="../assets/api_new.js"></script>
+    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/crearNavFooterTemplates.js"></script>
     <script src="../assets/js/calcularAlturaNav.js"></script>
 
 </body>

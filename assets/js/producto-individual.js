@@ -14,6 +14,8 @@ function mostrarProducto() {
     let urlProducto = window.location.href;
     if (urlProducto.includes('?')) {
         urlProducto = urlProducto.split('?')[1].split('=')[1];
+    } else {
+        window.location = 'http://127.0.0.1:5500/templates/productos.html';
     }
 
     urlProducto = urlProducto - 1;

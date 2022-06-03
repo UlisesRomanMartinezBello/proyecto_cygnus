@@ -47,17 +47,13 @@ function mostrarProductos(productos) {
         cardBody.classList = 'card-body h-100 d-block';
 
         const btnPrecio = document.createElement('button');
-        btnPrecio.classList = 'btn btn-principal btn-block';
+        btnPrecio.classList = 'btn btn-transparent btn-block';
         btnPrecio.textContent = `$${producto.precio}`;
 
         const nombreProducto = document.createElement('p');
         nombreProducto.classList = 'h5 text-center font-weight-bold d-block';
         nombreProducto.textContent = `${producto.nombre}`;
 
-        const tallas = document.createElement('p');
-        tallas.textContent = ` ${producto.talla}`;
-
-        cardBody.appendChild(tallas);
         cardBody.appendChild(nombreProducto);
         cardBody.appendChild(btnPrecio);
         cardHeader.appendChild(iconoCorazon);
@@ -180,38 +176,22 @@ function filtrarProductos(event) {
         resultados = [...coloresFiltrados];
     }
 
-
-
-    // console.log(resultados);
-
-
-
     // Filtrar por talla
-    /* let tallasFiltradas = new Set();
+    let tallasFiltradas = new Set();
 
     for (let i = 0; i < datosFiltro.talla.length; i++) {
         resultados.forEach(producto => {
-            console.log(producto.talla, datosFiltro.talla[i]);
-            if (producto.talla === datosFiltro.tallas[i]) {
-                tallasFiltradas.add(producto);
-            }
+            producto.talla.forEach(talla =>{
+                if (talla === datosFiltro.talla[i]) {
+                    tallasFiltradas.add(producto);
+                }
+            });
         });
-    } */
+    }
 
-    // console.log(tallasFiltradas);
-
-
-
-    /* let tallasFiltradas = new Set();
-    resultados.forEach(producto => {        
-        producto.talla.forEach(talla => {
-            if (datosFiltro.talla.includes(talla)) {
-                tallasFiltradas.add(producto);
-            }
-        });
-    });
-    resultados = [...tallasFiltradas]; */
-
+    if (tallasFiltradas.size > 0) {
+        resultados = [...tallasFiltradas];
+    }
 
     resultados = resultados.sort(() => Math.random() - 0.5);
 
@@ -222,44 +202,6 @@ function filtrarProductos(event) {
         limpiarHTML();
         mostrarProductos(resultados);
     }
-    /* resultados.forEach(producto => {
-        producto.talla.forEach(talla => {
-            console.log(talla)
-        })
-    }) */
-
-    /* resulados = resulados.filter(filtrarTalla);
-
-
-    function filtrarTalla() {
-
-    } */
-
-    /* if (resultados.length === 0) {
-        limpiarHTML();
-        sinResultados();
-    }  else {
-        limpiarHTML();
-        mostrarProductos(resultados);
-    } */
-
-
-
-    /* checkBoxTalla.forEach(check => {
-        if (check.parentNode.classList.contains('active')) {
-            datosFiltro.talla.push(check.value);
-        }
-    }); */
-    // Selecciona el color
-
-    // Selecciona el precio
-    // datosFiltro.precio = parseInt(rangoPrecio.value);
-
-
-    // Filtra el arreglo con los parametros del formulario
-    /* const resultadoBusqueda = listaProductos.filter(producto => producto.precio <= datosFiltro.precio).filter(producto => producto.tipo === datosFiltro.tipo);
-
-    console.log(resultadoBusqueda);  */
 }
 
 function mostrarRangoPrecio() {

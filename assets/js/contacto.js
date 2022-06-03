@@ -1,12 +1,13 @@
 const inputNombre = document.getElementById("input_nombre");
 const inputEmail = document.getElementById("input_email");
 const txtArea = document.getElementById("txt_area");
-const formContacto = document.getElementById("form_contacto")
+const formContacto = document.querySelector("form")
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/ 
 }
+
 
 loadDocument();
 
@@ -20,7 +21,7 @@ function loadDocument() {
 function validarFormulario(event) {
 	
     // Validando que los campos no esten vacios
-    const bandera = true;
+    //const bandera = true;
     if (event.target.value.length > 0 ) {
         event.target.classList.remove('border-danger');
         event.target.classList.add('border-success', 'border-3');
@@ -28,7 +29,7 @@ function validarFormulario(event) {
         event.target.classList.add('border-danger', 'border-3');
         event.target.classList.remove('border-success');
         mostrarError('El campo esta vacio', event.target.parentNode);
-        bandera = false;
+        //bandera = false;
     }
 
     // Validar el nombre
@@ -63,8 +64,18 @@ function capturarInformacion(event){
 	const nombre = inputNombre.value;
     const email = inputEmail.value;
     const mensaje = txtArea.value;
-	console.log("el nombre es "+ nombre);
-	console.log("el email es "+ email);
-	console.log("el mensaje es "+ mensaje);
+    if(nombre.length > 0 && email.length > 0 && mensaje.length > 0){
+        event.target.classList.remove('border-danger');
+        event.target.classList.add('border-success', 'border-3');
+        console.log(nombre);
+        console.log(email);
+        console.log(mensaje);
+        formContacto.reset();
+    }else{
+        event.target.classList.add('border-danger', 'border-3');
+        event.target.classList.remove('border-success');
+        mostrarError('Hay campos vacios', event.target.parentNode);
+    }
 }
+
 

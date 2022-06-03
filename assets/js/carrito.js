@@ -27,7 +27,7 @@ function mostrarProductos() {
                                         <p class="text-principal font-weight-bold">$MXN ${producto.precio}</p>
                                         <strike class="small">$MXN ${producto.precio * 1.5}</strike>
                                         <button type="button" class="d-block bg-transparent btn-talla my-1">CH</button>
-                                        <button class="btn btn-principal btn-sm">
+                                        <button class="btn btn-transparent btn-sm">
                                             <i class="fa-solid fa-xmark"></i>
                                             Eliminar
                                         </button>

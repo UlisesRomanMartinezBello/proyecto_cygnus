@@ -3,7 +3,7 @@ const divCarousel1 = document.getElementById('divCarousel1');
 const divCarousel2 = document.getElementById('divCarousel2');
 
 document.addEventListener('DOMContentLoaded', () => {
-    crearGliderSudadera();
+    // crearGliderSudadera();
 });
 
 

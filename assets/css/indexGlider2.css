@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* background: linear-gradient(to right, #4b00e0be, #8E2DE2); */
 }
 
 /*clase cuadros, para cada slide*/
@@ -25,16 +25,28 @@ body{
     color: black;
 }
 
+.cuadros[class*=active] .img{
+    border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
+}
+
 .img{
     width: 100%;
-    
+    border: 5px solid transparent;
     /* object-fit: cover;
     object-position: center center; */
 }
 .cuadros{
     color: transparent;
+    
+}
+.cuadros[class*=active] {   
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
 }
 
 #borde{
     border: none;
+}
+.cuadros[class*=active] .titulo {
+    padding-bottom: 0.5rem;
 }

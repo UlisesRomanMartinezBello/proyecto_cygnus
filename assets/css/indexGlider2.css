@@ -51,7 +51,7 @@ body{
     padding-bottom: 0.5rem;
 }
 
-@media screen and (min-width: 250px) and (max-width: 376px) {
+@media screen and (min-width: 250px) and (max-width: 450px) {
     .titulo{
         font-size: 0.6rem;
     }

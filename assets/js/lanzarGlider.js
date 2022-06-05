@@ -1,6 +1,6 @@
 
     let glide = new Glide('.glide', {
-      type: 'carrousel', //hay dos tipos slider y carrousel
+      type: 'slider', //hay dos tipos slider y carrousel
       startAt: 2, //adónde inicia el slider
       focusAt: 'center',
       autoplay: 4000, //inicia automatic en miliseg

@@ -61,7 +61,7 @@ function crearGliderSudadera (){
         for(let x=0; x<arregloHoodies2.length;x++){
             if(aux == arregloHoodies2[x]){
                 // console.log('encon');
-                textTitulo = document.createTextNode(arregloSudaderas2[x+1]);
+                textTitulo = document.createTextNode(arregloHoodies2[x+1]);
                 // console.log(textTitulo);
                 p.appendChild(textTitulo);
             }

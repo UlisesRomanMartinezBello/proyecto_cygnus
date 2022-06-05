@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+/*clase cuadros, para cada slide*/
+.cuadros{   
+    border-radius: .16667em;
+    text-align: center;
+    height: 500%;
+    /* width: 150px; */
+    line-height: 100%;
+    /* -webkit-box-shadow: inset 0 0 0 2px hsla(0,0%,100%,.5);
+    box-shadow: inset 0 0 0 2px hsla(0,0%,100%,.5); */
+    color: #fff;
+    background: transparent;
+    font-size: 1em;
+    font-weight: 900;
+    border: none;
+}
+
+/*Cuando el cuadro obtiene el foco cambia el color*/
+.cuadros[class*=active] {   
+    box-shadow: none;
+    /* background: linear-gradient(to right, #00f260, #0575e6); */
+    color: black;
+}
+
+.img{
+    width: 100%;
+    
+    /* object-fit: cover;
+    object-position: center center; */
+}
+.cuadros{
+    color: transparent;
+}
+
+#borde{
+    border: none;
+}

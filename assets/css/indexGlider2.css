@@ -2,6 +2,8 @@ body{
     /* background: linear-gradient(to right, #4b00e0be, #8E2DE2); */
 }
 
+
+
 /*clase cuadros, para cada slide*/
 .cuadros{   
     border-radius: .16667em;
@@ -31,7 +33,7 @@ body{
 
 .img{
     width: 100%;
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     /* object-fit: cover;
     object-position: center center; */
 }
@@ -51,11 +53,22 @@ body{
     padding-bottom: 0.5rem;
 }
 
-@media screen and (min-width: 250px) and (max-width: 450px) {
+#bordeFlechas{
+    color: black;
+}
+.titulo{
+    font-size: 0.72rem;
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 575px) {
     .titulo{
-        font-size: 0.6rem;
+        font-size: 0.38rem;
     }
     .cuadros[class*=active] .titulo{
         padding-bottom: 0rem;    
+    }
+    #contenedor{
+        width: 85%;
     }
 }

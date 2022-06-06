@@ -8,10 +8,9 @@
     
 }
 
-/* .img-bannerindex{
-    height: calc(90vh - (var(--alturaNav)));
-    
-} */
+.img-bannerindex{
+    height: calc(100vh - (var(--alturaNav)));
+}
 
 
 .img-carousel{
@@ -31,3 +30,14 @@ p{
     margin: 0;
 }
 
+@media screen and (min-width: 250px) and (max-width: 500px) {
+    .img-bannerindex{
+        height: calc(40vh - (var(--alturaNav)));
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .img-bannerindex{
+        height: calc(50vh - (var(--alturaNav)));
+    }
+}

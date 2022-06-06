@@ -6,6 +6,16 @@
 .glide * {
   box-sizing: inherit;
 }
+
+.glide1 {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .glide1 * {
+    box-sizing: inherit;
+  }
+
 .glide__track {
   overflow: hidden;
 }

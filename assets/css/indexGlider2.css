@@ -62,8 +62,16 @@ body{
 
 #contenedor{
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     /* height: 100%; */
+}
+
+#contenedorMini{
+    margin: 0 auto;
+    width: 85%;
+}
+.imgMini{
+    width: 100%;
 }
 
 @media screen and (min-width: 250px) and (max-width: 575px) {
@@ -74,6 +82,14 @@ body{
         padding-bottom: 0rem;    
     }
     #contenedor{
-        width: 80%;
+        width: 75%;
+    }
+    #contenedorMini{
+        margin: 0 auto;
+        height: 30%;
+    }
+    #contenedorMini{
+        margin: 0 auto;
+        width: 75%;
     }
 }

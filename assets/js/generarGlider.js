@@ -1,5 +1,7 @@
 const carouselHoodie = document.getElementById('carouselHoodie');
 const carouselHoodie1 = document.getElementById('carouselHoodie1');
+const carouselHoodie2 = document.getElementById('carouselHoodie2');
+
 
 
 // console.log(carouselHoodie);
@@ -91,6 +93,30 @@ function crearGliderSudadera (){
             if(aux == arregloPlayeras2[x]){
                 // console.log('encon');
                 textTitulo = document.createTextNode(arregloPlayeras2[x+1]);
+                // console.log(textTitulo);
+                p.appendChild(textTitulo);
+            }
+        }
+    }
+
+    for(let x=0; x<arregloSudaderas.length;x++){
+        let li = document.createElement('li');
+        li.setAttribute('class','cuadros');
+        carouselHoodie2.appendChild(li);
+        let p = document.createElement('p');
+        p.classList.add('titulo');
+        li.appendChild(p);
+        let img = document.createElement('img');
+        img.classList.add('img');
+        let aux = arregloSudaderas[x];
+        img.setAttribute('src',aux);
+        li.appendChild(img);
+        // let textoP = document.createTextNode()
+        // console.log(aux);
+        for(let x=0; x<arregloSudaderas2.length;x++){
+            if(aux == arregloSudaderas2[x]){
+                // console.log('encon');
+                textTitulo = document.createTextNode(arregloSudaderas2[x+1]);
                 // console.log(textTitulo);
                 p.appendChild(textTitulo);
             }

@@ -108,7 +108,6 @@
   cursor: -moz-grab;
   cursor: -webkit-grab;
 }
-
 .glide--dragging {
   cursor: grabbing;
   cursor: -moz-grabbing;

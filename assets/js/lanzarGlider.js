@@ -40,5 +40,4 @@ let glide2 = new Glide(".glide2", {
     480: { perView: 3 },
   },
 });
-
 glide2.mount();

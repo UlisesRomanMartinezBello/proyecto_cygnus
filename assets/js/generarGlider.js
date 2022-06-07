@@ -1,4 +1,4 @@
-const carouselHoodie = document.getElementById('carouselHoodie');
+recorconst carouselHoodie = document.getElementById('carouselHoodie');
 const carouselHoodie1 = document.getElementById('carouselHoodie1');
 
 

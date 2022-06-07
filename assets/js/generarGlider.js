@@ -98,7 +98,6 @@ function crearGliderSudadera (){
             }
         }
     }
-
     for(let x=0; x<arregloSudaderas.length;x++){
         let li = document.createElement('li');
         li.setAttribute('class','cuadros');

@@ -1,4 +1,4 @@
-recorconst carouselHoodie = document.getElementById('carouselHoodie');
+const carouselHoodie = document.getElementById('carouselHoodie');
 const carouselHoodie1 = document.getElementById('carouselHoodie1');
 
 
@@ -22,7 +22,7 @@ function crearGliderSudadera (){
     // carouselHoodie.appendChild(lista);
 
     for(let x=0; x<productos.length; x++){ 
-        let src = 'assets/img/img-producto/';
+        let src = 'assets/img/img-inde/';
         let aux = productos[x].imagenes[0];
         src = src+aux;
         let titulo = productos[x].nombre;  

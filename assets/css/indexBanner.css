@@ -30,6 +30,14 @@ p{
     margin: 0;
 }
 
+/* .videoIndex{
+    height: calc(100vh - (var(--alturaNav)));
+} */
+
+#fondoVideo{
+    background-color: black;
+}
+
 @media screen and (min-width: 250px) and (max-width: 500px) {
     .img-bannerindex{
         height: calc(40vh - (var(--alturaNav)));

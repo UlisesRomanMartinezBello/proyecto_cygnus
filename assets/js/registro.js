@@ -7,6 +7,7 @@ const inputPasswordConfirm = document.getElementById('input-password-confirm');
 const btnRegistrar = document.getElementById('btn-registrar');
 const btnIniciar = document.querySelector('#btn-iniciar');
 const formIniciar = document.querySelector('#form-iniciar');
+const botonFinalizar = document.getElementById('btn-finalizar');
 
 const expresiones = {
     usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
@@ -24,6 +25,7 @@ function loadDocument() {
     inputEmail.addEventListener('blur', validarFormulario);
     inputPassword.addEventListener('blur', validarFormulario);
     inputPasswordConfirm.addEventListener('blur', validarFormulario);
+    // botonFinalizar.addEventListener('clic',enviarFormulario);
 }
 
 function validarFormulario(event) {
@@ -84,11 +86,9 @@ function validarFormulario(event) {
 
         console.log(inputPasswordConfirm.value);
         console.log(inputPassword.value);
-        imprimirInformacion();
+        // imprimirInformacion();
     }
-
-    //Verificar contraseñas iguales
-    
+    //Verificar contraseñas iguales 
 }
 
 function mostrarError(mensaje, elementHTML) {
@@ -123,11 +123,11 @@ function cambiarFormulario() {
     });
 }
 
-function imprimirInformacion(){
-	const nombre = inputNombre.value;
-	console.log("el nombre es "+ nombre);
-	const email = inputEmail.value;
-	console.log("el email es "+ email);
-	const mensaje = txtArea.value;
-	alert("el mensaje es "+ mensaje);
-}
+formRegistrar.addEventListener("submit",function(event){
+    event.preventDefault();
+    console.log('cls');
+    console.log("el nombre es "+ inputNombre.textContent);
+
+    
+});
+	

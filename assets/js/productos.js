@@ -21,7 +21,7 @@ function cargarEventos() {
 function mostrarProductos(productos) {
     productos.forEach(producto => {
         const columna = document.createElement('div');
-        columna.classList = 'col-sm-12 col-md-6 col-lg-4 pb-4';
+        columna.classList = 'col-sm-6 col-md-6 col-lg-4 pb-4 d-flex justify-content-center';
         columna.dataset.id = producto.id;
 
         const card = document.createElement('div');

@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
     <link href="../assets/css/producto.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../assets/img/logo-white.png">
     <title>Proyecto Cygnus</title>
 </head>
 
@@ -31,9 +32,8 @@
             <div class="col-12">
                 <h1 class="text-center titulo pb-4">Productos</h1>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-3">
-                <div
-                    class="card bg-transparent border-light h-auto p-3 mb-4 mb-md-0 rounded sticky-top align-self-start">
+            <div class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card bg-transparent border-light h-auto p-3 mb-4 mb-md-0 rounded sticky-top align-self-start" id="cardFiltro">
                     <form class="text-center" id="formulario-filtrado">
                         <div class="d-flex flex-column">
                             <label for="">Talla</label>
@@ -96,8 +96,8 @@
                     </form>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-9">
-                <div class="row" id="productos">
+            <div class="col-sm-12 col-md-8 col-lg-9 ">
+                <div class="row " id="productos">
 
                 </div>
             </div>
@@ -106,59 +106,59 @@
 
     <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">
         <div class="container text-center text-md-left">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
-                    <h4 class="font-weight-bold">Contáctanos</h4>
-                    <ul class="lista pt-4 font-weight-light">
-                        <li class="pb-4">55 1234 5678</li>
-                        <li class="pb-4">Síguenos</li>
-                    </ul>
-                    <div>
-                        <a href="https://www.facebook.com/profile.php?id=100081594083664">
-                            <i class="fa-brands fa-facebook-square h1 mx-2 text-light"></i>
-                        </a>
-                        <a href="https://www.instagram.com/proyecto_cygnus/">
-                            <i class="fa-brands fa-twitter-square h1 mx-2 text-light"></i>
-                        </a>
-                        <a href="https://twitter.com/proyecto_cygnus">
-                            <i class="fa-brands fa-instagram h1 mx-2 text-light"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
-                    <h4 class="font-weight-bold">Ayuda</h4>
-                    <ul class="lista pt-4 font-weight-light hiper">
-                        <a href="contacto.html" class="text-light">
-                            <li class="pb-4">Contacto</li>
-                        </a>
-                        <a href="como-comprar.html" class="text-light">
-                            <li class="pb-4">¿Cómo comprar?</li>
-                        </a>
-                        <a href="envios-devoluciones.html" class="text-light">
-                            <li class="pb-4">Envios y devoluciones</li>
-                        </a>
-                        <a href="garantias.html" class="text-light">
-                            <li class="pb-4">Garantias</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="col-sm-12 col-md-4">
-                    <h4 class="font-weight-bold">Sobre Nosotros</h4>
-                    <ul class="lista pt-4 font-weight-light hiper">
-                        <a href="sobre-nosotros.html" class="text-light">
-                            <li class="pb-4">Nosotros</li>
-                        </a>
-                        <a href="buscar-tiendas.html" class="text-light">
-                            <li class="pb-4">Buscar Tiendas</li>
-                        </a>
-                    </ul>
-                </div>
-
+          <div class="row">
+            <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+              <h4 class="font-weight-bold">Contáctanos</h4>
+              <ul class="lista pt-4 font-weight-light">
+                <li class="pb-4">55 1234 5678</li>
+                <li class="pb-4">Síguenos</li>
+              </ul>
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=100081594083664">
+                  <i class="fa-brands fa-facebook-square h1 mx-2 text-light"></i>
+                </a>
+                <a href="https://twitter.com/proyecto_cygnus">
+                  <i class="fa-brands fa-twitter-square h1 mx-2 text-light"></i>
+                </a>
+                <a href="https://www.instagram.com/proyecto_cygnus/">
+                  <i class="fa-brands fa-instagram h1 mx-2 text-light"></i>
+                </a>
+              </div>
             </div>
+    
+            <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+              <h4 class="font-weight-bold">Ayuda</h4>
+              <ul class="lista pt-4 font-weight-light hiper">
+                <a href="contacto.html" class="text-light">
+                  <li class="pb-4">Contacto</li>
+                </a>
+                <a href="como-comprar.html" class="text-light">
+                  <li class="pb-4">¿Cómo comprar?</li>
+                </a>
+                <a href="envios-devoluciones.html" class="text-light">
+                  <li class="pb-4">Envios y devoluciones</li>
+                </a>
+                <a href="garantias.html" class="text-light">
+                  <li class="pb-4">Garantias</li>
+                </a>
+              </ul>
+            </div>
+    
+            <div class="col-sm-12 col-md-4">
+              <h4 class="font-weight-bold">Sobre Nosotros</h4>
+              <ul class="lista pt-4 font-weight-light hiper">
+                <a href="sobre-nosotros.html" class="text-light">
+                  <li class="pb-4">Nosotros</li>
+                </a>
+                <a href="buscar-tiendas.html" class="text-light">
+                  <li class="pb-4">Buscar Tiendas</li>
+                </a>
+              </ul>
+            </div>
+    
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

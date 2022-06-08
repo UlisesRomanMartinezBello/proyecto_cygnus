@@ -9,6 +9,12 @@ const btnIniciar = document.querySelector('#btn-iniciar');
 const formIniciar = document.querySelector('#form-iniciar');
 const botonFinalizar = document.getElementById('btn-finalizar');
 
+
+botonFinalizar.addEventListener("click",function(event){
+    // event.preventDefault();
+    // console.log(inputNombre.value)
+});
+
 const expresiones = {
     usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
@@ -30,7 +36,7 @@ function loadDocument() {
 
 function validarFormulario(event) {
     // Validando que los inputs no esten vacios
-    const bandera = true;
+    let bandera = true;
     if (event.target.value.length > 0) {
         event.target.classList.remove('border-danger');
         event.target.classList.add('border-success', 'border-3');
@@ -123,11 +129,5 @@ function cambiarFormulario() {
     });
 }
 
-formRegistrar.addEventListener("submit",function(event){
-    event.preventDefault();
-    console.log('cls');
-    console.log("el nombre es "+ inputNombre.textContent);
 
-    
-});
 	

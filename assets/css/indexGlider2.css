@@ -57,7 +57,7 @@ body{
     color: black;
 }
 .titulo{
-    font-size: 0.72rem;
+    font-size: 1rem;
 }
 
 #contenedor{
@@ -67,7 +67,7 @@ body{
 }
 #contenedorMini{
     margin: 0 auto;
-    width: 85%;
+    width: 100%;
 }
 .imgMini{
     width: 100%;
@@ -83,12 +83,17 @@ body{
     #contenedor{
         width: 75%;
     }
-    #contenedorMini{
-        margin: 0 auto;
-        height: 30%;
-    }
-    #contenedorMini{
-        margin: 0 auto;
-        width: 75%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 750px) {
+    .titulo{
+        font-size: 0.65rem;
     }
 }
+
+@media screen and (min-width: 751px) and (max-width: 900px) {
+    .titulo{
+        font-size: 0.8rem;
+    }
+}
+

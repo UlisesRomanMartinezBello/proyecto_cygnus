@@ -246,7 +246,7 @@ function crearNav(){
     agregarAtributo(hiperSudaderas,'class','nav-item nav-link textoNavBar linkHover');
     agregarAtributo(hiperSudaderas,'href','templates/productos.html?tipo=sudadera');
     agregarAtributo(hiperHoodies,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperHoodies,'href','templates/productos.html?tipo=playera');
+    agregarAtributo(hiperHoodies,'href','templates/productos.html?tipo=hoodie');
     agregarAtributo(hiperPlayeras,'class','nav-item nav-link textoNavBar linkHover');
     agregarAtributo(hiperPlayeras,'href','templates/productos.html?tipo=playera');
 

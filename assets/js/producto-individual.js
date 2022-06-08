@@ -28,7 +28,7 @@ function mostrarProducto() {
 function mostrarImagenes(idProducto) {
     idProducto.imagenes.forEach(imagenes => {
         const imagenProducto = document.createElement('img');
-        imagenProducto.classList = 'pb-3 img-fluid rounded mx-2 img-producto w-75';
+        imagenProducto.classList = 'img-fluid rounded mx-2 img-producto w-75';
         imagenProducto.src = `${urlImagenes}/${imagenes}`;
         imagenesProducto.appendChild(imagenProducto);
     });

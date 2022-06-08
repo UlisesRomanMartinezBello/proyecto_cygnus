@@ -1,3 +1,6 @@
+body{
+  background-color: white;
+}
 .titulo {
   font-family: "Sigmar One", cursive;
   text-align: center;
@@ -44,9 +47,20 @@
 }
 
 .card {
-  height: 100%;
+  width: 100%;
   position: relative;
   border-radius: 0%;
+  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
+  border-width: 0.05rem;
+}
+
+.card:hover{
+  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
+  border-width: 0.15rem;
+}
+
+#cardFiltro{
+  border: none;
 }
 
 /* posicion del corazon negro arriba de la card */
@@ -60,17 +74,17 @@
 
 .card-img-top {
   width: 100%;
-  height: 40vh;
-  object-fit: cover;
-  object-position: center;
+  height: 25vh;
+  /* object-fit: cover;
+  object-position: center; */
 }
 
-.img-card {
+/* .img-card {
   width: 100%;
   height: 60vh;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 
 
@@ -130,4 +144,36 @@
 
 .btn-color-seleccionado {
   border: 2px solid black !important;
+}
+
+@media screen and (min-width: 300px) and (max-width: 575px) {
+  .card {
+    width: 65%;
+    height: 100%;
+    position: relative;
+    border-radius: 0%;
+    margin: 0;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 25vh;
+    /* object-fit: cover;
+    object-position: center; */
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0%;
+    margin: 0;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 20vh;
+    /* object-fit: cover;
+    object-position: center; */
+  }
 }

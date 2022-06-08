@@ -1,7 +1,7 @@
 const inputNombre = document.getElementById("input_nombre");
 const inputEmail = document.getElementById("input_email");
 const txtArea = document.getElementById("txt_area");
-const formContacto = document.querySelector("form")
+const formContacto = document.querySelector("form");
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
@@ -15,7 +15,7 @@ function loadDocument() {
     inputNombre.addEventListener('blur', validarFormulario);
     inputEmail.addEventListener('blur', validarFormulario);
     txtArea.addEventListener('blur', validarFormulario);
-    formContacto.addEventListener('submit', capturarInformacion)
+    formContacto.addEventListener('submit', capturarInformacion);
 }
 
 function validarFormulario(event) {

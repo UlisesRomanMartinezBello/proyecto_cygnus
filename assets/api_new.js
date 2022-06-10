@@ -355,7 +355,7 @@ const productos = [
         tipo: "Playera",
         precio: 330,
         talla: ["G","M","S","XS"],
-        color: "Moarado",
+        color: "Morado",
         imagenes: ['PM6-FR.png','PM-DER.png','PM-IZQ.png','PM-ATR.png'],
         descripcion: 'Delicado diseño de cuello redondo,de estampado con lluvia de estrellas, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 

@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../assets/css/styles_form.css">
+  <link rel="stylesheet" href="../assets/css/buscador.css">
   <link rel="icon" href="../assets/img/logo-white.png">
   <title>Proyecto Cygnus</title>
 </head>
@@ -25,6 +26,13 @@
 
     <div class="bg-principal" id="divNavInferior">
 
+    </div>
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-sm-12 col-md-6" id="resultados-busqueda">
+
+        </div>
+      </div>
     </div>
   </header>
 
@@ -57,18 +65,20 @@
             </div>
             <div class="form-group ">
               <label for="email">Correo Electrónico<span style="color: red;">*</span></label>
-              <input type="email" class="form-control" id="input-email" placeholder="Ingresa tu correo electrónico" required>
+              <input type="email" class="form-control" id="input-email" placeholder="Ingresa tu correo electrónico"
+                required>
               <p class="msj-error" id="errorEmail"></p>
             </div>
             <div class="form-group ">
               <label for="password">Contraseña<span style="color: red;">*</span></label>
-              <input type="password" class="form-control" id="input-password" placeholder="Ingresa tu contraseña" required>
+              <input type="password" class="form-control" id="input-password" placeholder="Ingresa tu contraseña"
+                required>
               <p class="msj-error" id="errorPassword"></p>
             </div>
             <div class="form-group">
               <label for="password">Confirma tu contraseña<span style="color: red;">*</span></label>
-              <input type="password" class="form-control" id="input-password-confirm"
-                placeholder="Confirmar Contraseña" required>
+              <input type="password" class="form-control" id="input-password-confirm" placeholder="Confirmar Contraseña"
+                required>
               <p class="msj-error" id="errorPassword"></p>
             </div>
             <div class="pt-2">
@@ -85,14 +95,15 @@
             </div>
             <div class="form-group">
               <label for="password">Contraseña<span style="color: red;">*</span></label>
-              <input type="password" class="form-control" id="input-password-login" placeholder="Ingresa tu contraseña" required>
+              <input type="password" class="form-control" id="input-password-login" placeholder="Ingresa tu contraseña"
+                required>
               <p class="msj-error" id="errorPassword"></p>
             </div>
             <div>
               <button type="submit" class="btn btn-principal btn-block" id="btn-iniciar1">Iniciar</button>
             </div>
           </form>
-        
+
         </div>
       </div>
     </div>
@@ -167,6 +178,8 @@
   <script src="../assets/js/crearNavFooterTemplates.js"></script>
   <script src="../assets/js/calcularAlturaNav.js"></script>
   <script src="../assets/js/registro.js"></script>
+  <script src="../assets/api_new.js"></script>
+  <script src="../assets/js/buscador.js"></script>
 
 </body>
 

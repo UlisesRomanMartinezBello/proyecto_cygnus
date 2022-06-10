@@ -2,13 +2,8 @@ const carouselHoodie = document.getElementById('carouselHoodie');
 const carouselHoodie1 = document.getElementById('carouselHoodie1');
 const carouselHoodie2 = document.getElementById('carouselHoodie2');
 
-
-
-// console.log(carouselHoodie);
-
-
+// console.log(carouselHoodie)
 crearGliderSudadera();
-
 
 function crearGliderSudadera (){
     // console.log(divCarousel);

@@ -99,6 +99,7 @@ function filtrarTipo() {
             const playeras = listaProductos.filter(playera => playera.tipo === 'playera' || playera.tipo === 'Playera');
             playeras.sort(() => Math.random() - 0.5);
             mostrarProductos(playeras);
+            mostrarColoresTipo(playeras);
             datosFiltro.tipo = 'Playera';
             break;
 
@@ -106,6 +107,7 @@ function filtrarTipo() {
             const hoodies = listaProductos.filter(playera => playera.tipo === 'hoodie' || playera.tipo === 'Hoodie');
             hoodies.sort(() => Math.random() - 0.5);
             mostrarProductos(hoodies);
+            mostrarColoresTipo(hoodies);
             datosFiltro.tipo = 'Hoodie';
             break;
 
@@ -113,12 +115,14 @@ function filtrarTipo() {
             const sudaderas = listaProductos.filter(playera => playera.tipo === 'sudadera' || playera.tipo === 'Sudadera');
             sudaderas.sort(() => Math.random() - 0.5);
             mostrarProductos(sudaderas);
+            mostrarColoresTipo(sudaderas);
             datosFiltro.tipo = 'Sudadera';
             break;
 
         default:
             listaProductos.sort(() => Math.random() - 0.5);
             mostrarProductos(listaProductos);
+            mostrarColoresTipo(productos);
             datosFiltro.tipo = '';
             break;
     }
@@ -181,7 +185,7 @@ function filtrarProductos(event) {
 
     for (let i = 0; i < datosFiltro.talla.length; i++) {
         resultados.forEach(producto => {
-            producto.talla.forEach(talla =>{
+            producto.talla.forEach(talla => {
                 if (talla === datosFiltro.talla[i]) {
                     tallasFiltradas.add(producto);
                 }
@@ -253,4 +257,19 @@ function limpiarHTML() {
     while (productosHTML.firstChild) {
         productosHTML.removeChild(productosHTML.firstChild);
     }
+}
+
+function mostrarColoresTipo(tipoRopa) {
+    const coloresDisponibles = new Set();
+    tipoRopa.forEach(ropa => {
+        coloresDisponibles.add(ropa.color);
+    });
+
+    checkBoxColor.forEach(btnColor => {
+        coloresDisponibles.forEach(colorDisponible => {
+            if (btnColor.value === colorDisponible) {
+                btnColor.parentElement.classList.remove('d-none')
+            }
+        });
+    });
 }

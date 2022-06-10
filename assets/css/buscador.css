@@ -1,0 +1,8 @@
+.z-index-2000 {
+    z-index: 2000;
+}
+
+.option-search:hover {
+    background-color: #EDE6DB;
+    text-decoration: none;
+}

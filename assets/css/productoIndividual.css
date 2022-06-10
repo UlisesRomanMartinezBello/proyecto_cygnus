@@ -1,4 +1,4 @@
-body{
+body {
   background-color: white;
 }
 
@@ -37,7 +37,7 @@ body{
   border-width: 0.35rem;
 } */
 
-.img-fluid{
+.img-fluid {
   border: 1px solid white;
   border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
   border-width: 0.15rem;
@@ -45,7 +45,7 @@ body{
   margin-bottom: 1rem;
 }
 
-.img-fluid:hover{
+.img-fluid:hover {
   border: 1px solid white;
   border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
   border-width: 0.25rem;
@@ -62,14 +62,26 @@ body{
   border-width: 0.15rem;
 } */
 
-#imagenes-productos{
+#imagenes-productos {
   /* height: 100%; */
   /* display: flex;
   justify-content: center; */
 }
 
-#divImgChicas{
+#divImgChicas {
   height: 100%;
 }
 
+.btn-talla {
+  border: 2px solid black;
+}
 
+.btn-talla:hover {
+  background-color: #4b3869;
+  color: white;
+}
+
+.btn-talla-seleccionada {
+  background-color: #4b3869;
+  color: white;
+}

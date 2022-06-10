@@ -34,12 +34,12 @@ function crearNav(){
             </div>
             <div class="divUser d-flex justify-content-end">
                 <div class="divIconoUser hiper">
-                    <a href="templates/formulario.html" class="text-light btnIcono">
+                    <a href="templates/login.html" class="text-light btnIcono">
                         <i class="uil uil-user"></i>
                     </a>
                 </div>
                 <div class="divIniciarSesion hiper">
-                    <a href="templates/formulario.html" class="text-light">
+                    <a href="templates/login.html" class="text-light">
                         <p class="textoRegistrate">Registrate</p>
                     </a>
                 </div>
@@ -82,18 +82,18 @@ function crearNav(){
     crearClase(divIniciarSesion,'divIniciarSesion');
     crearClase(divIniciarSesion,'hiper');
 
-    agregarAtributo(hiperIconoSesion,'href','templates/formulario.html');
+    agregarAtributo(hiperIconoSesion,'href','templates/login.html');
     crearClase(hiperIconoSesion,'text-light');
     crearClase(hiperIconoSesion,'btnIcono');
 
     crearClase(iconoSesion,'uil');
     crearClase(iconoSesion,'uil-user');
 
-    agregarAtributo(hiperIconoSesion,'href','templates/formulario.html')
+    agregarAtributo(hiperIconoSesion,'href','templates/login.html')
     crearClase(hiperIconoSesion,'text-light');
     crearClase(hiperIconoSesion,'btnIcono');
 
-    agregarAtributo(hiperTextoRegistrate,'href','templates/formulario.html');
+    agregarAtributo(hiperTextoRegistrate,'href','templates/login.html');
     crearClase(hiperTextoRegistrate,'text-light')
     crearClase(etiquetaTextoRegistrate,'textoRegistrate');
 

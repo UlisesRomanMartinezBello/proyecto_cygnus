@@ -54,12 +54,30 @@
           <div class="text-center text-sm-left">
             <h1 class="h2 fw-bold pt-4 pt-md-0 pb-3 titulo" id="producto-titulo"></h1>
             <p class="h3 py-2 pb-3" id="producto-precio"></p>
-            <p>Tallas disponibles:</p>
-            <div id="tallas" class="pb-4">
-
-            </div>
+            <form id="formulario-filtrado">
+              <div class="d-flex flex-column">
+                <label for="">Selecciona una talla:</label>
+                <div class="mb-3">
+                  <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-talla mx-1 my-1 d-none">
+                      <input type="checkbox" autocomplete="off" name="XS" value="XS" class="check-talla"> XS
+                    </label>
+                    <label class="btn btn-talla mx-1 my-1 d-none">
+                      <input type="checkbox" autocomplete="off" name="S" value="S" class="check-talla"> S
+                    </label>
+                    <label class="btn btn-talla mx-1 my-1 d-none">
+                      <input type="checkbox" autocomplete="off" name="M" value="M" class="check-talla"> M
+                    </label>
+                    <label class="btn btn-talla mx-1 my-1 d-none">
+                      <input type="checkbox" autocomplete="off" name="G" value="G" class="check-talla"> G
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-          <button class="btn btn-principal btn-block btn-lg text-uppercase">Agregar al carrito</button>
+          <button class="btn btn-principal btn-block btn-lg text-uppercase" id="agregar-carrito">Agregar al
+            carrito</button>
           <p class="pt-4" id="producto-descripcion"></p>
         </div>
       </div>

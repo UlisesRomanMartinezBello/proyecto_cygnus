@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../assets/css/buscar-tiendas.css">
+  <link rel="stylesheet" href="../assets/css/buscador.css">
   <link rel="icon" href="../assets/img/logo-white.png">
   <title>Proyecto Cygnus</title>
 </head>
@@ -25,6 +26,14 @@
     <div class="bg-principal" id="divNavInferior">
 
     </div>
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-sm-12 col-md-6" id="resultados-busqueda">
+
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -33,38 +42,47 @@
       <div class="row">
 
         <div class="col-sm-12 col-md-9">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.8192494651989!2d-99.14003003612243!3d19.433867204492287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92cbbfc35c3%3A0xaed19a7c62145fe2!2sBarojas%20Reyes%20Efrain!5e0!3m2!1ses-419!2smx!4v1653782286048!5m2!1ses-419!2smx" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.8192494651989!2d-99.14003003612243!3d19.433867204492287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92cbbfc35c3%3A0xaed19a7c62145fe2!2sBarojas%20Reyes%20Efrain!5e0!3m2!1ses-419!2smx!4v1653782286048!5m2!1ses-419!2smx"
+            width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
         </div>
 
         <div class="col-sm-12 col-md-3">
-          
+
           <h5 class="card-title">Encuentra una tienda</h5>
-                    
-            
-              <div class="card tienda" data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.508611147081!2d-99.13946988578154!3d19.43362624568519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92ccfd5df5b%3A0xe9b6e141fc8e036b!2sAv%20Francisco%20I.%20Madero%2C%20Centro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1654211275583!5m2!1ses-419!2smx">
-                <div class="card-body pb-2">
-                  <h5 class="card-title">Cygnus Store</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Av Francisco I. Madero 16, CenHistórico de Cdad. de México, Centro, Cuauhtémoc, 06000 Centro, CDMX</h6>
-                </div>
-              </div>
-      
-              <div class="card tienda" data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1365681781135!2d-99.15381788578132!3d19.4496778451758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8dbc7f643f7%3A0x1d9b7ca35f8b46c6!2sF%C3%B3rum%20Buenavista!5e0!3m2!1ses-419!2smx!4v1654211347467!5m2!1ses-419!2smx">
-                <div class="card-body pb-2">
-                  <h5 class="card-title">Cygnus Store</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Fórum Buenavista, Eje 1 Nte. 259, Buenavista, Cuauhtémoc, 06350 Ciudad de México, CDMX</h6>
-                </div>
-              </div>
-              
-              <div class="card tienda" data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101251.18736979579!2d-99.1969926018795!3d19.42235135888941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d03a3d2ccf92f3b!2sParque%20Delta!5e0!3m2!1ses-419!2smx!4v1654211496449!5m2!1ses-419!2smx">
-                <div class="card-body pb-2">
-                  <h5 class="card-title">Cygnus Store</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Parque Delta, Av. Cuauhtémoc 462, Piedad Narvarte, Benito Juárez, 03000 Ciudad de México, CDMX</h6>
-                </div>
-              </div>
-            
+
+
+          <div class="card tienda"
+            data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.508611147081!2d-99.13946988578154!3d19.43362624568519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92ccfd5df5b%3A0xe9b6e141fc8e036b!2sAv%20Francisco%20I.%20Madero%2C%20Centro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1654211275583!5m2!1ses-419!2smx">
+            <div class="card-body pb-2">
+              <h5 class="card-title">Cygnus Store</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Av Francisco I. Madero 16, CenHistórico de Cdad. de México,
+                Centro, Cuauhtémoc, 06000 Centro, CDMX</h6>
+            </div>
+          </div>
+
+          <div class="card tienda"
+            data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1365681781135!2d-99.15381788578132!3d19.4496778451758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8dbc7f643f7%3A0x1d9b7ca35f8b46c6!2sF%C3%B3rum%20Buenavista!5e0!3m2!1ses-419!2smx!4v1654211347467!5m2!1ses-419!2smx">
+            <div class="card-body pb-2">
+              <h5 class="card-title">Cygnus Store</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Fórum Buenavista, Eje 1 Nte. 259, Buenavista, Cuauhtémoc, 06350
+                Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+
+          <div class="card tienda"
+            data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101251.18736979579!2d-99.1969926018795!3d19.42235135888941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d03a3d2ccf92f3b!2sParque%20Delta!5e0!3m2!1ses-419!2smx!4v1654211496449!5m2!1ses-419!2smx">
+            <div class="card-body pb-2">
+              <h5 class="card-title">Cygnus Store</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Parque Delta, Av. Cuauhtémoc 462, Piedad Narvarte, Benito
+                Juárez, 03000 Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+
 
         </div>
-        
+
       </div>
     </div>
 
@@ -138,6 +156,8 @@
   <script src="../assets/js/crearNavFooterTemplates.js"></script>
   <script src="../assets/js/calcularAlturaNav.js"></script>
   <script src="../assets/js/modificarFrameMapa.js"></script>
+  <script src="../assets/api_new.js"></script>
+  <script src="../assets/js/buscador.js"></script>
 </body>
 
 </html>

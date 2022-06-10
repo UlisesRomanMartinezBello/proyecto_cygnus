@@ -1,8 +1,27 @@
 const buscador = document.querySelector('#barraBuscarCursor');
 const resultadosBusqueda = document.querySelector('#resultados-busqueda');
+let urlImagenes = '';
+let urlProducto = '';
 
-buscador.addEventListener('keyup', buscarProductos);
-document.addEventListener('click', limpiarResultadosBusqueda);
+cargarEventos();
+
+function cargarEventos() {
+    buscador.addEventListener('keyup', buscarProductos);
+    document.addEventListener('click', limpiarResultadosBusqueda);
+    document.addEventListener('DOMContentLoaded', obtenerEnlaces);
+}
+
+function obtenerEnlaces() {
+    let index = window.location.href.split('/')[3];
+    if (index === 'index.html') {
+        urlImagenes = 'assets/img/img-producto/';
+        urlProducto = 'templates/producto-Individual.html'
+
+    } else {
+        urlImagenes = '../assets/img/img-producto/';
+        urlProducto = '../templates/producto-Individual.html';
+    }
+}
 
 function buscarProductos(event) {
     const productosSeleccionados = [];
@@ -24,12 +43,12 @@ function buscarProductos(event) {
 
         productosMostrados.forEach(producto => {
             const enlaceProducto = document.createElement('a');
-            enlaceProducto.href = `producto-Individual.html?id=${producto.id}`;
+            enlaceProducto.href = `${urlProducto}?id=${producto.id}`;
             enlaceProducto.textContent = producto.nombre;
             enlaceProducto.classList = 'd-flex text-dark py-3 flex-row-reverse justify-content-center option-search align-items-center';
 
             const imagenProducto = document.createElement('img');
-            imagenProducto.src = `../assets/img/img-producto/${producto.imagen}`;
+            imagenProducto.src = `${urlImagenes + producto.imagen}`;
             imagenProducto.classList = 'img-fluid mr-2';
             imagenProducto.width = 50;
             enlaceProducto.appendChild(imagenProducto);
@@ -39,7 +58,7 @@ function buscarProductos(event) {
 
         resultadosBusqueda.appendChild(contenedorBuscador);
 
-    } else  {
+    } else {
         limpiarResultadosBusqueda();
     }
 }

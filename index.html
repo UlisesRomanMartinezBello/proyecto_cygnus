@@ -15,18 +15,19 @@
   <link href="assets/css/indexGlider.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+  <link rel="stylesheet" href="../assets/css/buscador.css">
   <link rel="icon" href="assets/img/logo-white.png">
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="assets/css/indexGlider2.css">  
-  <!-- Glide CSS -->        
+  <link rel="stylesheet" href="assets/css/indexGlider2.css">
+  <!-- Glide CSS -->
   <link rel="stylesheet" href="glide-3.2.4/dist/css/glide.core.min.css">
   <link rel="stylesheet" href="glide-3.2.4/dist/css/glide.theme.min.css">
   <title>Proyecto Cygnus</title>
 </head>
 
 <body>
-    
+
   <header>
     <div class="bg-principal" id="divNavSuperior">
 
@@ -35,6 +36,15 @@
     <div class="bg-principal" id="divNavInferior">
 
     </div>
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-sm-12 col-md-6" id="resultados-busqueda">
+
+        </div>
+      </div>
+    </div>
+
   </header>
 
 
@@ -53,7 +63,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         </ol> -->
         <div class="carousel-inner">
-          <div class="carousel-item active"  data-interval="9000">
+          <div class="carousel-item active" data-interval="9000">
             <img class="d-block w-100 img-bannerindex" src="assets/img/img-bannerindex/GifBanner1.gif">
           </div>
           <div class="carousel-item" data-interval="6000">
@@ -65,7 +75,7 @@
           <div class="carousel-item" data-interval="6000">
             <img class="d-block w-100 img-bannerindex" src="assets/img/img-bannerindex/Banner3.png">
           </div>
-          <div class="carousel-item"  data-interval="12000">
+          <div class="carousel-item" data-interval="12000">
             <img class="d-block w-100 img-bannerindex" src="assets/img/img-bannerindex/GifBanner2.gif">
           </div>
           <div class="carousel-item" data-interval="6000">
@@ -74,7 +84,7 @@
           <div class="carousel-item" data-interval="6000">
             <img class="d-block w-100 img-bannerindex" src="assets/img/img-bannerindex/Banner5.png">
           </div>
-          <div class="carousel-item"  data-interval="12000">
+          <div class="carousel-item" data-interval="12000">
             <img class="d-block w-100 img-bannerindex" src="assets/img/img-bannerindex/GifBanner3.gif">
           </div>
           <!-- <div class="carousel-item" data-interval="6000">
@@ -96,12 +106,13 @@
     <div class="pb-5" id="contenedor">
       <div class="glide" id="borde">
         <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides" id="carouselHoodie">          
+          <ul class="glide__slides" id="carouselHoodie">
           </ul>
-        </div>      
+        </div>
         <div class="glide__arrows" id='bordeFlechas' data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            << /button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
         </div>
         <!-- Estilo bullets (puntos) -->
         <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -127,12 +138,13 @@
     <div class="pb-5" id="contenedor">
       <div class="glide1" id="borde">
         <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides" id="carouselHoodie1">          
+          <ul class="glide__slides" id="carouselHoodie1">
           </ul>
-        </div>      
+        </div>
         <div class="glide__arrows" id='bordeFlechas' data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            << /button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
         </div>
         <!-- Estilo bullets (puntos) -->
         <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -149,20 +161,21 @@
         </div> -->
       </div>
     </div>
-     
+
     <div class="pb-5" id="contenedorMini">
       <img class="imgMini" src="assets/img/img-bannerindex/miniBanner4.png">
     </div>
-    
+
     <div class="pb-5" id="contenedor">
       <div class="glide2" id="borde">
         <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides" id="carouselHoodie2">          
+          <ul class="glide__slides" id="carouselHoodie2">
           </ul>
-        </div>      
+        </div>
         <div class="glide__arrows" id='bordeFlechas' data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            << /button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
         </div>
         <!-- Estilo bullets (puntos) -->
         <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -240,20 +253,20 @@
 
 
   <!-- jQuery, Popper.js, Bootstrap JS -->
-  
+
   <!-- <script src="popper/popper.min.js"></script> -->
   <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
   <!-- Glide JS -->
 
   <script src="assets/api_new.js"></script>
-  <script src="assets/js/generarGlider.js"></script> 
-  
+  <script src="assets/js/generarGlider.js"></script>
+
   <!-- <script src="jquery/jquery-3.3.1.min.js"></script> -->
   <script src="glide-3.2.4/dist/glide.min.js"></script>
   <script src="assets/js/lanzarGlider.js"></script>
-  
-  
-  
+
+
+
 
   <!-- <script src="assets/js/API.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -267,10 +280,11 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script> -->
   <!-- <script src="assets/js/slider.js"></script> -->
   <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
-  
+
   <script src="assets/js/crearNavFooter.js"></script>
   <!-- <script src="assets/js/crearGlider.js"></script> -->
   <script src="assets/js/calcularAlturaNav.js"></script>
+  <script src="../assets/js/buscador.js"></script>
 
 </body>
 

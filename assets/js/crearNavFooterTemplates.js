@@ -268,7 +268,7 @@ function crearNav(){
     agregarAtributo(divBtn,'class','d-flex divBtn justify-content-end');
     agregarAtributo(iconoCorazon,'class','uil uil-heart btnIconoCorazon');
     agregarAtributo(hiperCarrito,'href','carrito-compras.html');
-    agregarAtributo(hiperCarrito,'class','text-light btnIcono');
+    agregarAtributo(hiperCarrito,'class','text-light btnIcono icono-carrito');
     agregarAtributo(iconoCarrito,'class','uil uil-shopping-cart-alt');
     agregarAtributo(iconoCarrito,'id','btnCarrito');
 

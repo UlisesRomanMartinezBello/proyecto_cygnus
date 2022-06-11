@@ -7,14 +7,19 @@ const btnCarrito = document.querySelector('#agregar-carrito');
 const checkTallas = document.querySelectorAll('.check-talla');
 const pathImagenes = '../assets/img/img-producto/';
 const urlProductos = 'http://127.0.0.1:5500/templates/productos.html';
-const detallesProducto = { nombre: '', precio: 0, imagen: '', talla: '', cantidad: 0 };
+const detallesProducto = { id: 0, nombre: '', precio: 0, imagen: '', talla: '', cantidad: 0 };
+let carrito = [];
 
 cargarEventos();
 
 function cargarEventos() {
     document.addEventListener('DOMContentLoaded', mostrarProducto);
     document.addEventListener('DOMContentLoaded', seleccionarTalla);
-    btnCarrito.addEventListener('click', agregarCarrito)
+    document.addEventListener('DOMContentLoaded', numeroProductosCarrito)
+    btnCarrito.addEventListener('click', agregarCarrito);
+    document.addEventListener('DOMContentLoaded', () => {
+        carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    });
 }
 
 function mostrarProducto() {
@@ -74,26 +79,47 @@ function agregarCarrito() {
     let urlProducto = window.location.href;
     if (urlProducto.includes('?')) {
         urlProducto = urlProducto.split('?')[1].split('=')[1];
-    } else {
-        window.location = urlProductos;
     }
-    detallesProducto.nombre = productos[urlProducto].nombre;
-    detallesProducto.precio = productos[urlProducto].precio;
-    detallesProducto.imagen = productos[urlProducto].imagenes[0];
-    detallesProducto.cantidad = detallesProducto.cantidad + 1;
 
-    console.log(detallesProducto);
+    urlProducto = urlProducto - 1;
+
+    if (detallesProducto.talla === '') {
+        const textoTalla = document.querySelector('#texto-talla');
+        textoTalla.textContent = 'Selecciona una talla primero';
+        textoTalla.classList = 'alert alert-warning';
+    } else {
+        detallesProducto.id = productos[urlProducto].id;
+        detallesProducto.nombre = productos[urlProducto].nombre;
+        detallesProducto.precio = productos[urlProducto].precio;
+        detallesProducto.imagen = productos[urlProducto].imagenes[0];
+        detallesProducto.cantidad = detallesProducto.cantidad + 1;
+        carrito = [...carrito, detallesProducto];
+        guardarProductoCarrito();
+    }
 }
-
 
 function seleccionarTalla() {
     checkTallas.forEach(talla => {
         talla.addEventListener('click', () => {
-            if (talla.parentElement.classList.contains('btn-talla-seleccionada')) {
-                talla.parentElement.classList.remove('btn-talla-seleccionada');
-            } else {
-                talla.parentElement.classList.add('btn-talla-seleccionada');
+            if (talla.parentNode.classList.contains('btn-talla-seleccionada')) {
+                talla.parentNode.classList.remove('btn-talla-seleccionada');
             }
+            talla.parentNode.classList.add('btn-talla-seleccionada');
+            detallesProducto.talla = talla.value;
         });
     });
+}
+
+function guardarProductoCarrito() {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    const productoAgregado = document.createElement('div');
+    productoAgregado.textContent = 'Producto agregado al carrito';
+    productoAgregado.classList = 'alert alert-success';
+    document.querySelector('#producto-agregado').appendChild(productoAgregado);
+
+    numeroProductosCarrito();
+
+    setTimeout(() => {
+        productoAgregado.remove();
+    }, 3000);
 }

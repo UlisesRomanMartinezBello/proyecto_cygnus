@@ -11,11 +11,11 @@ cargarEventos();
 
 function cargarEventos() {
     document.addEventListener('DOMContentLoaded', filtrarTipo);
-    document.addEventListener('DOMContentLoaded', mostrarBotonCarrito);
     document.addEventListener('DOMContentLoaded', mostrarTallaSeleccionada);
     document.addEventListener('DOMContentLoaded', mostrarColorSeleccionado);
     formularioFiltrado.addEventListener('submit', filtrarProductos);
     rangoPrecio.addEventListener('click', mostrarRangoPrecio);
+    document.addEventListener('DOMContentLoaded', mostrarBotonCarrito);
 }
 
 function mostrarProductos(productos) {
@@ -64,6 +64,7 @@ function mostrarProductos(productos) {
         columna.appendChild(card);
         productosHTML.appendChild(columna);
     });
+    mostrarBotonCarrito();
 }
 
 function mostrarBotonCarrito() {

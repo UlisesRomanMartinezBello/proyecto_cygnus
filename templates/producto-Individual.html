@@ -12,7 +12,7 @@
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../assets/css/productoIndividual.css">
-  <title>Proyecto Cygnus</title>
+  <title>Proyecto Cygnus - Producto Seleccionado</title>
 </head>
 
 <body>
@@ -56,20 +56,20 @@
             <p class="h3 py-2 pb-3" id="producto-precio"></p>
             <form id="formulario-filtrado">
               <div class="d-flex flex-column">
-                <label for="">Selecciona una talla:</label>
+                <label for="" id="texto-talla">Selecciona una talla:</label>
                 <div class="mb-3">
                   <div class="btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-talla mx-1 my-1 d-none">
-                      <input type="checkbox" autocomplete="off" name="XS" value="XS" class="check-talla"> XS
+                      <input type="radio" autocomplete="off" name="talla" value="XS" class="check-talla"> XS
                     </label>
                     <label class="btn btn-talla mx-1 my-1 d-none">
-                      <input type="checkbox" autocomplete="off" name="S" value="S" class="check-talla"> S
+                      <input type="radio" autocomplete="off" name="talla" value="S" class="check-talla"> S
                     </label>
                     <label class="btn btn-talla mx-1 my-1 d-none">
-                      <input type="checkbox" autocomplete="off" name="M" value="M" class="check-talla"> M
+                      <input type="radio" autocomplete="off" name="talla" value="M" class="check-talla"> M
                     </label>
                     <label class="btn btn-talla mx-1 my-1 d-none">
-                      <input type="checkbox" autocomplete="off" name="G" value="G" class="check-talla"> G
+                      <input type="radio" autocomplete="off" name="talla" value="G" class="check-talla"> G
                     </label>
                   </div>
                 </div>
@@ -79,6 +79,7 @@
           <button class="btn btn-principal btn-block btn-lg text-uppercase" id="agregar-carrito">Agregar al
             carrito</button>
           <p class="pt-4" id="producto-descripcion"></p>
+          <div id="producto-agregado"></div>
         </div>
       </div>
     </div>
@@ -154,8 +155,8 @@
   <script src="../assets/js/calcularAlturaNav.js"></script>
 
   <script src="../assets/api_new.js"></script>
-  <script src="../assets/js/producto-individual.js"></script>
   <script src="../assets/js/buscador.js"></script>
+  <script src="../assets/js/producto-individual.js"></script>
 
 </body>
 

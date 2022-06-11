@@ -266,7 +266,7 @@ const productos = [
         precio: 265,
         talla: ["G","M","S","XS"],
         color: "Blanco",
-        imagenes: ['PB3-FR.png','PA-DER.png','PA-IZQ.png','PA-ATR.png'],
+        imagenes: ['PB3-FR.png','PB-DER.png','PB-IZQ.png','PB-ATR.png'],
         descripcion: 'Delicado diseño de cuello redondo,con estampado de espacio, estas camisetas para hombre pueden mostrar tu cuello delgado y elegante.',
     }, 
     {

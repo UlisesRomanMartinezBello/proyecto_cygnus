@@ -9,6 +9,7 @@ function cargarEventos() {
     buscador.addEventListener('keyup', buscarProductos);
     document.addEventListener('click', limpiarResultadosBusqueda);
     document.addEventListener('DOMContentLoaded', obtenerEnlaces);
+    document.addEventListener('DOMContentLoaded', numeroProductosCarrito);
 }
 
 function obtenerEnlaces() {
@@ -67,4 +68,12 @@ function limpiarResultadosBusqueda() {
     while (resultadosBusqueda.firstChild) {
         resultadosBusqueda.removeChild(resultadosBusqueda.firstChild);
     }
+}
+
+function numeroProductosCarrito() {
+    let numeroProductos = JSON.parse(localStorage.getItem('carrito'));
+    const badgeProductos = document.createElement('span');
+    badgeProductos.textContent = numeroProductos.length;
+    badgeProductos.classList = 'badge badge-light rounded-circle position-absolute small';
+    document.querySelector('.icono-carrito').appendChild(badgeProductos);
 }

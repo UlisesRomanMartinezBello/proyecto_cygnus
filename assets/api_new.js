@@ -1,7 +1,7 @@
 const productos = [
     {
         id: 1,
-        nombre: "Hoodie Grogu",
+        nombre: "Grogu",
         tipo: "Hoodie",
         precio: 220,
         talla: ["G"],
@@ -11,7 +11,7 @@ const productos = [
     },
     {
         id: 2,
-        nombre: "Hoodie Espiral",
+        nombre: "Espiral",
         tipo: "Hoodie",
         precio: 280,
         talla: ["G","M","S","XS"],
@@ -21,7 +21,7 @@ const productos = [
     },
     {
         id: 3,
-        nombre: "Hoodie Grogu",
+        nombre: "Baby Yoda",
         tipo: "Hoodie",
         precio: 230,
         talla: ["M","S","XS"],
@@ -31,7 +31,7 @@ const productos = [
     },
     {
         id: 4,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Mando I",
         tipo: "Hoodie",
         precio: 240,
         talla: ["G","M","S"],
@@ -41,7 +41,7 @@ const productos = [
     },
     {
         id: 5,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Mandalorian",
         tipo: "Hoodie",
         precio: 350,
         talla: ["G","M","XS"],
@@ -51,7 +51,7 @@ const productos = [
     },
     {
         id: 6,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Star",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","S","XS"],
@@ -61,7 +61,7 @@ const productos = [
     },
     {
         id: 7,
-        nombre: "Hoodie Grogu",
+        nombre: "Grogu",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","S","XS"],
@@ -71,7 +71,7 @@ const productos = [
     },
     {
         id: 8,
-        nombre: "Hoodie Espiral",
+        nombre: "Espiral",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","XS"],
@@ -81,7 +81,7 @@ const productos = [
     },
     {
         id: 9,
-        nombre: "Hoodie Grogu",
+        nombre: "Baby Yoda",
         tipo: "Hoodie",
         precio: 250,
         talla: ["S","XS"],
@@ -91,7 +91,7 @@ const productos = [
     },
     {
         id: 10,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Mando II",
         tipo: "Hoodie",
         precio: 250,
         talla: ["M","S","XS"],
@@ -101,7 +101,7 @@ const productos = [
     },
     {
         id: 11,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Mandalorian",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","XS"],
@@ -111,7 +111,7 @@ const productos = [
     },
     {
         id: 12,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Star I",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","S","XS"],
@@ -121,7 +121,7 @@ const productos = [
     },
     {
         id: 13,
-        nombre: "Hoodie Grogu",
+        nombre: "Grogu",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","S","XS"],
@@ -131,7 +131,7 @@ const productos = [
     },
     {
         id: 14,
-        nombre: "Hoodie Espiral",
+        nombre: "Espiral",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","XS"],
@@ -141,7 +141,7 @@ const productos = [
     },
     {
         id: 15,
-        nombre: "Hoodie Grogu",
+        nombre: "Baby Yoda",
         tipo: "Hoodie",
         precio: 250,
         talla: ["S","XS"],
@@ -151,7 +151,7 @@ const productos = [
     },
     {
         id: 16,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Mando III",
         tipo: "Hoodie",
         precio: 250,
         talla: ["M","S","XS"],
@@ -161,7 +161,7 @@ const productos = [
     },
     {
         id: 17,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Mandalorian",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","XS"],
@@ -171,7 +171,7 @@ const productos = [
     },
     {
         id: 18,
-        nombre: "Hoodie Mandalorian",
+        nombre: "Star II",
         tipo: "Hoodie",
         precio: 250,
         talla: ["G","M","S","XS"],
@@ -181,7 +181,7 @@ const productos = [
     }, 
     {
         id: 19,
-        nombre: "Playera Cometa",
+        nombre: "Cometa",
         tipo: "Playera",
         precio: 280,
         talla: ["G","M","S","XS"],
@@ -191,7 +191,7 @@ const productos = [
     }, 
     {
         id: 20,
-        nombre: "Playera Galaxia",
+        nombre: " Galaxia",
         tipo: "Playera",
         precio: 270,
         talla: ["G","M","S","XS"],
@@ -201,7 +201,7 @@ const productos = [
     }, 
     {
         id: 21,
-        nombre: "Playera Espacio",
+        nombre: "Espacio",
         tipo: "Playera",
         precio: 265,
         talla: ["G","M","S","XS"],
@@ -211,7 +211,7 @@ const productos = [
     }, 
     {
         id: 22,
-        nombre: "Playera Destellos",
+        nombre: "Destellos",
         tipo: "Playera",
         precio: 255,
         talla: ["G","M","S","XS"],
@@ -221,7 +221,7 @@ const productos = [
     }, 
     {
         id: 23,
-        nombre: "Playera Lluvia",
+        nombre: "Lluvia",
         tipo: "Playera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -231,7 +231,7 @@ const productos = [
     }, 
     {
         id: 24,
-        nombre: "Playera Barnard",
+        nombre: "Barnard",
         tipo: "Playera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -241,7 +241,7 @@ const productos = [
     }, 
     {
         id: 25,
-        nombre: "Playera Cometa",
+        nombre: "Cometa I",
         tipo: "Playera",
         precio: 280,
         talla: ["G","M","S","XS"],
@@ -251,7 +251,7 @@ const productos = [
     }, 
     {
         id: 26,
-        nombre: "Playera Galaxia",
+        nombre: "Galaxia I",
         tipo: "Playera",
         precio: 270,
         talla: ["G","M","S","XS"],
@@ -261,7 +261,7 @@ const productos = [
     }, 
     {
         id: 27,
-        nombre: "Playera Espacio",
+        nombre: "Espacio I",
         tipo: "Playera",
         precio: 265,
         talla: ["G","M","S","XS"],
@@ -271,7 +271,7 @@ const productos = [
     }, 
     {
         id: 28,
-        nombre: "Playera Destellos",
+        nombre: "Destellos I",
         tipo: "Playera",
         precio: 255,
         talla: ["G","M","S","XS"],
@@ -281,7 +281,7 @@ const productos = [
     }, 
     {
         id: 29,
-        nombre: "Playera Estrellas",
+        nombre: "Estrellas",
         tipo: "Playera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -291,7 +291,7 @@ const productos = [
     }, 
     {
         id: 30,
-        nombre: "Playera Barnard",
+        nombre: "Barnard",
         tipo: "Playera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -301,7 +301,7 @@ const productos = [
     }, 
     {
         id: 31,
-        nombre: "Playera Cometa",
+        nombre: "Cometa",
         tipo: "Playera",
         precio: 280,
         talla: ["G","M","S","XS"],
@@ -311,7 +311,7 @@ const productos = [
     }, 
     {
         id: 32,
-        nombre: "Playera Galaxia",
+        nombre: "Galaxia",
         tipo: "Playera",
         precio: 270,
         talla: ["G","M","S","XS"],
@@ -321,7 +321,7 @@ const productos = [
     }, 
     {
         id: 33,
-        nombre: "Playera Espacio",
+        nombre: "Espacio",
         tipo: "Playera",
         precio: 265,
         talla: ["G","M","S","XS"],
@@ -331,7 +331,7 @@ const productos = [
     }, 
     {
         id: 34,
-        nombre: "Playera Destellos",
+        nombre: "Destellos",
         tipo: "Playera",
         precio: 255,
         talla: ["G","M","S","XS"],
@@ -341,7 +341,7 @@ const productos = [
     }, 
     {
         id: 35,
-        nombre: "Playera Lluvia",
+        nombre: "Lluvia",
         tipo: "Playera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -351,7 +351,7 @@ const productos = [
     }, 
     {
         id: 36,
-        nombre: "Playera Barnard",
+        nombre: "Barnard",
         tipo: "Playera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -361,7 +361,7 @@ const productos = [
     }, 
     {
         id: 37,
-        nombre: "Playera Galaxia",
+        nombre: "Galaxia",
         tipo: "Playera",
         precio: 280,
         talla: ["G","M","S","XS"],
@@ -371,7 +371,7 @@ const productos = [
     }, 
     {
         id: 38,
-        nombre: "Playera  Galaxia",
+        nombre: "Galaxias",
         tipo: "Playera",
         precio: 270,
         talla: ["G","M","S","XS"],
@@ -381,7 +381,7 @@ const productos = [
     }, 
     {
         id: 39,
-        nombre: "Playera Espacio",
+        nombre: " Espacio",
         tipo: "Playera",
         precio: 265,
         talla: ["G","M","S","XS"],
@@ -391,7 +391,7 @@ const productos = [
     }, 
     {
         id: 40,
-        nombre: "Playera Destellos",
+        nombre: "Destellos",
         tipo: "Playera",
         precio: 255,
         talla: ["G","M","S","XS"],
@@ -401,7 +401,7 @@ const productos = [
     }, 
     {
         id: 41,
-        nombre: "Playera Lluvia",
+        nombre: "Lluvia",
         tipo: "Playera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -411,7 +411,7 @@ const productos = [
     }, 
     {
         id: 42,
-        nombre: "Playera Barnard",
+        nombre: "Barnard",
         tipo: "Playera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -421,7 +421,7 @@ const productos = [
     }, 
     {
         id: 43,
-        nombre: "Sudadera NASA",
+        nombre: "NASA",
         tipo: "Sudadera",
         precio: 380,
         talla: ["G","M","S","XS"],
@@ -431,7 +431,7 @@ const productos = [
     }, 
     {
         id: 44,
-        nombre: "Sudadera Conquista",
+        nombre: "Conquista",
         tipo: "Sudadera",
         precio: 370,
         talla: ["G","M","S","XS"],
@@ -441,7 +441,7 @@ const productos = [
     }, 
     {
         id: 45,
-        nombre: "Sudadera 404",
+        nombre: "404",
         tipo: "Sudadera",
         precio: 365,
         talla: ["G","M","S","XS"],
@@ -451,7 +451,7 @@ const productos = [
     }, 
     {
         id: 46,
-        nombre: "Sudadera Reloj",
+        nombre: "Reloj",
         tipo: "Sudadera",
         precio: 395,
         talla: ["G","M","S","XS"],
@@ -461,7 +461,7 @@ const productos = [
     }, 
     {
         id: 47,
-        nombre: "Sudadera Misión",
+        nombre: " Misión",
         tipo: "Sudadera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -471,7 +471,7 @@ const productos = [
     }, 
     {
         id: 48,
-        nombre: "Sudadera Explorer",
+        nombre: "Explorer",
         tipo: "Sudadera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -481,7 +481,7 @@ const productos = [
     }, 
     {
         id: 49,
-        nombre: "Sudadera NASA",
+        nombre: "NASA I",
         tipo: "Sudadera",
         precio: 380,
         talla: ["G","M","S","XS"],
@@ -491,7 +491,7 @@ const productos = [
     }, 
     {
         id: 50,
-        nombre: "Sudadera Astronauta",
+        nombre: "Astronauta I",
         tipo: "Sudadera",
         precio: 370,
         talla: ["G","M","S","XS"],
@@ -501,7 +501,7 @@ const productos = [
     }, 
     {
         id: 51,
-        nombre: "Sudadera 404",
+        nombre: "404",
         tipo: "Sudadera",
         precio: 365,
         talla: ["G","M","S","XS"],
@@ -521,7 +521,7 @@ const productos = [
     }, 
     {
         id: 53,
-        nombre: "Sudadera NASA",
+        nombre: "Astral",
         tipo: "Sudadera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -531,7 +531,7 @@ const productos = [
     }, 
     {
         id: 54,
-        nombre: "Sudadera NASA",
+        nombre: "Explorar",
         tipo: "Sudadera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -541,7 +541,7 @@ const productos = [
     }, 
     {
         id: 55,
-        nombre: "Sudadera NASA",
+        nombre: "Viaje",
         tipo: "Sudadera",
         precio: 380,
         talla: ["G","M","S","XS"],
@@ -551,7 +551,7 @@ const productos = [
     }, 
     {
         id: 56,
-        nombre: "Sudadera Astronauta",
+        nombre: "Astronauta",
         tipo: "Sudadera",
         precio: 370,
         talla: ["G","M","S","XS"],
@@ -561,7 +561,7 @@ const productos = [
     }, 
     {
         id: 57,
-        nombre: "Sudadera 404",
+        nombre: " 404",
         tipo: "Sudadera",
         precio: 365,
         talla: ["G","M","S","XS"],
@@ -571,7 +571,7 @@ const productos = [
     }, 
     {
         id: 58,
-        nombre: "Sudadera Reloj",
+        nombre: "Reloj",
         tipo: "Sudadera",
         precio: 395,
         talla: ["G","M","S","XS"],
@@ -581,7 +581,7 @@ const productos = [
     }, 
     {
         id: 59,
-        nombre: "Sudadera NASA",
+        nombre: "Espacio",
         tipo: "Sudadera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -591,7 +591,7 @@ const productos = [
     }, 
     {
         id: 60,
-        nombre: "Sudadera NASA",
+        nombre: "Andromeda",
         tipo: "Sudadera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -601,7 +601,7 @@ const productos = [
     }, 
     {
         id: 61,
-        nombre: "Sudadera NASA",
+        nombre: "Galaxy",
         tipo: "Sudadera",
         precio: 380,
         talla: ["G","M","S","XS"],
@@ -611,7 +611,7 @@ const productos = [
     }, 
     {
         id: 62,
-        nombre: "Sudadera Astronauta",
+        nombre: "Astronauta",
         tipo: "Sudadera",
         precio: 370,
         talla: ["G","M","S","XS"],
@@ -621,7 +621,7 @@ const productos = [
     }, 
     {
         id: 63,
-        nombre: "Sudadera 404",
+        nombre: "404",
         tipo: "Sudadera",
         precio: 365,
         talla: ["G","M","S","XS"],
@@ -631,7 +631,7 @@ const productos = [
     }, 
     {
         id: 64,
-        nombre: "Sudadera Reloj",
+        nombre: "Reloj",
         tipo: "Sudadera",
         precio: 395,
         talla: ["G","M","S","XS"],
@@ -641,7 +641,7 @@ const productos = [
     }, 
     {
         id: 65,
-        nombre: "Sudadera NASA",
+        nombre: "NASA",
         tipo: "Sudadera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -651,7 +651,7 @@ const productos = [
     }, 
     {
         id: 66,
-        nombre: "Sudadera NASA",
+        nombre: "Andromeda",
         tipo: "Sudadera",
         precio: 330,
         talla: ["G","M","S","XS"],
@@ -661,7 +661,7 @@ const productos = [
     }, 
     {
         id: 67,
-        nombre: "Sudadera NASA",
+        nombre: "Virgo",
         tipo: "Sudadera",
         precio: 380,
         talla: ["G","M","S","XS"],
@@ -671,7 +671,7 @@ const productos = [
     }, 
     {
         id: 68,
-        nombre: "Sudadera Conquista",
+        nombre: " Conquista",
         tipo: "Sudadera",
         precio: 370,
         talla: ["G","M","S","XS"],
@@ -681,7 +681,7 @@ const productos = [
     }, 
     {
         id: 69,
-        nombre: "Sudadera 404",
+        nombre: " 404",
         tipo: "Sudadera",
         precio: 365,
         talla: ["G","M","S","XS"],
@@ -691,7 +691,7 @@ const productos = [
     }, 
     {
         id: 70,
-        nombre: "Sudadera Reloj",
+        nombre: "Reloj",
         tipo: "Sudadera",
         precio: 395,
         talla: ["G","M","S","XS"],
@@ -701,7 +701,7 @@ const productos = [
     }, 
     {
         id: 71,
-        nombre: "Sudadera NASA",
+        nombre: "Lilith",
         tipo: "Sudadera",
         precio: 290,
         talla: ["G","M","S","XS"],
@@ -711,7 +711,7 @@ const productos = [
     }, 
     {
         id: 72,
-        nombre: "Sudadera Explorer",
+        nombre: "Explorer",
         tipo: "Sudadera",
         precio: 330,
         talla: ["G","M","S","XS"],

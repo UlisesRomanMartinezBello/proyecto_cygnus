@@ -11,11 +11,47 @@ const expresiones = {
 
 loadDocument();
 
+const $formulario = document.getElementById('form_contacto');
+// console.log($formulario)
+
+$formulario.addEventListener('submit',(e)=> {
+    e.preventDefault();
+
+    const datos = Object.fromEntries(
+        new FormData(e.target)
+    )
+    console.log(datos);
+
+    $formulario.reset ();
+
+    // console.log(datos.codigoPostal);
+    fetch('http://localhost:8080/api/contacto',{
+        //tipo de dato que va a tener nuestra peticion
+        // los datos que vamos a enviar
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({
+            nombre_completo:datos.nombre,
+            correo:datos.email,
+            mensaje:datos.mensaje,
+        })
+    })
+    .then(responde => responde.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
+})
+
 function loadDocument() {
     inputNombre.addEventListener('blur', validarFormulario);
     inputEmail.addEventListener('blur', validarFormulario);
     txtArea.addEventListener('blur', validarFormulario);
-    formContacto.addEventListener('submit', capturarInformacion);
+    // formContacto.addEventListener('submit', capturarInformacion);
 }
 
 function validarFormulario(event) {
@@ -67,9 +103,9 @@ function capturarInformacion(event){
     if(nombre.length > 0 && email.length > 0 && mensaje.length > 0){
         event.target.classList.remove('border-danger');
         event.target.classList.add('border-success', 'border-3');
-        console.log(nombre);
-        console.log(email);
-        console.log(mensaje);
+        // console.log(nombre);
+        // console.log(email);
+        // console.log(mensaje);
         formContacto.reset();
     }else{
         event.target.classList.add('border-danger', 'border-3');

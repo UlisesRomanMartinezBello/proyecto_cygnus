@@ -71,17 +71,16 @@
               <h2 class="font-weight-bolder text-center">CONTACTO</h2>
               <div class="form-row pt-4">
                 <label for="nombre">Nombre Completo <span class="span">*</span></label>
-                <input type="text" class="form-control" id="input_nombre" name="nombre" placeholder="Ingresa tu nombre">
+                <input name="nombre" type="text" class="form-control" id="input_nombre" placeholder="Ingresa tu nombre" required>
               </div>
             </div>
             <div class="form-row pt-2">
               <label for="email">Email <span class="span">*</span></label>
-              <input type="email" class="form-control" id="input_email" name="email"
-                placeholder="Ingresa tu correo electrónico">
+              <input name="email" type="email" class="form-control" id="input_email" placeholder="Ingresa tu correo electrónico" required>
             </div>
             <div class="form-row pt-4">
               <label for="mensaje">Mensaje <span class="span">*</span></label>
-              <textarea class="form-control" rows="5" id="txt_area"></textarea>
+              <textarea name="mensaje" class="form-control" rows="5" id="txt_area"></textarea>
             </div>
 
             <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Enviar</button>
@@ -160,7 +159,7 @@
   <script src="../assets/js/calcularAlturaNav.js"></script>
   <script src="../assets/js/contacto.js"></script>
   <script src="../assets/api_new.js"></script>
-  <script src="../assets/js/buscador.js"></script>
+  <!-- <script src="../assets/js/buscador.js"></script> -->
 
 
 </body>

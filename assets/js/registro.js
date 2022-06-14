@@ -24,6 +24,43 @@ const expresiones = {
 
 loadDocument();
 
+const $formulario = document.getElementById('form-registrar');
+
+$formulario.addEventListener('submit',(e)=> {
+    e.preventDefault();
+
+    const datos = Object.fromEntries(
+        new FormData(e.target)
+    )
+
+    console.log(datos);
+
+    $formulario.reset ();
+
+    console.log(datos.codigoPostal);
+    fetch('http://localhost:8080/api/usuario',{
+        //tipo de dato que va a tener nuestra peticion
+        // los datos que vamos a enviar
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({
+                nombre:datos.nombre,
+                apellido:datos.apellido,
+                correo_electronico:datos.email,
+                password:datos.password,
+        })
+    })
+    .then(responde => responde.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
+})
+
 function loadDocument() {
     document.addEventListener('DOMContentLoaded', cambiarFormulario);
     inputNombre.addEventListener('blur', validarFormulario);
@@ -90,8 +127,8 @@ function validarFormulario(event) {
             }  
         }
 
-        console.log(inputPasswordConfirm.value);
-        console.log(inputPassword.value);
+        // console.log(inputPasswordConfirm.value);
+        // console.log(inputPassword.value);
         // imprimirInformacion();
     }
     //Verificar contraseñas iguales 

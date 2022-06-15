@@ -48,7 +48,7 @@ const productos = [
         color: "Azul",
         imagenes: ['HDA5-FR.png','HDA-DER.png','HDA-IZQ.png','HDA-ATR.png'],
         descripcion: 'Hoodie térmica con estampado de mandalorian , con bolsillo de canguro.',
-    },
+    },//aqui me quede
     {
         id: 6,
         nombre: "Hoodie Mandalorian y Grogu ",

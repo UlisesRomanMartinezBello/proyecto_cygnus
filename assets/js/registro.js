@@ -24,6 +24,8 @@ function loadDocument() {
     inputEmail.addEventListener('blur', validarFormulario);
     inputPassword.addEventListener('blur', validarFormulario);
     inputPasswordConfirm.addEventListener('blur', validarFormulario);
+    formRegistrar.addEventListener('submit', imprimirInformacion)
+    
 }
 
 function validarFormulario(event) {
@@ -84,7 +86,7 @@ function validarFormulario(event) {
 
         console.log(inputPasswordConfirm.value);
         console.log(inputPassword.value);
-        imprimirInformacion();
+        
     }
 
     //Verificar contraseñas iguales
@@ -123,11 +125,13 @@ function cambiarFormulario() {
     });
 }
 
-function imprimirInformacion(){
+function imprimirInformacion(event){
 	const nombre = inputNombre.value;
-	console.log("el nombre es "+ nombre);
+	console.log( nombre);
 	const email = inputEmail.value;
-	console.log("el email es "+ email);
-	const mensaje = txtArea.value;
-	alert("el mensaje es "+ mensaje);
+	console.log( email);
+	const contrasenia = inputPassword.value;
+    console.log(contrasenia);
+    const confirmcontrasenia = inputPasswordConfirm.value;
+    console.log(confirmcontrasenia);
 }

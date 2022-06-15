@@ -1,12 +1,16 @@
-#divBanner{
-    width: 100%;
+:root{
+    --alturaNav: 0px;
 }
 
-.imagenSlider{
-    height: 50vh; 
-    /* object-fit: cover; */
-    /* object-position: center;*/
+#divBanner{
+    width:100%;   
+    margin-bottom: 2rem;
 }
+
+.img-bannerindex{
+    height: calc(100vh - (var(--alturaNav)));
+}
+
 
 .img-carousel{
     width: 100%;
@@ -25,56 +29,22 @@ p{
     margin: 0;
 }
 
-@media screen and (min-width: 300px) and (max-width: 376px) {
-	.imagenSlider{
-        height: 20vh; 
-    }
-    #divBanner{
-        margin-bottom: 2rem;
+/* .videoIndex{
+    height: calc(100vh - (var(--alturaNav)));
+} */
+
+#fondoVideo{
+    background-color: black;
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px) {
+    .img-bannerindex{
+        height: calc(40vh - (var(--alturaNav)));
     }
 }
 
-@media screen and (min-width: 377px) and (max-width: 670px) {
-	.imagenSlider{
-        height: 25vh; 
-    }
-    #divBanner{
-        margin-bottom: 2rem;
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .img-bannerindex{
+        height: calc(50vh - (var(--alturaNav)));
     }
 }
-
-@media screen and (min-width: 671px) and (max-width: 800px) {
-	.imagenSlider{
-        height: 30vh; 
-    }
-    #divBanner{
-        margin-bottom: 2rem;
-    }
-}
-@media screen and (min-width: 801px) and (max-width: 1000px) {
-	.imagenSlider{
-        height: 35vh; 
-    }
-    #divBanner{
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1250px) {
-	.imagenSlider{
-        height: 40vh; 
-    }
-    #divBanner{
-        margin-bottom: 2rem;
-    }
-}
-@media screen and (min-width: 1250px) and (max-width: 2000px) {
-	.imagenSlider{
-        height: 45vh; 
-    }
-    #divBanner{
-        margin-bottom: 2rem;
-    }
-}
-
-

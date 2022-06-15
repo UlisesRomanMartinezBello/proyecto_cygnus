@@ -11,17 +11,17 @@ cargarEventos();
 
 function cargarEventos() {
     document.addEventListener('DOMContentLoaded', filtrarTipo);
-    document.addEventListener('DOMContentLoaded', mostrarBotonCarrito);
     document.addEventListener('DOMContentLoaded', mostrarTallaSeleccionada);
     document.addEventListener('DOMContentLoaded', mostrarColorSeleccionado);
     formularioFiltrado.addEventListener('submit', filtrarProductos);
     rangoPrecio.addEventListener('click', mostrarRangoPrecio);
+    document.addEventListener('DOMContentLoaded', mostrarBotonCarrito);
 }
 
 function mostrarProductos(productos) {
     productos.forEach(producto => {
         const columna = document.createElement('div');
-        columna.classList = 'col-sm-12 col-md-6 col-lg-4 pb-4';
+        columna.classList = 'col-sm-6 col-md-6 col-lg-4 pb-4 d-flex justify-content-center';
         columna.dataset.id = producto.id;
 
         const card = document.createElement('div');
@@ -44,18 +44,18 @@ function mostrarProductos(productos) {
         imgProducto.src = `../assets/img/img-producto/${producto.imagenes[0]}`;
 
         const cardBody = document.createElement('div');
-        cardBody.classList = 'card-body';
+        cardBody.classList = 'card-body h-100 d-block';
 
         const btnPrecio = document.createElement('button');
-        btnPrecio.classList = 'btn btn-principal';
+        btnPrecio.classList = 'btn btn-transparent btn-block';
         btnPrecio.textContent = `$${producto.precio}`;
 
-        const nombreProducto = document.createElement('h6');
-        nombreProducto.classList = 'pt-3';
+        const nombreProducto = document.createElement('p');
+        nombreProducto.classList = 'h5 text-center font-weight-bold d-block';
         nombreProducto.textContent = `${producto.nombre}`;
 
-        cardBody.appendChild(btnPrecio);
         cardBody.appendChild(nombreProducto);
+        cardBody.appendChild(btnPrecio);
         cardHeader.appendChild(iconoCorazon);
         cardHeader.appendChild(btnAgregarCarrito);
         cardHeader.appendChild(imgProducto);
@@ -64,6 +64,7 @@ function mostrarProductos(productos) {
         columna.appendChild(card);
         productosHTML.appendChild(columna);
     });
+    mostrarBotonCarrito();
 }
 
 function mostrarBotonCarrito() {
@@ -95,30 +96,34 @@ function filtrarTipo() {
         tipoProduto = tipoProduto.split('?')[1].split('=')[1];
     }
     switch (tipoProduto) {
-        case 'Playera':
+        case 'playera':
             const playeras = listaProductos.filter(playera => playera.tipo === 'playera' || playera.tipo === 'Playera');
             playeras.sort(() => Math.random() - 0.5);
             mostrarProductos(playeras);
+            mostrarColoresTipo(playeras);
             datosFiltro.tipo = 'Playera';
             break;
 
-        case 'Hoodie':
+        case 'hoodie':
             const hoodies = listaProductos.filter(playera => playera.tipo === 'hoodie' || playera.tipo === 'Hoodie');
             hoodies.sort(() => Math.random() - 0.5);
             mostrarProductos(hoodies);
+            mostrarColoresTipo(hoodies);
             datosFiltro.tipo = 'Hoodie';
             break;
 
-        case 'Sudadera':
+        case 'sudadera':
             const sudaderas = listaProductos.filter(playera => playera.tipo === 'sudadera' || playera.tipo === 'Sudadera');
             sudaderas.sort(() => Math.random() - 0.5);
             mostrarProductos(sudaderas);
+            mostrarColoresTipo(sudaderas);
             datosFiltro.tipo = 'Sudadera';
             break;
 
         default:
             listaProductos.sort(() => Math.random() - 0.5);
             mostrarProductos(listaProductos);
+            mostrarColoresTipo(productos);
             datosFiltro.tipo = '';
             break;
     }
@@ -151,73 +156,57 @@ function filtrarProductos(event) {
     // Resetar estilos al no encontrar productos
     productosHTML.classList.remove('flex-column', 'align-content-center');
 
-    // console.log(datosFiltro)
-
     let resultados = [...listaProductos];
 
     // Filtrar por tipo
-    if(datosFiltro.tipo != '') {
+    if (datosFiltro.tipo != '') {
         resultados = listaProductos.filter(producto => producto.tipo === datosFiltro.tipo);
     }
 
     // Filtrar por precio
     resultados = resultados.filter(producto => producto.precio <= datosFiltro.precio);
 
+    // Filtrar por color
+    let coloresFiltrados = new Set();
+
+    for (let i = 0; i < datosFiltro.color.length; i++) {
+        resultados.forEach(producto => {
+            if (producto.color === datosFiltro.color[i]) {
+                coloresFiltrados.add(producto);
+            }
+        });
+    }
+
+    if (coloresFiltrados.size > 0) {
+        resultados = [...coloresFiltrados];
+    }
+
     // Filtrar por talla
     let tallasFiltradas = new Set();
 
-    resultados.forEach(producto => {        
-        producto.talla.forEach(talla => {
-            if (datosFiltro.talla.includes(talla)) {
-                tallasFiltradas.add(producto);
-            }
+    for (let i = 0; i < datosFiltro.talla.length; i++) {
+        resultados.forEach(producto => {
+            producto.talla.forEach(talla => {
+                if (talla === datosFiltro.talla[i]) {
+                    tallasFiltradas.add(producto);
+                }
+            });
         });
-    });
+    }
 
-    tallasFiltradas.forEach(productoTalla => {
-        
-    });
+    if (tallasFiltradas.size > 0) {
+        resultados = [...tallasFiltradas];
+    }
 
-    console.log(resultados);
+    resultados = resultados.sort(() => Math.random() - 0.5);
 
-    /* resultados.forEach(producto => {
-        producto.talla.forEach(talla => {
-            console.log(talla)
-        })
-    }) */
-
-    /* resulados = resulados.filter(filtrarTalla);
-
-
-    function filtrarTalla() {
-
-    } */
-
-    /* if (resultados.length === 0) {
+    if (resultados.length === 0) {
         limpiarHTML();
         sinResultados();
-    }  else {
+    } else {
         limpiarHTML();
         mostrarProductos(resultados);
-    } */
-    
-    
-
-    /* checkBoxTalla.forEach(check => {
-        if (check.parentNode.classList.contains('active')) {
-            datosFiltro.talla.push(check.value);
-        }
-    }); */
-    // Selecciona el color
-
-    // Selecciona el precio
-    // datosFiltro.precio = parseInt(rangoPrecio.value);
-    
-
-    // Filtra el arreglo con los parametros del formulario
-    /* const resultadoBusqueda = listaProductos.filter(producto => producto.precio <= datosFiltro.precio).filter(producto => producto.tipo === datosFiltro.tipo);
-
-    console.log(resultadoBusqueda);  */
+    }
 }
 
 function mostrarRangoPrecio() {
@@ -244,7 +233,7 @@ function mostrarColorSeleccionado() {
                 check.parentNode.classList.remove('btn-color-seleccionado');
                 check.parentNode.classList.add('btn-color');
             } else {
-                check.parentNode.classList.add('btn-color-seleccionado');   
+                check.parentNode.classList.add('btn-color-seleccionado');
             }
         });
     });
@@ -269,4 +258,19 @@ function limpiarHTML() {
     while (productosHTML.firstChild) {
         productosHTML.removeChild(productosHTML.firstChild);
     }
+}
+
+function mostrarColoresTipo(tipoRopa) {
+    const coloresDisponibles = new Set();
+    tipoRopa.forEach(ropa => {
+        coloresDisponibles.add(ropa.color);
+    });
+
+    checkBoxColor.forEach(btnColor => {
+        coloresDisponibles.forEach(colorDisponible => {
+            if (btnColor.value === colorDisponible) {
+                btnColor.parentElement.classList.remove('d-none')
+            }
+        });
+    });
 }

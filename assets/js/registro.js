@@ -7,6 +7,13 @@ const inputPasswordConfirm = document.getElementById('input-password-confirm');
 const btnRegistrar = document.getElementById('btn-registrar');
 const btnIniciar = document.querySelector('#btn-iniciar');
 const formIniciar = document.querySelector('#form-iniciar');
+const botonFinalizar = document.getElementById('btn-finalizar');
+
+
+botonFinalizar.addEventListener("click",function(event){
+    // event.preventDefault();
+    // console.log(inputNombre.value)
+});
 
 const expresiones = {
     usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
@@ -17,6 +24,43 @@ const expresiones = {
 
 loadDocument();
 
+const $formulario = document.getElementById('form-registrar');
+
+$formulario.addEventListener('submit',(e)=> {
+    e.preventDefault();
+
+    const datos = Object.fromEntries(
+        new FormData(e.target)
+    )
+
+    console.log(datos);
+
+    $formulario.reset ();
+
+    console.log(datos.codigoPostal);
+    fetch('http://localhost:8080/api/usuario',{
+        //tipo de dato que va a tener nuestra peticion
+        // los datos que vamos a enviar
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify({
+                nombre:datos.nombre,
+                apellido:datos.apellido,
+                correo_electronico:datos.email,
+                password:datos.password,
+        })
+    })
+    .then(responde => responde.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.error(error);
+    })
+})
+
 function loadDocument() {
     document.addEventListener('DOMContentLoaded', cambiarFormulario);
     inputNombre.addEventListener('blur', validarFormulario);
@@ -24,13 +68,12 @@ function loadDocument() {
     inputEmail.addEventListener('blur', validarFormulario);
     inputPassword.addEventListener('blur', validarFormulario);
     inputPasswordConfirm.addEventListener('blur', validarFormulario);
-    formRegistrar.addEventListener('submit', imprimirInformacion)
-    
+    // botonFinalizar.addEventListener('clic',enviarFormulario);
 }
 
 function validarFormulario(event) {
     // Validando que los inputs no esten vacios
-    const bandera = true;
+    let bandera = true;
     if (event.target.value.length > 0) {
         event.target.classList.remove('border-danger');
         event.target.classList.add('border-success', 'border-3');
@@ -84,13 +127,11 @@ function validarFormulario(event) {
             }  
         }
 
-        console.log(inputPasswordConfirm.value);
-        console.log(inputPassword.value);
-        
+        // console.log(inputPasswordConfirm.value);
+        // console.log(inputPassword.value);
+        // imprimirInformacion();
     }
-
-    //Verificar contraseñas iguales
-    
+    //Verificar contraseñas iguales 
 }
 
 function mostrarError(mensaje, elementHTML) {
@@ -125,13 +166,5 @@ function cambiarFormulario() {
     });
 }
 
-function imprimirInformacion(event){
-	const nombre = inputNombre.value;
-	console.log( nombre);
-	const email = inputEmail.value;
-	console.log( email);
-	const contrasenia = inputPassword.value;
-    console.log(contrasenia);
-    const confirmcontrasenia = inputPasswordConfirm.value;
-    console.log(confirmcontrasenia);
-}
+
+	

@@ -34,12 +34,12 @@ function crearNav(){
             </div>
             <div class="divUser d-flex justify-content-end">
                 <div class="divIconoUser hiper">
-                    <a href="templates/formulario.html" class="text-light btnIcono">
+                    <a href="templates/login.html" class="text-light btnIcono">
                         <i class="uil uil-user"></i>
                     </a>
                 </div>
                 <div class="divIniciarSesion hiper">
-                    <a href="templates/formulario.html" class="text-light">
+                    <a href="templates/login.html" class="text-light">
                         <p class="textoRegistrate">Registrate</p>
                     </a>
                 </div>
@@ -82,18 +82,18 @@ function crearNav(){
     crearClase(divIniciarSesion,'divIniciarSesion');
     crearClase(divIniciarSesion,'hiper');
 
-    agregarAtributo(hiperIconoSesion,'href','formulario.html');
+    agregarAtributo(hiperIconoSesion,'href','login.html');
     crearClase(hiperIconoSesion,'text-light');
     crearClase(hiperIconoSesion,'btnIcono');
 
     crearClase(iconoSesion,'uil');
     crearClase(iconoSesion,'uil-user');
 
-    agregarAtributo(hiperIconoSesion,'href','formulario.html')
+    agregarAtributo(hiperIconoSesion,'href','login.html')
     crearClase(hiperIconoSesion,'text-light');
     crearClase(hiperIconoSesion,'btnIcono');
 
-    agregarAtributo(hiperTextoRegistrate,'href','formulario.html');
+    agregarAtributo(hiperTextoRegistrate,'href','login.html');
     crearClase(hiperTextoRegistrate,'text-light')
     crearClase(etiquetaTextoRegistrate,'textoRegistrate');
 
@@ -165,6 +165,9 @@ function crearNav(){
     let textoHiperSudadera = document.createTextNode("Sudaderas");
     let textoHiperHoodies = document.createTextNode("Hoodies");
     let textoHiperPlayeras = document.createTextNode("Playeras");
+    let textHiperSudadera = document.createTextNode("Sudaderas");
+    let textHiperHoodies = document.createTextNode("Hoodies");
+    let textHiperPlayeras = document.createTextNode("Playeras");
     let divInputBuscar = document.createElement('div');
     let divBtn = document.createElement('div');
     let buscar = document.createElement('div');
@@ -192,9 +195,9 @@ function crearNav(){
     heredar(divTexto,hiperSudaderas);
     heredar(divTexto,hiperHoodies);
     heredar(divTexto,hiperPlayeras);
-    heredar(hiperSudaderas,textoHiperSudadera);
-    heredar(hiperHoodies,textoHiperHoodies);
-    heredar(hiperPlayeras,textoHiperPlayeras);
+    heredar(hiperSudaderas,textHiperSudadera);
+    heredar(hiperHoodies,textHiperHoodies);
+    heredar(hiperPlayeras,textHiperPlayeras);
     heredar(divBotones,divInputBuscar);
     heredar(divBotones,divBtn);
     heredar(divInputBuscar,buscar);
@@ -241,11 +244,11 @@ function crearNav(){
     crearClase(divTexto,'divNav');
     agregarAtributo(divTexto,'id','divTexto');
     agregarAtributo(hiperSudaderas,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperSudaderas,'href','producto.html');
+    agregarAtributo(hiperSudaderas,'href','productos.html?tipo=sudadera');
     agregarAtributo(hiperHoodies,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperHoodies,'href','producto.html');
+    agregarAtributo(hiperHoodies,'href','productos.html?tipo=hoodie');
     agregarAtributo(hiperPlayeras,'class','nav-item nav-link textoNavBar linkHover');
-    agregarAtributo(hiperPlayeras,'href','producto.html');
+    agregarAtributo(hiperPlayeras,'href','productos.html?tipo=playera');
 
     crearClase(divBotones,'divNav');
     agregarAtributo(divBotones,'id','divBotones');
@@ -265,7 +268,7 @@ function crearNav(){
     agregarAtributo(divBtn,'class','d-flex divBtn justify-content-end');
     agregarAtributo(iconoCorazon,'class','uil uil-heart btnIconoCorazon');
     agregarAtributo(hiperCarrito,'href','carrito-compras.html');
-    agregarAtributo(hiperCarrito,'class','text-light btnIcono');
+    agregarAtributo(hiperCarrito,'class','text-light btnIcono icono-carrito');
     agregarAtributo(iconoCarrito,'class','uil uil-shopping-cart-alt');
     agregarAtributo(iconoCarrito,'id','btnCarrito');
 
@@ -275,9 +278,9 @@ function crearNav(){
     agregarAtributo(hiperSudaderasColapsado,'class','nav-item nav-link textoNavBar');
     agregarAtributo(hiperHoodiesColapsado,'class','nav-item nav-link textoNavBar');
     agregarAtributo(hiperPlayerasColapsado,'class','nav-item nav-link textoNavBar');
-    agregarAtributo(hiperSudaderasColapsado,'href','producto.html');
-    agregarAtributo(hiperHoodiesColapsado,'href','producto.html');
-    agregarAtributo(hiperPlayerasColapsado,'href','producto.html');
+    agregarAtributo(hiperSudaderasColapsado,'href','productos.html?tipo=sudadera');
+    agregarAtributo(hiperHoodiesColapsado,'href','productos.html?tipo=hoodie');
+    agregarAtributo(hiperPlayerasColapsado,'href','productos.html?tipo=playera');
 
     // console.log(divContainer);
     

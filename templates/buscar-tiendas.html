@@ -12,74 +12,26 @@
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../assets/css/buscar-tiendas.css">
-  <title>Proyecto Cygnus</title>
+  <link rel="stylesheet" href="../assets/css/buscador.css">
+  <link rel="icon" href="../assets/img/logo-white.png">
+  <title>Proyecto Cygnus - Buscar tiendas</title>
 </head>
 
 <body>
-  <header
+  <header>
+    <div class="bg-principal" id="divNavSuperior">
 
-    <div class="bg-principal">
-      <div class="container divContainer" id="navLogoUser">
-        <div class="divLogo">
-          <a href="../index.html" class="text-light "><img class="imgNav" src="../assets/img/logo-white.png"></a>
-        </div>
-        <div class="divUser d-flex justify-content-end">
-          <div class="divIconoUser hiper">
-            <a href="formulario.html" class="text-light btnIcono"><i class="uil uil-user"></i></a>
-          </div>
-          <div class="divIniciarSesion hiper">
-            <a href="formulario.html" class="text-light">
-              <p class="textoRegistrate">Registrate</p>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="bg-principal">
-      <div class="container divContainer" id="nav">
-        <nav class="navbar navbar-dark" id="navbarP">
-          <div class="divNav" id="divProyecto">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="iconoToggler">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand TituloProyecto textoNavBar" href="#">Proyecto Cygnus</a>
-          </div>
+    <div class="bg-principal" id="divNavInferior">
 
-          <div class="divNav hiper" id="divTexto">
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Chamarras</a>
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Hoodie</a>
-            <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Playeras</a>
-          </div>
+    </div>
 
-          <div class="divNav" id="divBotones">
-            <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
-              <div class="input-group-prepend buscar">
-                <span class="input-group-text barraBuscar" id="inputGroup-sizing-sm"><i
-                    class="uil uil-search"></i></span>
-              </div>
-              <input type="text" class="form-control barraBuscar" id="barraBuscarCursor" aria-label="Small"
-                aria-describedby="inputGroup-sizing-sm" placeholder="Buscar...">
-            </div>
-            <!-- btnIcono -->
-            <div class="d-flex divBtn justify-content-end hiper">
-              <a href="producto-Individual.html" class="text-light btnIcono"><i
-                  class="uil uil-heart btnIconoCorazon"></i></a>
-              <a href="carrito-compras.html" class="text-light btnIcono" id="btnCarrito"><i
-                  class="uil uil-shopping-cart-alt"></i></a>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-sm-12 col-md-6" id="resultados-busqueda">
 
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav hiper">
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Chamarras</a>
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Hoddie</a>
-              <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Playeras</a>
-            </div>
-          </div>
-
-        </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -89,43 +41,48 @@
     <div class="container mt-5">
       <div class="row">
 
-        <div class="col-sm-12 col-md-9" id="divFrameMapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.8192494651989!2d-99.14003003612243!3d19.433867204492287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92cbbfc35c3%3A0xaed19a7c62145fe2!2sBarojas%20Reyes%20Efrain!5e0!3m2!1ses-419!2smx!4v1653782286048!5m2!1ses-419!2smx" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="col-sm-12 col-md-9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.8192494651989!2d-99.14003003612243!3d19.433867204492287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92cbbfc35c3%3A0xaed19a7c62145fe2!2sBarojas%20Reyes%20Efrain!5e0!3m2!1ses-419!2smx!4v1653782286048!5m2!1ses-419!2smx"
+            width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
         </div>
 
         <div class="col-sm-12 col-md-3">
-          
-          <h5 class="card-title" >Encuentra una tienda</h5>
-                    
-            
-              <div class="card">
-                <div class="card-body pb-2">
-                  <h5 class="card-title">Cygnus Store</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Av Francisco I. Madero 16, CenHistórico de Cdad. de México, Centro, Cuauhtémoc, 06000 Centro, CDMX</h6>
-                </div>
-              </div>
-            
 
-            
-              <div class="card">
-                <div class="card-body pb-2">
-                  <h5 class="card-title">Cygnus Store</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Av Francisco I. Madero 16, CenHistórico de Cdad. de México, Centro, Cuauhtémoc, 06000 Centro, CDMX</h6>
-                </div>
-              </div>
-            
+          <h5 class="card-title">Encuentra una tienda</h5>
 
-            
-              <div class="card">
-                <div class="card-body pb-2">
-                  <h5 class="card-title">Cygnus Store</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Av Francisco I. Madero 16, CenHistórico de Cdad. de México, Centro, Cuauhtémoc, 06000 Centro, CDMX</h6>
-                </div>
-              </div>
-            
+
+          <div class="card tienda"
+            data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.508611147081!2d-99.13946988578154!3d19.43362624568519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92ccfd5df5b%3A0xe9b6e141fc8e036b!2sAv%20Francisco%20I.%20Madero%2C%20Centro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1654211275583!5m2!1ses-419!2smx">
+            <div class="card-body pb-2">
+              <h5 class="card-title">Cygnus Store</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Av Francisco I. Madero 16, CenHistórico de Cdad. de México,
+                Centro, Cuauhtémoc, 06000 Centro, CDMX</h6>
+            </div>
+          </div>
+
+          <div class="card tienda"
+            data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1365681781135!2d-99.15381788578132!3d19.4496778451758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8dbc7f643f7%3A0x1d9b7ca35f8b46c6!2sF%C3%B3rum%20Buenavista!5e0!3m2!1ses-419!2smx!4v1654211347467!5m2!1ses-419!2smx">
+            <div class="card-body pb-2">
+              <h5 class="card-title">Cygnus Store</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Fórum Buenavista, Eje 1 Nte. 259, Buenavista, Cuauhtémoc, 06350
+                Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+
+          <div class="card tienda"
+            data-mapa="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101251.18736979579!2d-99.1969926018795!3d19.42235135888941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d03a3d2ccf92f3b!2sParque%20Delta!5e0!3m2!1ses-419!2smx!4v1654211496449!5m2!1ses-419!2smx">
+            <div class="card-body pb-2">
+              <h5 class="card-title">Cygnus Store</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Parque Delta, Av. Cuauhtémoc 462, Piedad Narvarte, Benito
+                Juárez, 03000 Ciudad de México, CDMX</h6>
+            </div>
+          </div>
+
 
         </div>
-        
+
       </div>
     </div>
 
@@ -140,10 +97,16 @@
             <li class="pb-4">55 1234 5678</li>
             <li class="pb-4">Síguenos</li>
           </ul>
-          <div class="">
-            <i class="fa-brands fa-facebook-square h1 mx-2"></i>
-            <i class="fa-brands fa-twitter-square h1 mx-2"></i>
-            <i class="fa-brands fa-instagram h1 mx-2"></i>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100081594083664">
+              <i class="fa-brands fa-facebook-square h1 mx-2 text-light"></i>
+            </a>
+            <a href="https://twitter.com/proyecto_cygnus">
+              <i class="fa-brands fa-twitter-square h1 mx-2 text-light"></i>
+            </a>
+            <a href="https://www.instagram.com/proyecto_cygnus/">
+              <i class="fa-brands fa-instagram h1 mx-2 text-light"></i>
+            </a>
           </div>
         </div>
 
@@ -153,9 +116,15 @@
             <a href="contacto.html" class="text-light">
               <li class="pb-4">Contacto</li>
             </a>
-            <li class="pb-4">¿Cómo comprar?</li>
-            <li class="pb-4">Envios y devoluciones</li>
-            <li class="pb-4">Garantias</li>
+            <a href="como-comprar.html" class="text-light">
+              <li class="pb-4">¿Cómo comprar?</li>
+            </a>
+            <a href="envios-devoluciones.html" class="text-light">
+              <li class="pb-4">Envios y devoluciones</li>
+            </a>
+            <a href="garantias.html" class="text-light">
+              <li class="pb-4">Garantias</li>
+            </a>
           </ul>
         </div>
 
@@ -165,7 +134,9 @@
             <a href="sobre-nosotros.html" class="text-light">
               <li class="pb-4">Nosotros</li>
             </a>
-            <li class="pb-4">Buscar Tiendas</li>
+            <a href="buscar-tiendas.html" class="text-light">
+              <li class="pb-4">Buscar Tiendas</li>
+            </a>
           </ul>
         </div>
 
@@ -182,8 +153,11 @@
 
   <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
 
+  <script src="../assets/js/crearNavFooterTemplates.js"></script>
   <script src="../assets/js/calcularAlturaNav.js"></script>
   <script src="../assets/js/modificarFrameMapa.js"></script>
+  <script src="../assets/api_new.js"></script>
+  <script src="../assets/js/buscador.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,10 @@
     color: #fff;
 }
 
+.btn-cantidad:hover {
+    background-color: #f8f9fa;
+}
+
 /* Text */
 .text-principal {
     color: #4B3869;

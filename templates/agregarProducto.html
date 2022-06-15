@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/agregarProductos.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="../assets/img/logo-white.png">
   <title>Proyecto Cygnus - Productos</title>
 
@@ -35,7 +36,45 @@
     </div>
   </header>
   <main>
+      <div class="container pt-4 d-flex justify-content-center">
+        <form id="Formulario" >
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nombre</label>
+              <input name="nombre" type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe el nombre del producto" required>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Talla</label>
+              <input name="talla" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe la talla del producto" required>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Descripción</label>
+                <input name="descripcion" type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe la descripción del producto" required>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Categoria</label>
+                <input name="categoria" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe la categoria del producto" required>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Color</label>
+                <input name="color" type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe el color del producto" required>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Precio</label>
+                <input name="precio" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe el precio del producto" required>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Costo</label>
+                <input name="costo" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe el costo del producto" required>
+              
+              </div>
 
+              <div class="pt-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-primary">Enviar</button>
+
+              </div>
+
+          </form>
+      </div>
 
 
   </main>

@@ -73,8 +73,10 @@ function limpiarResultadosBusqueda() {
 
 function numeroProductosCarrito() {
     let numeroProductos = JSON.parse(localStorage.getItem('carrito'));
-    const badgeProductos = document.createElement('span');
-    badgeProductos.textContent = numeroProductos.length;
-    badgeProductos.classList = 'badge badge-light rounded-circle position-absolute small';
-    document.querySelector('.icono-carrito').appendChild(badgeProductos);
+    if (numeroProductos != null) {
+        const badgeProductos = document.createElement('span');
+        badgeProductos.textContent = numeroProductos.length;
+        badgeProductos.classList = 'badge badge-light rounded-circle position-absolute small';
+        document.querySelector('.icono-carrito').appendChild(badgeProductos);   
+    }
 }

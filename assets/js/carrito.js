@@ -22,7 +22,7 @@ function mostrarProductos() {
     if (numeroProductos === null) {
         document.getElementById('table-carrito').remove();
         const divCarritoVacio = document.createElement('div');
-        divCarritoVacio.classList = 'd-flex flex-column align-items-center h3';
+        divCarritoVacio.classList = 'd-flex flex-column align-items-center h3 pt-5';
         divCarritoVacio.textContent = 'No hay productos en el carrito';
 
         const imagenCarritoVacio = document.createElement('img');
@@ -70,9 +70,14 @@ function mostrarProductos() {
 
 function calcularTotal() {
     let numeroProductos = JSON.parse(localStorage.getItem('carrito'));
-    const preciosProductos = numeroProductos.map(producto => producto.precio);
-    const total = preciosProductos.reduce((a, b) => a + b);
-    totalProductos.textContent = `$MXN ${total}`;
+
+    if (numeroProductos != null) {
+        const preciosProductos = numeroProductos.map(producto => producto.precio);
+        const total = preciosProductos.reduce((a, b) => a + b);
+        totalProductos.textContent = `$MXN ${total}`;
+    } else {
+        console.log('carrito vacio');
+    }
 }
 
 function aumentarProducto() {

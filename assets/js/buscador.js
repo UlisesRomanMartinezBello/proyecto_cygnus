@@ -35,8 +35,9 @@ function buscarProductos(event) {
             const colorProducto = productos[i].color;
             const idProducto = productos[i].id;
             const imagenProducto = productos[i].imagenes[0];
+            const tipoProducto = productos[i].tipo;
             if (nombreProducto.includes(textoBusqueda)) {
-                productosSeleccionados.push({ id: idProducto, nombre: nombreProducto, color: colorProducto, imagen: imagenProducto });
+                productosSeleccionados.push({ id: idProducto, nombre: nombreProducto, color: colorProducto, imagen: imagenProducto, tipo: tipoProducto });
             }
         }
 
@@ -45,7 +46,7 @@ function buscarProductos(event) {
         productosMostrados.forEach(producto => {
             const enlaceProducto = document.createElement('a');
             enlaceProducto.href = `${urlProducto}?id=${producto.id}`;
-            enlaceProducto.textContent = producto.nombre;
+            enlaceProducto.textContent = `${producto.nombre}`;
             enlaceProducto.classList = 'd-flex text-dark py-3 flex-row-reverse justify-content-center option-search align-items-center';
 
             const imagenProducto = document.createElement('img');

@@ -69,10 +69,10 @@ function mostrarProductos() {
 }
 
 function calcularTotal() {
-    /*  // Este arreglo debe ser llamado del localStorage
-     const preciosProductos = carrito.map(producto => producto.precio);
-     const total = preciosProductos.reduce((a, b) => a + b);
-     totalProductos.textContent = `$MXN ${total}`; */
+    let numeroProductos = JSON.parse(localStorage.getItem('carrito'));
+    const preciosProductos = numeroProductos.map(producto => producto.precio);
+    const total = preciosProductos.reduce((a, b) => a + b);
+    totalProductos.textContent = `$MXN ${total}`;
 }
 
 function aumentarProducto() {

@@ -76,7 +76,24 @@ function calcularTotal() {
         const total = preciosProductos.reduce((a, b) => a + b);
         totalProductos.textContent = `$MXN ${total}`;
     } else {
-        console.log('carrito vacio');
+
+        const contenedorTotal = document.getElementById('contenedor-total');
+        contenedorTotal.children[0].remove();
+
+        const cardComprarProductos = document.createElement('div');
+        cardComprarProductos.classList = 'card p-4 p-lg-5 card-radius height-auto';
+        const tituloComprarProductos = document.createElement('h2');
+        tituloComprarProductos.classList = 'font-weight-bold text-center h5';
+        tituloComprarProductos.textContent = 'Agrega productos al carrito';
+
+        const btnComprarProductos = document.createElement('a');
+        btnComprarProductos.href = 'productos.html';
+        btnComprarProductos.classList = 'btn btn-principal btn-block';
+        btnComprarProductos.textContent = 'Ver productos';
+        
+        cardComprarProductos.appendChild(tituloComprarProductos);
+        cardComprarProductos.appendChild(btnComprarProductos);
+        contenedorTotal.appendChild(cardComprarProductos);
     }
 }
 

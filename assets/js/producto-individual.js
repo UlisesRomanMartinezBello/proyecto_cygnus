@@ -63,7 +63,7 @@ function mostrarImagenPrincipal(idProducto) {
 }
 
 function mostrarInformacion(idProducto) {
-    productoTitulo.textContent = idProducto.nombre;
+    productoTitulo.textContent = `${idProducto.tipo} ${idProducto.nombre}`;
     productoPrecio.textContent = `$MXN ${idProducto.precio}`;
     productoDescripcion.textContent = idProducto.descripcion;
 

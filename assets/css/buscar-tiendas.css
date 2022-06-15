@@ -5,5 +5,8 @@
 .card:hover{
     border: 2px solid #1A132F;
     font-size: 1.05rem;
-    cursor: pointer;
 }
+
+/* .card .card-body .card-subtitle:hover{
+    
+} */

@@ -1,9 +1,11 @@
-.importante {
-  background-color: #4B3869;
-  color: white;
+*{
+    text-align: center;
 }
 
-.note {
-  background-color: #4B3869;
-  color: white;
+.importante{
+    background-color: rgb(222, 192, 24);
+}
+
+.note{
+    background-color: chartreuse;
 }

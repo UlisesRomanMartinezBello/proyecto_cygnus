@@ -1,7 +1,3 @@
-body {
-  background-color: white;
-}
-
 .titulo {
   font-family: "Sigmar One", cursive;
 }
@@ -21,67 +17,6 @@ body {
 }
 
 .efecto:hover {
-  background-color: #4b3869;
-  color: white;
-}
-
-/* #imagen-principal{
-  border: 1px solid white;
-  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
-  border-width: 0.15rem;
-}
-
-#imagen-principal:hover{
-  border: 1px solid white;
-  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
-  border-width: 0.35rem;
-} */
-
-.img-fluid {
-  border: 1px solid white;
-  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
-  border-width: 0.15rem;
-  /* height: 100%; */
-  margin-bottom: 1rem;
-}
-
-.img-fluid:hover {
-  border: 1px solid white;
-  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
-  border-width: 0.25rem;
-}
-
-/* #imagen-principal .img-fluid{
-    border: none;
-    margin: 0;
-} */
-
-/* #imagen-principal{
-  border: 1px solid white;
-  border-image: linear-gradient(to right, #3acfd5, #3a4ed5) 1;
-  border-width: 0.15rem;
-} */
-
-#imagenes-productos {
-  /* height: 100%; */
-  /* display: flex;
-  justify-content: center; */
-}
-
-#divImgChicas {
-  height: 100%;
-}
-
-.btn-talla {
-  border: 2px solid black;
-}
-
-.btn-talla:hover {
-  background-color: #4b3869;
-  color: white;
-}
-
-.btn-talla-seleccionada {
   background-color: #4b3869;
   color: white;
 }

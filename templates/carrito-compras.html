@@ -2,160 +2,288 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
-    rel="stylesheet">
-  <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../assets/css/carrito.css">
-  <link rel="stylesheet" href="../assets/css/buscador.css">
-  <link rel="icon" href="../assets/img/logo-white.png">
-  <title>Proyecto Cygnus - Carrito de Compras</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
+        rel="stylesheet">
+    <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../assets/css/carrito.css">
+    <title>Proyecto Cygnus</title>
 </head>
 
 <body>
 
-  <header>
-    <div class="bg-principal" id="divNavSuperior">
+    <header>
 
-    </div>
-
-    <div class="bg-principal" id="divNavInferior">
-
-    </div>
-    <div class="container">
-      <div class="row justify-content-end">
-        <div class="col-sm-12 col-md-6" id="resultados-busqueda">
-
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-sm-12 col-md-7 col-lg-8" id="tabla-carrito">
-        <div class="table-responsive-sm">
-          <table class="table table-borderless" id="table-carrito">
-            <thead class="border-table text-uppercase">
-              <tr>
-                <th scope="col">Producto</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Total</th>
-              </tr>
-            </thead>
-            <tbody id="lista-productos">
-
-            </tbody>
-          </table>
-          <div id="carrito-vacio"></div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-5 col-lg-4">
-        <div class="pb-4 pt-5">
-          <div class="card p-4 p-lg-5 card-radius height-auto">
-            <h2 class="font-weight-bold text-center h5">Resumen del pédido</h2>
-            <div class="d-flex flex-md-column justify-content-between align-items-baseline font-weight-bold py-3">
-              <p class="h2">TOTAL:</p>
-              <p class="h4 font-weight-bold" id="total"></p>
+        <div class="bg-principal">
+            <div class="container divContainer" id="navLogoUser">
+                <div class="divLogo">
+                    <a href="../index.html" class="text-light "><img class="imgNav"
+                            src="../assets/img/logo-white.png"></a>
+                </div>
+                <div class="divUser d-flex justify-content-end">
+                    <div class="divIconoUser hiper">
+                        <a href="formulario.html" class="text-light btnIcono"><i class="uil uil-user"></i></a>
+                    </div>
+                    <div class="divIniciarSesion hiper">
+                        <a href="formulario.html" class="text-light">
+                            <p class="textoRegistrate">Registrate</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-principal btn-lg" id="btnPagar">
-              PAGAR
-            </button>
-            <p class="pt-3">Obten más información sobre códigos de descuento.</p>
-
-          </div>
         </div>
 
-        <div class="card p-4 p-lg-5 card-radius height-auto">
-          <h2 class="font-weight-bold text-center h5">Aceptamos</h2>
-          <div class="d-flex justify-content-between pt-2">
-            <i class="fa-brands fa-cc-visa h1"></i>
-            <i class="fa-brands fa-cc-paypal h1"></i>
-            <i class="fa-brands fa-cc-mastercard h1"></i>
-            <i class="fa-brands fa-cc-amex h1"></i>
-          </div>
+        <div class="bg-principal">
+            <div class="container divContainer" id="nav">
+                <nav class="navbar navbar-dark" id="navbarP">
+                    <div class="divNav" id="divProyecto">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation" id="iconoToggler">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand TituloProyecto textoNavBar" href="#">Proyecto Cygnus</a>
+                    </div>
+
+                    <div class="divNav hiper" id="divTexto">
+                        <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Chamarras</a>
+                        <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Hoodie</a>
+                        <a class="nav-item nav-link textoNavBar linkHover" href="producto.html">Playeras</a>
+                    </div>
+
+                    <div class="divNav" id="divBotones">
+                        <div class="input-group input-group-sm d-flex align-items-center divInputBuscar">
+                            <div class="input-group-prepend buscar">
+                                <span class="input-group-text barraBuscar" id="inputGroup-sizing-sm"><i
+                                        class="uil uil-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control barraBuscar" id="barraBuscarCursor"
+                                aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Buscar...">
+                        </div>
+                        <!-- btnIcono -->
+                        <div class="d-flex divBtn justify-content-end hiper">
+                            <a href="producto-Individual.html" class="text-light btnIcono"><i
+                                    class="uil uil-heart btnIconoCorazon"></i></a>
+                            <a href="carrito-compras.html" class="text-light btnIcono" id="btnCarrito"><i
+                                    class="uil uil-shopping-cart-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav hiper">
+                            <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Chamarras</a>
+                            <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Hoddie</a>
+                            <a class="nav-item nav-link textoNavBar" href="templates/producto.html">Playeras</a>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-8">
+                <div class="table-responsive-sm">
+                    <table class="table table-borderless">
+                        <thead class="border-table text-uppercase">
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="../assets/img/individualProducto/playera1.jpg"
+                                                class="img-fluid img-carrito d-none d-sm-block">
+                                        </div>
+                                        <div class="px-3">
+                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
+                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
+                                            <strike class="small">$MXN 699.99</strike>
+                                            <button type="button"
+                                                class="d-block bg-transparent btn-talla my-2">CH</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-light border">-</button>
+                                        <button type="button" class="btn btn-light border">1</button>
+                                        <button type="button" class="btn btn-light border">+</button>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">$MXN 666.66</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="../assets/img/individualProducto/playera1.jpg"
+                                                class="img-fluid img-carrito d-none d-sm-block">
+                                        </div>
+                                        <div class="px-3">
+                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
+                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
+                                            <strike class="small">$MXN 699.99</strike>
+                                            <button type="button"
+                                                class="d-block bg-transparent btn-talla my-2">CH</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-light border">-</button>
+                                        <button type="button" class="btn btn-light border">1</button>
+                                        <button type="button" class="btn btn-light border">+</button>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">$MXN 666.66</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="../assets/img/individualProducto/playera1.jpg"
+                                                class="img-fluid img-carrito d-none d-sm-block">
+                                        </div>
+                                        <div class="px-3">
+                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
+                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
+                                            <strike class="small">$MXN 699.99</strike>
+                                            <button type="button"
+                                                class="d-block bg-transparent btn-talla my-2">CH</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-light border">-</button>
+                                        <button type="button" class="btn btn-light border">1</button>
+                                        <button type="button" class="btn btn-light border">+</button>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">$MXN 666.66</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="../assets/img/individualProducto/playera1.jpg"
+                                                class="img-fluid img-carrito d-none d-sm-block">
+                                        </div>
+                                        <div class="px-3">
+                                            <h6 class="font-weight-bold">NOMBRE DEL PRODUCTO</h6>
+                                            <p class="text-principal font-weight-bold">$MXN 666.66</p>
+                                            <strike class="small">$MXN 699.99</strike>
+                                            <button type="button"
+                                                class="d-block bg-transparent btn-talla my-2">CH</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="btn-group rounded" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-light border">-</button>
+                                        <button type="button" class="btn btn-light border">1</button>
+                                        <button type="button" class="btn btn-light border">+</button>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">$MXN 666.66</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-4">
+                <div class="pb-4 pt-5">
+                    <div class="card p-4 p-lg-5 card-radius height-auto">
+                        <h2 class="font-weight-bold text-center h5">Resumen del pédido</h2>
+                        <div
+                            class="d-flex flex-md-column justify-content-between align-items-baseline font-weight-bold py-3">
+                            <p class="h2">TOTAL:</p>
+                            <p class="h4 font-weight-bold">$MXN 666.66</p>
+                        </div>
+                        <button class="btn btn-principal btn-lg">PAGAR</button>
+                        <p class="pt-3">Obten más información sobre códigos de descuento.</p>
+                    </div>
+                </div>
+
+                <div class="card p-4 p-lg-5 card-radius height-auto">
+                    <h2 class="font-weight-bold text-center h5">Aceptamos</h2>
+                    <div class="d-flex justify-content-between pt-2">
+                        <i class="fa-brands fa-cc-visa h1"></i>
+                        <i class="fa-brands fa-cc-paypal h1"></i>
+                        <i class="fa-brands fa-cc-mastercard h1"></i>
+                        <i class="fa-brands fa-cc-amex h1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
 
-  <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">
-    <div class="container text-center text-md-left">
-      <div class="row">
-        <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
-          <h4 class="font-weight-bold">Contáctanos</h4>
-          <ul class="lista pt-4 font-weight-light">
-            <li class="pb-4">55 1234 5678</li>
-            <li class="pb-4">Síguenos</li>
-          </ul>
-          <div>
-            <a href="https://www.facebook.com/profile.php?id=100081594083664">
-              <i class="fa-brands fa-facebook-square h1 mx-2 text-light"></i>
-            </a>
-            <a href="https://twitter.com/proyecto_cygnus">
-              <i class="fa-brands fa-twitter-square h1 mx-2 text-light"></i>
-            </a>
-            <a href="https://www.instagram.com/proyecto_cygnus/">
-              <i class="fa-brands fa-instagram h1 mx-2 text-light"></i>
-            </a>
-          </div>
+    <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+                    <h4 class="font-weight-bold">Contáctanos</h4>
+                    <ul class="lista pt-4 font-weight-light">
+                        <li class="pb-4">55 1234 5678</li>
+                        <li class="pb-4">Síguenos</li>
+                    </ul>
+                    <div class="">
+                        <i class="fa-brands fa-facebook-square h1 mx-2"></i>
+                        <i class="fa-brands fa-twitter-square h1 mx-2"></i>
+                        <i class="fa-brands fa-instagram h1 mx-2"></i>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+                    <h4 class="font-weight-bold">Ayuda</h4>
+                    <ul class="lista pt-4 font-weight-light hiper">
+                        <a href="contacto.html" class="text-light">
+                            <li class="pb-4">Contacto</li>
+                        </a>
+                        <li class="pb-4">¿Cómo comprar?</li>
+                        <li class="pb-4">Envios y devoluciones</li>
+                        <li class="pb-4">Garantias</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <h4 class="font-weight-bold">Sobre Nosotros</h4>
+                    <ul class="lista pt-4 font-weight-light hiper">
+                        <a href="sobre-nosotros.html" class="text-light">
+                            <li class="pb-4">Nosotros</li>
+                        </a>
+                        <li class="pb-4">Buscar Tiendas</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+    </footer>
 
-        <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
-          <h4 class="font-weight-bold">Ayuda</h4>
-          <ul class="lista pt-4 font-weight-light hiper">
-            <a href="contacto.html" class="text-light">
-              <li class="pb-4">Contacto</li>
-            </a>
-            <a href="como-comprar.html" class="text-light">
-              <li class="pb-4">¿Cómo comprar?</li>
-            </a>
-            <a href="envios-devoluciones.html" class="text-light">
-              <li class="pb-4">Envios y devoluciones</li>
-            </a>
-            <a href="garantias.html" class="text-light">
-              <li class="pb-4">Garantias</li>
-            </a>
-          </ul>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 
-        <div class="col-sm-12 col-md-4">
-          <h4 class="font-weight-bold">Sobre Nosotros</h4>
-          <ul class="lista pt-4 font-weight-light hiper">
-            <a href="sobre-nosotros.html" class="text-light">
-              <li class="pb-4">Nosotros</li>
-            </a>
-            <a href="buscar-tiendas.html" class="text-light">
-              <li class="pb-4">Buscar Tiendas</li>
-            </a>
-          </ul>
-        </div>
+    <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
 
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-    crossorigin="anonymous"></script>
-
-  <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
-
-  <script src="../assets/api_new.js"></script>
-  <script src="../assets/js/carrito.js"></script>
-  <script src="../assets/js/crearNavFooterTemplates.js"></script>
-  <script src="../assets/js/calcularAlturaNav.js"></script>
-  <script src="../assets/js/buscador.js"></script>
+    <script src="../assets/js/calcularAlturaNav.js"></script>
 
 </body>
 

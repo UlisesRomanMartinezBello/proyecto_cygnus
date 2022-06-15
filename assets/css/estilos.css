@@ -1,13 +1,12 @@
 :root{
     --altura: 0px;
-    --alturaNav: 0px;
 }
 
 body {
     background: #EDE6DB;
-    /* background: white; */
     font-family: 'Poppins', sans-serif;
 }
+
 .textoNavBar{
     color: #ffffff;
 }
@@ -177,9 +176,6 @@ body {
 #divBuscar:active{
     border: 1px solid black;
 }
-
-
-
 
 @media screen and (max-width: 992px){
     #nav{

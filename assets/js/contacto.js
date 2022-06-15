@@ -1,61 +1,24 @@
 const inputNombre = document.getElementById("input_nombre");
 const inputEmail = document.getElementById("input_email");
 const txtArea = document.getElementById("txt_area");
-const formContacto = document.querySelector("form");
+const btnRegistrar = document.getElementById("btn_enviar")
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/ 
 }
 
-
 loadDocument();
-
-const $formulario = document.getElementById('form_contacto');
-// console.log($formulario)
-
-$formulario.addEventListener('submit',(e)=> {
-    e.preventDefault();
-
-    const datos = Object.fromEntries(
-        new FormData(e.target)
-    )
-    console.log(datos);
-
-    $formulario.reset ();
-
-    // console.log(datos.codigoPostal);
-    fetch('http://localhost:8080/api/contacto',{
-        //tipo de dato que va a tener nuestra peticion
-        // los datos que vamos a enviar
-        method:'POST',
-        headers:{
-            'Content-Type': 'application/json'
-        },
-        body:JSON.stringify({
-            nombre_completo:datos.nombre,
-            correo:datos.email,
-            mensaje:datos.mensaje,
-        })
-    })
-    .then(responde => responde.json())
-    .then(data => {
-        console.log(data);
-    })
-    .catch((error) => {
-        console.error(error);
-    })
-})
 
 function loadDocument() {
     inputNombre.addEventListener('blur', validarFormulario);
     inputEmail.addEventListener('blur', validarFormulario);
     txtArea.addEventListener('blur', validarFormulario);
-    // formContacto.addEventListener('submit', capturarInformacion);
+    btnRegistrar.addEventListener('click', capturarInformacion);
 }
 
 function validarFormulario(event) {
-  
+	
     // Validando que los campos no esten vacios
     const bandera = true;
     if (event.target.value.length > 0 ) {
@@ -95,23 +58,13 @@ function mostrarError(mensaje, elementHTML) {
         elementHTML.removeChild(mensajeError);
     }, 2000);
 }
-function capturarInformacion(event){
-    event.preventDefault();
+function capturarInformacion(){
 	const nombre = inputNombre.value;
-    const email = inputEmail.value;
-    const mensaje = txtArea.value;
-    if(nombre.length > 0 && email.length > 0 && mensaje.length > 0){
-        event.target.classList.remove('border-danger');
-        event.target.classList.add('border-success', 'border-3');
-        // console.log(nombre);
-        // console.log(email);
-        // console.log(mensaje);
-        formContacto.reset();
-    }else{
-        event.target.classList.add('border-danger', 'border-3');
-        event.target.classList.remove('border-success');
-        mostrarError('Hay campos vacios', event.target.parentNode);
-    }
+	console.log("el nombre es "+ nombre);
+	const email = inputEmail.value;
+	console.log("el email es "+ email);
+	const mensaje = txtArea.value;
+	alert("el mensaje es "+ mensaje);
 }
 
 

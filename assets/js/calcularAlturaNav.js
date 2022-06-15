@@ -1,17 +1,25 @@
 const style = document.documentElement.style
 
-let element = document.getElementById('divNavSuperior');
-let element1 = document.getElementById('divNavInferior');
-
+let element = document.getElementById('navLogoUser');
 let alturaDiv = element.clientHeight;
-let alturaDiv1 = element1.clientHeight;
 
-let alturaNav = alturaDiv + alturaDiv1;
+// let prueba = document.querySelector(".buscar");
 
-document.documentElement.style.setProperty('--altura', alturaDiv + "px");
-document.documentElement.style.setProperty('--alturaNav', alturaNav + "px");
+// prueba.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     console.log("dando click en buscar");
+// });
 
+// let element1 = document.getElementById('etiquetaH1')
+// let alturaH1 = element1.clientHeight;
+
+// let alturaFinal = alturaDiv;
 
 // console.log(alturaDiv);
-// console.log(alturaDiv1);
-// console.log(alturaNav);
+// console.log(alturaH1);
+
+alturaDiv = alturaDiv;
+
+document.documentElement.style.setProperty('--altura', alturaDiv + "px");
+
+console.log(alturaDiv);

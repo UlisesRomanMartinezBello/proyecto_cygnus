@@ -2,10 +2,7 @@ const divCarousel = document.getElementById('divCarousel');
 const divCarousel1 = document.getElementById('divCarousel1');
 const divCarousel2 = document.getElementById('divCarousel2');
 
-document.addEventListener('DOMContentLoaded', () => {
-    // crearGliderSudadera();
-});
-
+crearGliderSudadera();
 
 function crearGliderSudadera (){
     // console.log(divCarousel);
@@ -40,9 +37,7 @@ function crearGliderSudadera (){
         }  
     }
     arregloSudaderas.sort(function() { return Math.random() - 0.5 });
-    arregloPlayeras.sort(function() { return Math.random() - 0.5 });
-    arregloHoodies.sort(function() { return Math.random() - 0.5 });
-
+    
     for(let x=0; x<arregloSudaderas.length; x++){
         let carousel__elemento = document.createElement('div');
         let img = document.createElement('img');
@@ -53,7 +48,10 @@ function crearGliderSudadera (){
         console.log(x);
         aux = arregloSudaderas[x];
         console.log(aux);
-        
+        divCarousel.appendChild(carousel__elemento);
+        carousel__elemento.appendChild(img);
+        carousel__elemento.appendChild(titulo);
+        carousel__elemento.appendChild(descripcion);
         titulo.setAttribute('class','tituloGlider');
 
         carousel__elemento.setAttribute('class','carousel__elemento');
@@ -68,13 +66,11 @@ function crearGliderSudadera (){
                 console.log(textDescripcion);
             }
         }
-        divCarousel.appendChild(carousel__elemento);
-        carousel__elemento.appendChild(img);
-        carousel__elemento.appendChild(titulo);
-        carousel__elemento.appendChild(descripcion);
         titulo.appendChild(textTitulo);
     }
 
+    arregloPlayeras.sort(function() { return Math.random() - 0.5 });
+    
     for(let x=0; x<arregloPlayeras.length; x++){
         let carousel__elemento = document.createElement('div');
         let img = document.createElement('img');
@@ -85,7 +81,11 @@ function crearGliderSudadera (){
         console.log(x);
         aux = arregloPlayeras[x];
         console.log(aux);
-        
+        divCarousel1.appendChild(carousel__elemento);
+        carousel__elemento.appendChild(img);
+        carousel__elemento.appendChild(titulo);
+        carousel__elemento.appendChild(descripcion);
+        titulo.setAttribute('class','tituloGlider');
 
         carousel__elemento.setAttribute('class','carousel__elemento');
         img.setAttribute('class','img-carousel');
@@ -99,14 +99,11 @@ function crearGliderSudadera (){
                 console.log(textDescripcion);
             }
         }
-        divCarousel1.appendChild(carousel__elemento);
-        carousel__elemento.appendChild(img);
-        carousel__elemento.appendChild(titulo);
-        carousel__elemento.appendChild(descripcion);
-        titulo.setAttribute('class','tituloGlider');
         titulo.appendChild(textTitulo);
     }
 
+    arregloHoodies.sort(function() { return Math.random() - 0.5 });
+    
     for(let x=0; x<arregloHoodies.length; x++){
         let carousel__elemento = document.createElement('div');
         let img = document.createElement('img');
@@ -117,7 +114,11 @@ function crearGliderSudadera (){
         console.log(x);
         aux = arregloHoodies[x];
         console.log(aux);
-        
+        divCarousel2.appendChild(carousel__elemento);
+        carousel__elemento.appendChild(img);
+        carousel__elemento.appendChild(titulo);
+        carousel__elemento.appendChild(descripcion);
+        titulo.setAttribute('class','tituloGlider');
 
         carousel__elemento.setAttribute('class','carousel__elemento');
         img.setAttribute('class','img-carousel');
@@ -131,11 +132,6 @@ function crearGliderSudadera (){
                 console.log(textDescripcion);
             }
         }
-        divCarousel2.appendChild(carousel__elemento);
-        carousel__elemento.appendChild(img);
-        carousel__elemento.appendChild(titulo);
-        carousel__elemento.appendChild(descripcion);
-        titulo.setAttribute('class','tituloGlider');
         titulo.appendChild(textTitulo);
     }
     

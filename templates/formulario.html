@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
+    rel="stylesheet">
+  <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../assets/css/styles_form.css">
+  <title>Proyecto Cygnus</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="bg-principal" id="divNavSuperior">
+
+    </div>
+
+    <div class="bg-principal" id="divNavInferior">
+
+    </div>
+  </header>
+
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <img src="../assets/img/logo-black.png" alt="logo" class="img-fluid d-none d-md-block
+                ">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="card p-4">
+          <div class="d-flex align-items-end">
+            <button type="submit" class="btn btn-principal btn-block mx-1" id="btn-registrar">Registrar</button>
+            <button type="submit" class="btn btn-principal btn-block mx-1" id="btn-iniciar">Iniciar</button>
+          </div>
+
+          <!-- Registrar -->
+
+          <form id="form-registrar">
+            <div class="form-group pt-4 ">
+              <label for="nombre">Nombre<span style="color: red;">*</span></label>
+              <input type="text" class="form-control" id="input-nombre" placeholder="Nombre completo">
+              <p class="msj-error" id="error-nombre"></p>
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido<span style="color: red;">*</span></label>
+              <input type="text" class="form-control" id="input-apellido" placeholder="Apellido">
+              <p class="msj-error" id="errorApellido"></p>
+            </div>
+            <div class="form-group ">
+              <label for="email">Correo Electrónico<span style="color: red;">*</span></label>
+              <input type="email" class="form-control" id="input-email" placeholder="Ingresa tu correo electrónico">
+              <p class="msj-error" id="errorEmail"></p>
+            </div>
+            <div class="form-group ">
+              <label for="password">Contraseña<span style="color: red;">*</span></label>
+              <input type="password" class="form-control" id="input-password" placeholder="Ingresa tu contraseña">
+              <p class="msj-error" id="errorPassword"></p>
+            </div>
+            <div class="form-group">
+              <label for="password">Confirma tu contraseña<span style="color: red;">*</span></label>
+              <input type="password" class="form-control" id="input-password-confirm"
+                placeholder="Confirmar Contraseña">
+              <p class="msj-error" id="errorPassword"></p>
+            </div>
+            <div class="pt-2">
+              <button type="submit" class="btn btn-principal btn-block" id="btn-registrar">Registrar</button>
+            </div>
+          </form>
+          <!-- Iniciar -->
+          <form class="d-none" id="form-iniciar">
+            <div class="form-group pt-4">
+              <label for="email">Correo Electrónico<span style="color: red;">*</span></label>
+              <input type="email" class="form-control" id="input-email-login"
+                placeholder="Ingresa tu correo electrónico" required>
+              <p class="msj-error" id="errorApellido"></p>
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña<span style="color: red;">*</span></label>
+              <input type="password" class="form-control" id="input-password-login" placeholder="Ingresa tu contraseña"required>
+              <p class="msj-error" id="errorPassword"></p>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-principal btn-block" id="btn-iniciar">Iniciar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer ulises actualizado-->
+  <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+          <h4 class="font-weight-bold">Contáctanos</h4>
+          <ul class="lista pt-4 font-weight-light">
+            <li class="pb-4">55 1234 5678</li>
+            <li class="pb-4">Síguenos</li>
+          </ul>
+          <div class="">
+            <i class="fa-brands fa-facebook-square h1 mx-2"></i>
+            <i class="fa-brands fa-twitter-square h1 mx-2"></i>
+            <i class="fa-brands fa-instagram h1 mx-2"></i>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+          <h4 class="font-weight-bold">Ayuda</h4>
+          <ul class="lista pt-4 font-weight-light hiper">
+            <a href="contacto.html" class="text-light">
+              <li class="pb-4">Contacto</li>
+            </a>
+            <li class="pb-4">¿Cómo comprar?</li>
+            <li class="pb-4">Envios y devoluciones</li>
+            <li class="pb-4">Garantias</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <h4 class="font-weight-bold">Sobre Nosotros</h4>
+          <ul class="lista pt-4 font-weight-light hiper">
+            <a href="sobre-nosotros.html" class="text-light">
+              <li class="pb-4">Nosotros</li>
+            </a>
+            <li class="pb-4">Buscar Tiendas</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
+
+  <script src="../assets/js/login.js"></script>
+  <script src="../assets/js/crearNavFooterTemplates.js"></script>
+  <script src="../assets/js/calcularAlturaNav.js"></script>
+  <script src="../assets/js/registro.js"></script>
+
+</body>
+
+</html>

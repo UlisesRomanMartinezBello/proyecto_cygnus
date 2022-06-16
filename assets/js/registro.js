@@ -25,8 +25,55 @@ const expresiones = {
 loadDocument();
 
 const $formulario = document.getElementById('form-registrar');
+const $formLogin = document.getElementById('form-iniciar');
 
-$formulario.addEventListener('submit',(e)=> {
+
+fetch('http://localhost:8080/api/usuario/all')
+.then(response => response.json())
+.then(datos =>{
+    // console.log(datos);
+    console.log(datos);
+})
+
+$formLogin.addEventListener('submit', (e) => {
+    
+    e.preventDefault();
+    console.log($formLogin);
+    const email = document.querySelector('#input-email-login').value;
+    const password = document.querySelector('#input-password-login').value;
+    console.log(email, password);
+
+    fetch('http://localhost:8080/login', {
+        method: 'POST',
+        body: JSON.stringify( {
+            correo: email,
+            password: password
+        }),
+        headers: {
+            'Content-type': 'application/json'
+        }
+    }).then(resp => {
+        const token = resp.headers.get('Authorization');
+        
+        if(token && token.includes('Bearer') && resp.ok && email!="admin@proyectocygnus.com" && password != "admincygnus") {
+            localStorage.setItem('token', token);
+            console.log(token);
+            url = window.location;
+            const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+            location.href = path +  '../index.html';
+        } if(token && token.includes('Bearer') && resp.ok && email=="admin@proyectocygnus.com" && password == "admincygnus") {
+            localStorage.setItem('token', token);
+            console.log(token);
+            url = window.location;
+            const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+            location.href = path +  'agregarProducto.html';
+        } else {
+            localStorage.removeItem('token');          
+        }
+    })
+})
+
+$formulario.addEventListener('submit',(e) => {
     e.preventDefault();
 
     const datos = Object.fromEntries(
@@ -48,7 +95,7 @@ $formulario.addEventListener('submit',(e)=> {
         body:JSON.stringify({
                 nombre:datos.nombre,
                 apellido:datos.apellido,
-                correo_electronico:datos.email,
+                correo:datos.email,
                 password:datos.password,
         })
     })

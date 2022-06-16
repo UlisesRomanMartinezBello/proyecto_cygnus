@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Sigmar+One&display=swap"
     rel="stylesheet">
   <link href="../assets/css/estilos.css" rel="stylesheet" type="text/css">
-  <link href="../assets/css/agregarProductos.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/contacto.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/buscador.css">
   <link rel="icon" href="../assets/img/logo-white.png">
   <title>Proyecto Cygnus - Productos</title>
 
@@ -36,48 +37,138 @@
     </div>
   </header>
   <main>
-      <div class="container pt-4 d-flex justify-content-center">
-        <form id="Formulario" >
-            <div class="form-group">
-              <label for="formGroupExampleInput">Nombre</label>
-              <input name="nombre" type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe el nombre del producto" required>
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2">Talla</label>
-              <input name="talla" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe la talla del producto" required>
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Descripción</label>
-                <input name="descripcion" type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe la descripción del producto" required>
-              </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput2">Categoria</label>
-                <input name="categoria" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe la categoria del producto" required>
-              </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput">Color</label>
-                <input name="color" type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe el color del producto" required>
-              </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput2">Precio</label>
-                <input name="precio" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe el precio del producto" required>
-              </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput2">Costo</label>
-                <input name="costo" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe el costo del producto" required>
-              
-              </div>
+    <!-- Sección formulario  -->
+    <div class="container">
+      <div class="row bg-light text-dark p-5 m-5 rounded order-0 order-sm-1">
+        <div class="col ">
+          <form id="form_contacto">
+            <h2 class="font-weight-bolder text-center">Agregar Producto</h2>
 
-              <div class="pt-2 d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-primary">Enviar</button>
-
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nombre</label>
+                  <input name="nombre" type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="Nombre del producto" required>
+                </div>
               </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Talla</label>
+                  <input name="talla" type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Talla del producto" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroupExampleInput">Descripción</label>
+              <input name="descripcion" type="text" class="form-control" id="formGroupExampleInput"
+                placeholder="Descripción del producto" required>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Categoria</label>
+                  <input name="categoria" type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Categoria del producto" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Color</label>
+                  <input name="color" type="text" class="form-control" id="formGroupExampleInput"
+                    placeholder="Color del producto" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Precio</label>
+                  <input name="precio" type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Precio del producto" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Costo</label>
+                  <input name="costo" type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Costo del producto" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Enviar</button>
+              <!-- <button type="button" class="btn btn-outline-primary">Enviar</button> -->
+            </div>
 
           </form>
+        </div>
       </div>
-
-
+    </div>
   </main>
+
+  <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+          <h4 class="font-weight-bold">Contáctanos</h4>
+          <ul class="lista pt-4 font-weight-light">
+            <li class="pb-4">55 1234 5678</li>
+            <li class="pb-4">Síguenos</li>
+          </ul>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100081594083664">
+              <i class="fa-brands fa-facebook-square h1 mx-2 text-light"></i>
+            </a>
+            <a href="https://twitter.com/proyecto_cygnus">
+              <i class="fa-brands fa-twitter-square h1 mx-2 text-light"></i>
+            </a>
+            <a href="https://www.instagram.com/proyecto_cygnus/">
+              <i class="fa-brands fa-instagram h1 mx-2 text-light"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 pb-4 pb-md-0">
+          <h4 class="font-weight-bold">Ayuda</h4>
+          <ul class="lista pt-4 font-weight-light hiper">
+            <a href="contacto.html" class="text-light">
+              <li class="pb-4">Contacto</li>
+            </a>
+            <a href="como-comprar.html" class="text-light">
+              <li class="pb-4">¿Cómo comprar?</li>
+            </a>
+            <a href="envios-devoluciones.html" class="text-light">
+              <li class="pb-4">Envios y devoluciones</li>
+            </a>
+            <a href="garantias.html" class="text-light">
+              <li class="pb-4">Garantias</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <h4 class="font-weight-bold">Sobre Nosotros</h4>
+          <ul class="lista pt-4 font-weight-light hiper">
+            <a href="sobre-nosotros.html" class="text-light">
+              <li class="pb-4">Nosotros</li>
+            </a>
+            <a href="buscar-tiendas.html" class="text-light">
+              <li class="pb-4">Buscar Tiendas</li>
+            </a>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -86,11 +177,11 @@
     crossorigin="anonymous"></script>
 
   <script src="https://kit.fontawesome.com/df61a8667b.js" crossorigin="anonymous"></script>
-
- 
-
   <script src="../assets/js/crearNavFooterTemplates.js"></script>
   <script src="../assets/js/calcularAlturaNav.js"></script>
+  <script src="../assets/js/contacto.js"></script>
+  <script src="../assets/api_new.js"></script>
+  <!-- <script src="../assets/js/buscador.js"></script> -->
 
 
 </body>

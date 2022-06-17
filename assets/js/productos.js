@@ -30,8 +30,8 @@ function mostrarProductos(productos) {
         const cardHeader = document.createElement('div');
         cardHeader.classList = 'card-header d-flex p-0 justify-content-center align-items-center';
 
-        const iconoCorazon = document.createElement('a');
-        iconoCorazon.classList = 'fa-solid fa-heart cora h4 text-dark';
+        // const iconoCorazon = document.createElement('a');
+        // iconoCorazon.classList = 'fa-solid fa-heart cora h4 text-dark';
 
         const btnAgregarCarrito = document.createElement('a');
         btnAgregarCarrito.classList = 'btn btn-principal position-absolute btn-carrito-compras d-none';
@@ -56,7 +56,7 @@ function mostrarProductos(productos) {
 
         cardBody.appendChild(nombreProducto);
         cardBody.appendChild(btnPrecio);
-        cardHeader.appendChild(iconoCorazon);
+        // cardHeader.appendChild(iconoCorazon);
         cardHeader.appendChild(btnAgregarCarrito);
         cardHeader.appendChild(imgProducto);
         card.appendChild(cardHeader);

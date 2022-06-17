@@ -13,7 +13,7 @@ $formulario.addEventListener('submit',(e)=> {
     console.log(datos);
     $formulario.reset ();
 
-    fetch('http://localhost:8080/api/imagen',{
+    fetch('https://proyectocygnus.herokuapp.com/api/imagen',{
         //tipo de dato que va a tener nuestra peticion
         // los datos que vamos a enviar
         method:'POST',

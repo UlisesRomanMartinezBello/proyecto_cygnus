@@ -28,7 +28,7 @@ const $formulario = document.getElementById('form-registrar');
 const $formLogin = document.getElementById('form-iniciar');
 
 
-// fetch('http://localhost:8080/api/usuario/all')
+// fetch('api/usuario/all')
 // .then(response => response.json())
 // .then(datos =>{
 //     // console.log(datos);
@@ -43,7 +43,7 @@ $formLogin.addEventListener('submit', (e) => {
     const password = document.querySelector('#input-password-login').value;
     console.log(email, password);
 
-    fetch('http://localhost:8080/login', {
+    fetch('https://proyectocygnus.herokuapp.com/login', {
         method: 'POST',
         body: JSON.stringify( {
             correo: email,
@@ -86,7 +86,7 @@ $formulario.addEventListener('submit',(e) => {
     $formulario.reset ();
 
     console.log(datos.codigoPostal);
-    fetch('http://localhost:8080/api/usuario',{
+    fetch('https://proyectocygnus.herokuapp.com/api/usuario',{
         //tipo de dato que va a tener nuestra peticion
         // los datos que vamos a enviar
         method:'POST',

@@ -25,7 +25,7 @@ $formulario.addEventListener('submit',(e)=> {
     $formulario.reset ();
 
     // console.log(datos.codigoPostal);
-    fetch('http://localhost:8080/api/contacto',{
+    fetch('https://proyectocygnus.herokuapp.com/api/contacto',{
         //tipo de dato que va a tener nuestra peticion
         // los datos que vamos a enviar
         method:'POST',

@@ -10,7 +10,6 @@ function cargarDocumento() {
     btnPagar.addEventListener('click', pagarProductos);
     window.addEventListener('load', aumentarProducto);
     document.addEventListener('DOMContentLoaded', calcularTotal);
-    document.addEventListener('DOMContentLoaded', asignarCantidad);
     document.addEventListener('DOMContentLoaded', () => {
         carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     });
@@ -45,21 +44,17 @@ function mostrarProductos() {
                                             <p class="text-principal font-weight-bold">$MXN ${producto.precio}</p>
                                             <strike class="small">$MXN ${producto.precio * 1.5}</strike>
                                             <button type="button" class="d-block bg-transparent btn-talla my-1">${producto.talla}</button>
-                                            <button class="btn btn-transparent btn-sm">
-                                                <i class="fa-solid fa-xmark"></i>
-                                                Eliminar
-                                            </button>
                                         </div>
                                     </div>
                                 </td>       
                                 <td>
                                     <div class="btn-group rounded" role="group">
-                                        <button type="button" class="btn btn-light border btn-disminuir" id="${index + 1}">-</button>
+                                        <button type="button" class="btn btn-light border btn-disminuir" id="${index + 1}" data-id=${producto.id}>-</button>
                                         <button type="button" class="btn btn-light border btn-cantidad" id="${index + 1}">${producto.cantidad}</button>
-                                        <button type="button" class="btn btn-light border btn-aumentar" id="${index + 1}">+</button>
+                                        <button type="button" class="btn btn-light border btn-aumentar" id="${index + 1}" data-id=${producto.id}>+</button>
                                     </div>
                                 </td>
-                                <td class="font-weight-bold">$MXN ${producto.precio * producto.cantidad}</td>
+                                <td class="font-weight-bold">$MXN ${producto.total}</td>
                             </tr>`;
             listaProductos.innerHTML += plantilla;
         });
@@ -72,7 +67,7 @@ function calcularTotal() {
     let numeroProductos = JSON.parse(localStorage.getItem('carrito'));
 
     if (numeroProductos != null) {
-        const preciosProductos = numeroProductos.map(producto => producto.precio);
+        const preciosProductos = numeroProductos.map(producto => producto.total);
         const total = preciosProductos.reduce((a, b) => a + b);
         totalProductos.textContent = `$MXN ${total}`;
     } else {
@@ -90,7 +85,7 @@ function calcularTotal() {
         btnComprarProductos.href = 'productos.html';
         btnComprarProductos.classList = 'btn btn-principal btn-block';
         btnComprarProductos.textContent = 'Ver productos';
-        
+
         cardComprarProductos.appendChild(tituloComprarProductos);
         cardComprarProductos.appendChild(btnComprarProductos);
         contenedorTotal.appendChild(cardComprarProductos);
@@ -105,13 +100,16 @@ function aumentarProducto() {
     btnDisminuir.forEach(boton => {
         boton.addEventListener('click', () => {
             let btnId = boton.id;
+            let idProducto = parseInt(boton.getAttribute('data-id'));
             btnCantidad.forEach(btn => {
                 if (btnId == btn.id) {
                     if (parseInt(btn.textContent) === 1) {
                         btn.setAttribute('disabled');
                     }
                     btn.textContent = parseInt(btn.textContent) - 1;
-
+                    asignarCantidadProducto(idProducto, 'Disminuir');
+                    calcularTotal();
+                    mostrarProductos();
                 }
             })
         });
@@ -120,19 +118,35 @@ function aumentarProducto() {
     btnAumentar.forEach(boton => {
         boton.addEventListener('click', () => {
             let btnId = boton.id;
+            let idProducto = parseInt(boton.getAttribute('data-id'));
             btnCantidad.forEach(btn => {
                 if (btnId == btn.id) {
                     btn.textContent = parseInt(btn.textContent) + 1;
+                    asignarCantidadProducto(idProducto, 'Aumentar');
+                    calcularTotal();
+                    mostrarProductos();
                 }
             })
         });
     })
 }
 
-function asignarCantidad() {
-    carrito.forEach(carrito => {
-        carrito.cantidad = 1;
-    });
+function asignarCantidadProducto(idProducto, operacion) {
+    carrito.forEach(producto => {
+        if (producto.id === idProducto) {
+            if (operacion === 'Aumentar') {
+                producto.cantidad = producto.cantidad + 1;
+                producto.total = producto.precio * producto.cantidad;
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                limpiarProductos();
+            } else {
+                producto.cantidad = producto.cantidad - 1;
+                producto.total = producto.precio * producto.cantidad;
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                limpiarProductos();
+            }
+        }
+    })
 }
 
 function pagarProductos() {
@@ -178,4 +192,10 @@ function vaciarCarrito() {
     compraDiv.appendChild(mensaje);
     compraDiv.appendChild(botonIndex);
     document.querySelector('#tabla-carrito').appendChild(compraDiv);
+}
+
+function limpiarProductos() {
+    while (listaProductos.firstChild) {
+        listaProductos.removeChild(listaProductos.firstChild);
+    }
 }

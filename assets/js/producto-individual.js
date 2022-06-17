@@ -7,7 +7,7 @@ const btnCarrito = document.querySelector('#agregar-carrito');
 const checkTallas = document.querySelectorAll('.check-talla');
 const pathImagenes = '../assets/img/img-producto/';
 const urlProductos = 'http://127.0.0.1:5500/templates/productos.html';
-const detallesProducto = { id: 0, nombre: '', precio: 0, imagen: '', talla: '', cantidad: 0 };
+const detallesProducto = { id: 0, nombre: '', precio: 0, imagen: '', talla: '', cantidad: 0, total: 0 };
 let carrito = [];
 
 cargarEventos();
@@ -91,8 +91,10 @@ function agregarCarrito() {
         detallesProducto.id = productos[urlProducto].id;
         detallesProducto.nombre = productos[urlProducto].nombre;
         detallesProducto.precio = productos[urlProducto].precio;
+        detallesProducto.total = productos[urlProducto].precio;
         detallesProducto.imagen = productos[urlProducto].imagenes[0];
         detallesProducto.cantidad = detallesProducto.cantidad + 1;
+
         carrito = [...carrito, detallesProducto];
         guardarProductoCarrito();
     }

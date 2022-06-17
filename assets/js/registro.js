@@ -28,12 +28,12 @@ const $formulario = document.getElementById('form-registrar');
 const $formLogin = document.getElementById('form-iniciar');
 
 
-fetch('http://localhost:8080/api/usuario/all')
-.then(response => response.json())
-.then(datos =>{
-    // console.log(datos);
-    console.log(datos);
-})
+// fetch('http://localhost:8080/api/usuario/all')
+// .then(response => response.json())
+// .then(datos =>{
+//     // console.log(datos);
+//     console.log(datos);
+// })
 
 $formLogin.addEventListener('submit', (e) => {
     
@@ -60,8 +60,9 @@ $formLogin.addEventListener('submit', (e) => {
             console.log(token);
             url = window.location;
             const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+            console.log(path);
             location.href = path +  '../index.html';
-        } if(token && token.includes('Bearer') && resp.ok && email=="admin@proyectocygnus.com" && password == "admincygnus") {
+        } else if(token && token.includes('Bearer') && resp.ok && email=="admin@proyectocygnus.com" && password == "admincygnus") {
             localStorage.setItem('token', token);
             console.log(token);
             url = window.location;

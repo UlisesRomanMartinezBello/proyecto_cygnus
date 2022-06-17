@@ -40,11 +40,11 @@ function borrar(elemento) {
     if (elemento.name === 'eliminar') {
 
         document.getElementById("tabla").deleteRow(fila.rowIndex);
-        fetch('http://localhost:8080/api/productos/delete/' + elemento.id, {
-            method: 'DELETE'
-        })
-            .then(res => res)
-            .then(res => console.log(res))
+        // fetch('http://localhost:8080/api/productos/delete/'+elemento.id, {
+        //     method: 'DELETE'
+        // })
+        //     .then(res => res)
+        //     .then(res => console.log(res))
         console.log(elemento.id)
     }
 }

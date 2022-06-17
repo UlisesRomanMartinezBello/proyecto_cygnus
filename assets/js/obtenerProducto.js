@@ -1,4 +1,4 @@
-fetch('http://localhost:8080/api/productos/all')
+fetch('https://proyectocygnus.herokuapp.com/api/productos/all')
 .then(response => response.json())
 .then(datos =>{
     console.log(datos);
@@ -40,7 +40,7 @@ function borrar(elemento) {
     if (elemento.name === 'eliminar') {
 
         document.getElementById("tabla").deleteRow(fila.rowIndex);
-        // fetch('http://localhost:8080/api/productos/delete/'+elemento.id, {
+        // fetch('api/productos/delete/'+elemento.id, {
         //     method: 'DELETE'
         // })
         //     .then(res => res)

@@ -17,7 +17,7 @@ $formulario.addEventListener('submit',(e)=> {
 
     $formulario.reset ();
 
-    fetch('http://localhost:8080/api/productos',{
+    fetch('https://proyectocygnus.herokuapp.com/api/productos',{
         //tipo de dato que va a tener nuestra peticion
         // los datos que vamos a enviar
         method:'POST',

@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
 
     const token = localStorage.getItem('token');
 
-    fetch('http://localhost:8080/api/usuario/all',{
+    fetch('api/usuario/all',{
         headers: {
             'Content-type': 'application/json',
             'Authorization': token

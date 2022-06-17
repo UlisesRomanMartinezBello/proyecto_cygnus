@@ -174,7 +174,7 @@ function crearNav(){
     let inputBuscar = document.createElement('input');
     let spanBuscar = document.createElement('span');
     let iconoBuscar = document.createElement('i');
-    let iconoCorazon = document.createElement('i');
+    // let iconoCorazon = document.createElement('i');
     let hiperCarrito = document.createElement('a');
     let iconoCarrito = document.createElement('i');
     let navbarNavAltMarkupContenido = document.createElement('div');
@@ -204,7 +204,7 @@ function crearNav(){
     heredar(divInputBuscar,inputBuscar);
     heredar(buscar,spanBuscar);
     heredar(spanBuscar,iconoBuscar);
-    heredar(divBtn,iconoCorazon);
+    // heredar(divBtn,iconoCorazon);
     heredar(divBtn,hiperCarrito);
     heredar(hiperCarrito,iconoCarrito);
     heredar(navbarNavAltMarkup,navbarNavAltMarkupContenido);
@@ -266,7 +266,7 @@ function crearNav(){
     agregarAtributo(inputBuscar,'placeholder','Buscar...');
 
     agregarAtributo(divBtn,'class','d-flex divBtn justify-content-end');
-    agregarAtributo(iconoCorazon,'class','uil uil-heart btnIconoCorazon');
+    // agregarAtributo(iconoCorazon,'class','uil uil-heart btnIconoCorazon');
     agregarAtributo(hiperCarrito,'href','templates/carrito-compras.html');
     agregarAtributo(hiperCarrito,'class','text-light btnIcono icono-carrito');
     agregarAtributo(iconoCarrito,'class','uil uil-shopping-cart-alt');

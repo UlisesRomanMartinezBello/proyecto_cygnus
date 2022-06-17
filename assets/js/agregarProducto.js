@@ -1,7 +1,7 @@
 //agregar código
 
 //agregar código
-const $formulario = document.getElementById('Formulario');
+const $formulario = document.getElementById('form_contacto');
 console.log($formulario);
 
 $formulario.addEventListener('submit',(e)=> {
@@ -11,7 +11,9 @@ $formulario.addEventListener('submit',(e)=> {
         new FormData(e.target)
     )
 
-    console.log(datos);
+    console.log(datos.precio);
+    console.log(datos.costo);
+
 
     $formulario.reset ();
 
@@ -23,7 +25,7 @@ $formulario.addEventListener('submit',(e)=> {
             'Content-Type': 'application/json'
         },
         body:JSON.stringify({
-                nombre_producto:datos.nombre_producto,
+                nombre_producto:datos.nombre,
                 talla:datos.talla,
                 descripcion:datos.descripcion,
                 categoria:datos.categoria,

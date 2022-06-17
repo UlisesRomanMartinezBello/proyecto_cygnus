@@ -511,7 +511,7 @@ const productos = [
     }, 
     {
         id: 52,
-        nombre: "Sudadera Reloj",
+        nombre: "Reloj",
         tipo: "Sudadera",
         precio: 395,
         talla: ["G","M","S","XS"],

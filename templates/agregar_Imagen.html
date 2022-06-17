@@ -38,44 +38,48 @@
   </header>
   <main>
     <!-- Sección formulario Agrgar imagen  -->
-    <div class="container">
-      <div class="row bg-light text-dark p-5 m-5 rounded order-0 order-sm-1">
-        <div class="col ">
-          <form id="form-imagenes">
-            <h2 class="font-weight-bolder text-center">Agregar Imágenes</h2>
 
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Producto_id</label>
-                  <input name="producto_id" type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="Ingresa el id del producto" required>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="card p-5">
+            <form id="form-imagenes">
+
+              <div class="d-flex justify-content-around align-items-center">
+                <h2 class="font-weight-bolder text-center">Agregar Imágenes</h2>
+                <a href="agregarProducto.html" class="btn btn-principal">Agregar producto</a>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Producto_id</label>
+                    <input name="producto_id" type="text" class="form-control" id="formGroupExampleInput"
+                      placeholder="Ingresa el id del producto" required>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Ruta</label>
+                    <input name="ruta" type="text" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Ruta del producto" required>
+                  </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Ruta</label>
-                  <input name="ruta" type="text" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Ruta del producto" required>
-                </div>
+
+              <div class="">
+                <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Agregar
+                  imágen</button>
+                <!-- <button type="button" class="btn btn-outline-primary">Enviar</button> -->
               </div>
-            </div>
 
-<!--             <div class="form-group">
-              <label for="formGroupExampleInput">Descripción</label>
-              <input name="descripcion" type="text" class="form-control" id="formGroupExampleInput"
-                placeholder="Descripción del producto" required>
-            </div> -->
-
-       <div class="">
-              <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Agregar Imágen</button>
-              <!-- <button type="button" class="btn btn-outline-primary">Enviar</button> -->
-            </div>
-
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+
+
   </main>
 
   <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">

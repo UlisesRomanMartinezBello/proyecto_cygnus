@@ -38,78 +38,91 @@
   </header>
   <main>
     <!-- Sección formulario  -->
-    <div class="container">
-      <div class="row bg-light text-dark p-5 m-5 rounded order-0 order-sm-1">
-        <div class="col ">
-          <form id="form_contacto">
-            <h2 class="font-weight-bolder text-center">Agregar Producto</h2>
 
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Nombre</label>
-                  <input name="nombre" type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="Nombre del producto" required>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="card rounded p-5">
+            <form id="form_contacto">
+              <div class="d-flex justify-content-around align-items-center">
+                <h2 class="font-weight-bolder text-center">Agregar Producto</h2>
+                <a href="agregar_Imagen.html" class="btn btn-principal">Agregar imagen</a>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Nombre</label>
+                    <input name="nombre" type="text" class="form-control" id="formGroupExampleInput"
+                      placeholder="Nombre del producto" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Talla</label>
+                    <input name="talla" type="text" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Talla del producto" required>
+                  </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Talla</label>
-                  <input name="talla" type="text" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Talla del producto" required>
+
+              <div class="form-group">
+                <label for="formGroupExampleInput">Descripción</label>
+                <input name="descripcion" type="text" class="form-control" id="formGroupExampleInput"
+                  placeholder="Descripción del producto" required>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Categoria</label>
+                    <input name="categoria" type="text" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Categoria del producto" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Color</label>
+                    <input name="color" type="text" class="form-control" id="formGroupExampleInput"
+                      placeholder="Color del producto" required>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="formGroupExampleInput">Descripción</label>
-              <input name="descripcion" type="text" class="form-control" id="formGroupExampleInput"
-                placeholder="Descripción del producto" required>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Categoria</label>
-                  <input name="categoria" type="text" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Categoria del producto" required>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Precio</label>
+                    <input name="precio" type="number" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Precio del producto" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Costo</label>
+                    <input name="costo" type="number" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Costo del producto" required>
+                  </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Color</label>
-                  <input name="color" type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="Color del producto" required>
-                </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Precio</label>
-                  <input name="precio" type="number" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Precio del producto" required>
-                </div>
+              <div class="">
+                <button type="submit" id="btn_enviar"
+                  class="btn btn-block btn-principal text-light mt-5 ">Enviar</button>
+                <!-- <button type="button" class="btn btn-outline-primary">Enviar</button> -->
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Costo</label>
-                  <input name="costo" type="number" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Costo del producto" required>
-                </div>
-              </div>
-            </div>
 
-            <div class="">
-              <button type="submit" id="btn_enviar" class="btn btn-block btn-principal text-light mt-5 ">Enviar</button>
-              <!-- <button type="button" class="btn btn-outline-primary">Enviar</button> -->
-            </div>
-
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- <div class="container">
+      <div class="row bg-light text-dark p-5 m-5 rounded order-0 order-sm-1">
+
+      </div>
+    </div> -->
   </main>
 
   <footer class="bg-principal mt-5 pt-5 pb-5 text-light text-uppercase">
